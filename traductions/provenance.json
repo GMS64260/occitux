@@ -1,0 +1,261 @@
+{
+  "distribution": "Ubuntu 24.04 noble / noble-updates",
+  "date_consultation": "2026-10-21",
+  "corpus": {
+    "titre": "Lo Congrès websites Corpus v1.0",
+    "auteur": "Aure Séguier ; Lo Congrès",
+    "url": "https://zenodo.org/records/12192029",
+    "licence": "CC BY 4.0",
+    "fichier": "oc-gascon-grclass_fr.csv",
+    "md5": "c431e8f5cb36aa3a89896e3586de0896",
+    "entrees": 8552
+  },
+  "paquets": [
+    {
+      "Package": "language-pack-fr-base",
+      "Version": "1:24.04+20260905",
+      "Architecture": "all",
+      "fichier": "language-pack-fr-base_1%3a24.04+20260905_all.deb",
+      "sha256": "784743d4bd60d3b657e7e24fd0851309a2c6a4d9cae454c26411f2ca17942231",
+      "catalogues": []
+    },
+    {
+      "Package": "language-pack-oc-base",
+      "Version": "1:24.04+20260905",
+      "Architecture": "all",
+      "fichier": "language-pack-oc-base_1%3a24.04+20260905_all.deb",
+      "sha256": "19c06bd86f63e19cbf79c64da97d545b4cc17f86d95bc5d92dde1d4eaa681218",
+      "catalogues": []
+    },
+    {
+      "Package": "lightdm-gtk-greeter",
+      "Version": "2.0.9-0ubuntu3",
+      "Architecture": "amd64",
+      "fichier": "lightdm-gtk-greeter_2.0.9-0ubuntu3_amd64.deb",
+      "sha256": "6586362b52b7ad157c3c29a197657b814138decf25640a88894c4965a38522e1",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "lightdm-gtk-greeter",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/lightdm-gtk-greeter.mo",
+          "sha256": "337aa578f832f858f80aa2a3f6c5269115174bc743e55b8fb04ef5392232f1c3",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "lightdm-gtk-greeter",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/lightdm-gtk-greeter.mo",
+          "sha256": "2c980656ccf10a96ed2871127c39ff7870e6fbb97dfeeb371f2f70243db88ac6",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "lightdm",
+      "Version": "1.30.0-0ubuntu14",
+      "Architecture": "amd64",
+      "fichier": "lightdm_1.30.0-0ubuntu14_amd64.deb",
+      "sha256": "d812e887047adefa087324195cd0f4b396e6168af92716ecb08b7e568f52ee45",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "lightdm",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/lightdm.mo",
+          "sha256": "3a383538e2ef02195b56d805ce60ae830cc2a1c30b53d5a844649c09f1630fd1",
+          "vide": true
+        },
+        {
+          "langue": "fr",
+          "domaine": "lightdm",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/lightdm.mo",
+          "sha256": "868f26fa4e6bb8e8f5f1e568bda8b6ebb13e96071b1563180e105d30b010296e",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "ristretto",
+      "Version": "0.13.1-1build2",
+      "Architecture": "amd64",
+      "fichier": "ristretto_0.13.1-1build2_amd64.deb",
+      "sha256": "ec76341f91f4cd043199fe75fe414f8d61a6d391fc904c9c38e6342b736ae2c4",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "ristretto",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/ristretto.mo",
+          "sha256": "96834363c8271947a8e32eae80225db12e7ae9646dfc771558f66d3c79151ae1",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "ristretto",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/ristretto.mo",
+          "sha256": "4653366f9714e191c5677c9d95680c9db01b5170c3ae3bcb636b6d3c9a67ec2a",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "thunar-data",
+      "Version": "4.18.8-1build3",
+      "Architecture": "all",
+      "fichier": "thunar-data_4.18.8-1build3_all.deb",
+      "sha256": "c2d5477a9a149d4347b13fbdc3b150509a127b8a9cc6b884b0049bf3422ca273",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "thunar",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/thunar.mo",
+          "sha256": "317e4d9ae346e3fd8971949e75bd25588241ca42aaf94d7c2ecf6cf01ff3c8ae",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "thunar",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/thunar.mo",
+          "sha256": "ed04d7ce1ddee01d79a68010224738e553adb952df0b1daf7cd2ba18ef063171",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "tuxpaint-data",
+      "Version": "1:0.9.28-sdl2-1build2",
+      "Architecture": "all",
+      "fichier": "tuxpaint-data_1%3a0.9.28-sdl2-1build2_all.deb",
+      "sha256": "f1820ec40a7f9c82df93b0b019a6f4da69b08c4a1d43fb538003af4808812636",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "tuxpaint",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/tuxpaint.mo",
+          "sha256": "70e284ed82bc47209c062669f9b9ca2599f2c20bdc17c019d465fa1359d12066",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "tuxpaint",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/tuxpaint.mo",
+          "sha256": "cce94d5aa4189dd22f4c04ea241616b2be285eb661c6fb5f55bd086a52bc5314",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "xfce4-panel",
+      "Version": "4.18.4-1ubuntu0.1",
+      "Architecture": "amd64",
+      "fichier": "xfce4-panel_4.18.4-1ubuntu0.1_amd64.deb",
+      "sha256": "8cb523d70e03eeae4c210d32dd1d1c41669864d48ff4672ff7cb3b87e30bbfc2",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "xfce4-panel",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/xfce4-panel.mo",
+          "sha256": "ff16c920c0bcb48b529d00136b60ae5936cd18d65fb6aaf52b533a990aed5e27",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "xfce4-panel",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/xfce4-panel.mo",
+          "sha256": "57f1fbad9936a42c1833714e18957dac032c11d02241a905d97731d24d490373",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "xfce4-pulseaudio-plugin",
+      "Version": "0.4.8-1build2",
+      "Architecture": "amd64",
+      "fichier": "xfce4-pulseaudio-plugin_0.4.8-1build2_amd64.deb",
+      "sha256": "9e732888539a2c5345b35dc3eeec3f636833c6d8a57ac689223dc91a94f92227",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "xfce4-pulseaudio-plugin",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/xfce4-pulseaudio-plugin.mo",
+          "sha256": "708fa47c6541527cc9c45d65f3c53993a2485412dc94ff2e72bc3550bc0d1e1d",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "xfce4-pulseaudio-plugin",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/xfce4-pulseaudio-plugin.mo",
+          "sha256": "5fc335cf5fee5ae2b7a30274c7a342e3687df7c8b69ca71e932306ba2fede285",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "xfce4-session",
+      "Version": "4.18.3-1build2",
+      "Architecture": "amd64",
+      "fichier": "xfce4-session_4.18.3-1build2_amd64.deb",
+      "sha256": "c000688e41194c914031f1d7be7da00c7d0315ce8e1976ddafb408c9466ccc6c",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "xfce4-session",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/xfce4-session.mo",
+          "sha256": "4fa29a6edf921be100121ef0708954eccb4bc9f4ea799ac9b8b6f5b5c4cbbf8d",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "xfce4-session",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/xfce4-session.mo",
+          "sha256": "9681913dcb165cf44844424494df79cc342dcf0807b079eed6eef8b3b3ecc432",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "xfdesktop4-data",
+      "Version": "4.18.1-1build3",
+      "Architecture": "all",
+      "fichier": "xfdesktop4-data_4.18.1-1build3_all.deb",
+      "sha256": "5bedadb53f8a4e24a4c788f553c8bb48959d2ee859b1ce6e237fc2baaa98c84e",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "xfdesktop",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/xfdesktop.mo",
+          "sha256": "e9bf4898d9725b0af54bcfa376ada4a582b7136467f4ff4980496afdd0fc7382",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "xfdesktop",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/xfdesktop.mo",
+          "sha256": "28b412699d43dee8067ceb98891bc504278163a17ae6a076f6abb35633771c71",
+          "vide": false
+        }
+      ]
+    },
+    {
+      "Package": "xfwm4",
+      "Version": "4.18.0-1build3",
+      "Architecture": "amd64",
+      "fichier": "xfwm4_4.18.0-1build3_amd64.deb",
+      "sha256": "e5b9f5ebfc0d49aaaffaa1fdbbbda0fadfb521199c57f76fdca92e9737dc942c",
+      "catalogues": [
+        {
+          "langue": "oc",
+          "domaine": "xfwm4",
+          "chemin": "usr/share/locale/oc/LC_MESSAGES/xfwm4.mo",
+          "sha256": "f0fe1144072602069fa4d486474efe21d67d714c4f0a656fd841440afd7dce9d",
+          "vide": false
+        },
+        {
+          "langue": "fr",
+          "domaine": "xfwm4",
+          "chemin": "usr/share/locale/fr/LC_MESSAGES/xfwm4.mo",
+          "sha256": "014232782c4c43983478cdc576dc8ef124461a2ba2abf5162d75547fbe3f38cc",
+          "vide": false
+        }
+      ]
+    }
+  ]
+}

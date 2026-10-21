@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Vérifier les scripts
         run: make verifier
@@ -56,7 +56,7 @@ jobs:
             test ! -e /etc/apt/apt.conf.d/51occitux-unattended-upgrades
           '
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: occitux-deb
           path: construction/*.deb

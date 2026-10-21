@@ -32,6 +32,6 @@ En attendant, on peut les installer à la main sur chaque PC, depuis LibreOffice
 
 PrimTux règle l'outil `localepurge` pour que les paquets n'installent que leurs traductions françaises : c'est une économie de place. Sans précaution, chaque mise à jour d'un logiciel effacerait donc sa traduction occitane, et le PC repasserait en français petit à petit.
 
-Occitux ajoute `/etc/dpkg/dpkg.cfg.d/51occitux-langues`, qui garde les traductions occitanes et béarnaises lors des mises à jour. Les catalogues béarnais d'Occitux sont livrés dans `/usr/share/occitux/locale/` et reliés à `/usr/share/locale/oc@gascon` par `occitux-config`.
+Occitux ajoute `/etc/dpkg/dpkg.cfg.d/zz-occitux-langues`, qui garde les traductions occitanes et béarnaises lors des mises à jour. Les catalogues béarnais d'Occitux sont livrés dans `/usr/share/occitux/locale/` et reliés à `/usr/share/locale/oc@gascon` par `occitux-config`.
 
 Limite : sur un PrimTux installé avant Occitux et déjà mis à jour, les traductions occitanes effacées par ces mises à jour ne reviennent qu'à la prochaine mise à jour de chaque logiciel.

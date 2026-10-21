@@ -2,8 +2,12 @@
 #
 # PrimTux règle localepurge pour que dpkg écarte toute traduction autre que
 # le français (50localepurge). Sans ces lignes, chaque mise à jour d'un
-# logiciel effacerait sa traduction occitane. Lues après celles de PrimTux,
-# elles l'emportent.
+# logiciel effacerait sa traduction occitane.
+#
+# dpkg lit ces fichiers par ordre alphabétique, et la dernière règle qui
+# correspond l'emporte : le nom en « zz- » fait passer ces lignes après celles
+# de PrimTux et de tout autre élagage (« excludes » des images Docker d'Ubuntu,
+# par exemple).
 path-include=/usr/share/locale/oc/*
 path-include=/usr/share/locale/oc_FR/*
 path-include=/usr/share/locale/oc@gascon/*

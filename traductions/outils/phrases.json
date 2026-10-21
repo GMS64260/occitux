@@ -1,0 +1,1566 @@
+[
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Please wait…",
+    "bearnes": "Esperar…",
+    "termes": [
+      "attendre"
+    ],
+    "sources": [
+      "G:attendre"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Good job!",
+    "bearnes": "Bon tribalh !",
+    "termes": [
+      "travail"
+    ],
+    "sources": [
+      "G:travail"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Keep it up!",
+    "bearnes": "Contunhar !",
+    "termes": [
+      "continuer"
+    ],
+    "sources": [
+      "G:continuer"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Blue!",
+    "bearnes": "Blu !",
+    "termes": [
+      "bleu"
+    ],
+    "sources": [
+      "G:bleu"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Red!",
+    "bearnes": "Roi !",
+    "termes": [
+      "rouge"
+    ],
+    "sources": [
+      "G:rouge"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Purple!",
+    "bearnes": "Vriulet !",
+    "termes": [
+      "violet"
+    ],
+    "sources": [
+      "G:violet"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Sky blue!",
+    "bearnes": "Blu cèu !",
+    "termes": [
+      "bleu"
+    ],
+    "sources": [
+      "G:bleu",
+      "C02424"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Eraser!",
+    "bearnes": "Desfaçar !",
+    "termes": [
+      "effacer"
+    ],
+    "sources": [
+      "G:effacer"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Redo!",
+    "bearnes": "Tornar har !",
+    "termes": [
+      "refaire"
+    ],
+    "sources": [
+      "G:refaire"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Print your picture now?",
+    "bearnes": "Imprimir l'imatge ara ?",
+    "termes": [
+      "imprimer",
+      "image",
+      "maintenant"
+    ],
+    "sources": [
+      "G:imprimer",
+      "G:image",
+      "G:maintenant"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "No, don’t bother saving!",
+    "bearnes": "Non, quitar shens enregistrar !",
+    "termes": [
+      "non",
+      "quitter",
+      "sans",
+      "enregistrer"
+    ],
+    "sources": [
+      "G:non",
+      "G:quitter",
+      "G:sans",
+      "G:enregistrer"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "No, don’t erase it!",
+    "bearnes": "Non, anullar !",
+    "termes": [
+      "non",
+      "annuler"
+    ],
+    "sources": [
+      "G:non",
+      "G:annuler"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "No, take me back!",
+    "bearnes": "Non, tornar !",
+    "termes": [
+      "non",
+      "retour"
+    ],
+    "sources": [
+      "G:non",
+      "G:retour"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Yes, I’m done!",
+    "bearnes": "Òc, quitar !",
+    "termes": [
+      "oui",
+      "quitter"
+    ],
+    "sources": [
+      "G:oui",
+      "G:quitter"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Yes, erase it!",
+    "bearnes": "Òc, suprimir !",
+    "termes": [
+      "oui",
+      "supprimer"
+    ],
+    "sources": [
+      "G:oui",
+      "G:supprimer"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Yes, print it!",
+    "bearnes": "Òc, imprimir !",
+    "termes": [
+      "oui",
+      "imprimer"
+    ],
+    "sources": [
+      "G:oui",
+      "G:imprimer"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Yes, save it!",
+    "bearnes": "Òc, enregistrar !",
+    "termes": [
+      "oui",
+      "enregistrer"
+    ],
+    "sources": [
+      "G:oui",
+      "G:enregistrer"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "There are no saved files!",
+    "bearnes": "Nat fichèr enregistrat !",
+    "termes": [
+      "aucun",
+      "fichier"
+    ],
+    "sources": [
+      "G:aucun",
+      "G:fichier",
+      "C05987"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "A drawing program for children.",
+    "bearnes": "Un logiciau de dessenh entaus mainatges.",
+    "termes": [
+      "logiciel",
+      "dessin",
+      "pour_les",
+      "enfant"
+    ],
+    "sources": [
+      "G:logiciel",
+      "G:dessin",
+      "G:pour_les",
+      "G:enfant"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Enter your password",
+    "bearnes": "Picar lo mot de passa",
+    "termes": [
+      "saisir",
+      "mot_de_passe"
+    ],
+    "sources": [
+      "G:saisir",
+      "G:mot_de_passe"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Enter your username",
+    "bearnes": "Picar lo nom d'utilizator",
+    "termes": [
+      "saisir",
+      "nom",
+      "utilisateur"
+    ],
+    "sources": [
+      "G:saisir",
+      "G:nom",
+      "G:utilisateur"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Log In",
+    "bearnes": "Obrir la session",
+    "termes": [
+      "ouvrir",
+      "session"
+    ],
+    "sources": [
+      "G:ouvrir",
+      "G:session"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Failed to start session",
+    "bearnes": "Impossible d'aviar la session",
+    "termes": [
+      "impossible",
+      "lancer",
+      "session"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:lancer",
+      "G:session"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Failed to authenticate",
+    "bearnes": "Error d'autentificacion",
+    "termes": [
+      "erreur"
+    ],
+    "sources": [
+      "G:erreur"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Are you sure you want to close all programs and restart the computer?",
+    "bearnes": "Barrar tots los programas e tornar aviar l'ordinator ?",
+    "termes": [
+      "fermer",
+      "tous",
+      "programme",
+      "redemarrer",
+      "ordinateur"
+    ],
+    "sources": [
+      "G:fermer",
+      "G:tous",
+      "G:programme",
+      "G:redemarrer",
+      "G:ordinateur"
+    ]
+  },
+  {
+    "domaine": "lightdm-gtk-greeter",
+    "msgid": "Are you sure you want to close all programs and shut down the computer?",
+    "bearnes": "Barrar tots los programas e estupar l'ordinator ?",
+    "termes": [
+      "fermer",
+      "tous",
+      "programme",
+      "eteindre",
+      "ordinateur"
+    ],
+    "sources": [
+      "G:fermer",
+      "G:tous",
+      "G:programme",
+      "G:eteindre",
+      "G:ordinateur"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Are you sure you want to log out?",
+    "bearnes": "Barrar la session ?",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Are you sure you want to restart?",
+    "bearnes": "Tornar aviar ?",
+    "termes": [
+      "redemarrer"
+    ],
+    "sources": [
+      "G:redemarrer"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Are you sure you want to shut down?",
+    "bearnes": "Estupar ?",
+    "termes": [
+      "eteindre"
+    ],
+    "sources": [
+      "G:eteindre"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Logging out in %d seconds.",
+    "bearnes": "Barrar la session dens %d segondas.",
+    "termes": [
+      "fermer_session",
+      "dans",
+      "seconde"
+    ],
+    "sources": [
+      "G:fermer_session",
+      "G:dans",
+      "G:seconde"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Restarting computer in %d seconds.",
+    "bearnes": "Tornar aviar l'ordinator dens %d segondas.",
+    "termes": [
+      "redemarrer",
+      "ordinateur",
+      "dans",
+      "seconde"
+    ],
+    "sources": [
+      "G:redemarrer",
+      "G:ordinateur",
+      "G:dans",
+      "G:seconde"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Turning off computer in %d seconds.",
+    "bearnes": "Estupar l'ordinator dens %d segondas.",
+    "termes": [
+      "eteindre",
+      "ordinateur",
+      "dans",
+      "seconde"
+    ],
+    "sources": [
+      "G:eteindre",
+      "G:ordinateur",
+      "G:dans",
+      "G:seconde"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Restarting...",
+    "bearnes": "Tornar aviar...",
+    "termes": [
+      "redemarrer"
+    ],
+    "sources": [
+      "G:redemarrer"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "What time is it?",
+    "bearnes": "Quina òra ei ?",
+    "termes": [
+      "heure"
+    ],
+    "sources": [
+      "G:heure",
+      "https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-oc&dic%5B%5D=PNST&q=heure"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Arrange _items in a single row",
+    "bearnes": "Arrengar los _elements en ua sola linha",
+    "termes": [
+      "element",
+      "une",
+      "ligne"
+    ],
+    "sources": [
+      "G:element",
+      "G:une",
+      "G:ligne"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Log Out",
+    "bearnes": "Barrar la session",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "_Log Out",
+    "bearnes": "_Barrar la session",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Log Out",
+    "bearnes": "Barrar la session",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "_Log Out",
+    "bearnes": "_Barrar la session",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Log Out...",
+    "bearnes": "Barrar la session…",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Log _Out",
+    "bearnes": "Barrar la _session",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Log _Out...",
+    "bearnes": "Barrar la _session…",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Log out %s",
+    "bearnes": "Barrar la session de %s",
+    "termes": [
+      "fermer_session"
+    ],
+    "sources": [
+      "G:fermer_session"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Log out quickly; don't save the session",
+    "bearnes": "Barrar la session shens enregistrar",
+    "termes": [
+      "fermer_session",
+      "sans",
+      "enregistrer"
+    ],
+    "sources": [
+      "G:fermer_session",
+      "G:sans",
+      "G:enregistrer"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Log out without displaying the logout dialog",
+    "bearnes": "Barrar la session shens demandar confirmacion",
+    "termes": [
+      "fermer_session",
+      "sans"
+    ],
+    "sources": [
+      "G:fermer_session",
+      "G:sans"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Save Sess_ion",
+    "bearnes": "Enregistrar la sess_ion",
+    "termes": [
+      "enregistrer",
+      "session"
+    ],
+    "sources": [
+      "G:enregistrer",
+      "G:session"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Active item text color",
+    "bearnes": "Color deu tèxte de l'element actiu",
+    "termes": [
+      "couleur",
+      "du",
+      "texte",
+      "element",
+      "actif"
+    ],
+    "sources": [
+      "G:couleur",
+      "G:du",
+      "G:texte",
+      "G:element",
+      "G:actif"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Last Four Hours",
+    "bearnes": "Las quate darrèras òras",
+    "termes": [
+      "derniere",
+      "heure"
+    ],
+    "sources": [
+      "G:derniere",
+      "G:heure",
+      "C04338",
+      "C05191",
+      "C06599"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Last Two Hours",
+    "bearnes": "Las duas darrèras òras",
+    "termes": [
+      "derniere",
+      "heure"
+    ],
+    "sources": [
+      "G:derniere",
+      "G:heure",
+      "C05784",
+      "C05191",
+      "C06599"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Press open to select an image",
+    "bearnes": "Obrir entà seleccionar un imatge",
+    "termes": [
+      "ouvrir",
+      "pour",
+      "selectionner",
+      "image"
+    ],
+    "sources": [
+      "G:ouvrir",
+      "G:pour",
+      "G:selectionner",
+      "G:image"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Browse Network",
+    "bearnes": "Percórrer lo hialat",
+    "termes": [
+      "reseau"
+    ],
+    "sources": [
+      "G:reseau"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Browse local network connections",
+    "bearnes": "Percórrer las connexions deu hialat locau",
+    "termes": [
+      "connexion",
+      "du",
+      "reseau"
+    ],
+    "sources": [
+      "G:connexion",
+      "G:du",
+      "G:reseau"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Failed to browse the network",
+    "bearnes": "Impossible de percórrer lo hialat",
+    "termes": [
+      "impossible",
+      "reseau"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:reseau"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Open a new tab for the displayed location",
+    "bearnes": "Obrir un onglet navèth entà l'endrech afichat",
+    "termes": [
+      "ouvrir",
+      "nouveau",
+      "pour"
+    ],
+    "sources": [
+      "G:ouvrir",
+      "G:nouveau",
+      "G:pour"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Clear the file list below",
+    "bearnes": "Vueitar la lista de fichèrs ací devath",
+    "termes": [
+      "vider",
+      "liste",
+      "fichier",
+      "dessous_ici"
+    ],
+    "sources": [
+      "G:vider",
+      "G:liste",
+      "G:fichier",
+      "G:dessous_ici"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Create an empty folder within the current folder",
+    "bearnes": "Crear un dossièr vueit dens lo dossièr corrent",
+    "termes": [
+      "creer",
+      "dossier",
+      "vide",
+      "dans"
+    ],
+    "sources": [
+      "G:creer",
+      "G:dossier",
+      "G:vide",
+      "G:dans"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Delete all files and folders in the Trash",
+    "bearnes": "Suprimir tots los fichèrs e dossièrs de l'escobilhièr",
+    "termes": [
+      "supprimer",
+      "tous",
+      "fichier",
+      "dossier"
+    ],
+    "sources": [
+      "G:supprimer",
+      "G:tous",
+      "G:fichier",
+      "G:dossier"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Display folder content in a compact list view",
+    "bearnes": "Afichar lo contiengut deu dossièr en lista compacta",
+    "termes": [
+      "afficher",
+      "contenu",
+      "du",
+      "dossier",
+      "liste"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:contenu",
+      "G:du",
+      "G:dossier",
+      "G:liste"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Display folder content in a detailed list view",
+    "bearnes": "Afichar lo contiengut deu dossièr en lista detalhada",
+    "termes": [
+      "afficher",
+      "contenu",
+      "du",
+      "dossier",
+      "liste"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:contenu",
+      "G:du",
+      "G:dossier",
+      "G:liste"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Display folder content in an icon view",
+    "bearnes": "Afichar lo contiengut deu dossièr dab icònas",
+    "termes": [
+      "afficher",
+      "contenu",
+      "du",
+      "dossier",
+      "avec",
+      "icone"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:contenu",
+      "G:du",
+      "G:dossier",
+      "G:avec",
+      "G:icone"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Paste the clipboard",
+    "bearnes": "Pegar lo contiengut deu quichapapièrs",
+    "termes": [
+      "coller",
+      "contenu",
+      "du"
+    ],
+    "sources": [
+      "G:coller",
+      "G:contenu",
+      "G:du"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "View the properties of the selected file",
+    "bearnes": "Afichar las proprietats deu fichèr seleccionat",
+    "termes": [
+      "afficher",
+      "proprietes",
+      "du",
+      "fichier"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:proprietes",
+      "G:du",
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Moving files ...",
+    "bearnes": "Desplaçament deus fichèrs...",
+    "termes": [
+      "des",
+      "fichier"
+    ],
+    "sources": [
+      "G:des",
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Show the contents at the normal size",
+    "bearnes": "Afichar lo contiengut dab ua talha normau",
+    "termes": [
+      "afficher",
+      "contenu",
+      "avec",
+      "une",
+      "taille",
+      "normal"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:contenu",
+      "G:avec",
+      "G:une",
+      "G:taille",
+      "G:normal"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Are you sure you want to clear the list of known items?",
+    "bearnes": "Suprimir la lista deus elements coneguts ?",
+    "termes": [
+      "supprimer",
+      "liste",
+      "des",
+      "element"
+    ],
+    "sources": [
+      "G:supprimer",
+      "G:liste",
+      "G:des",
+      "G:element"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Create & _Open",
+    "bearnes": "Crear & _obrir",
+    "termes": [
+      "creer",
+      "ouvrir"
+    ],
+    "sources": [
+      "G:creer",
+      "G:ouvrir"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Do you want to suspend to RAM?",
+    "bearnes": "Méter en velha en memòria viva ?",
+    "termes": [
+      "mettre"
+    ],
+    "sources": [
+      "G:mettre"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Do you want to suspend to disk?",
+    "bearnes": "Méter en velha suu disc ?",
+    "termes": [
+      "mettre",
+      "sur_le",
+      "disque"
+    ],
+    "sources": [
+      "G:mettre",
+      "G:sur_le",
+      "G:disque"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Enter search phrase here",
+    "bearnes": "Picar los mots de recèrca ací",
+    "termes": [
+      "saisir",
+      "mot",
+      "recherche",
+      "ici"
+    ],
+    "sources": [
+      "G:saisir",
+      "G:mot",
+      "G:recherche",
+      "G:ici"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Mi_ddle click action:",
+    "bearnes": "Accion deu clic deu _miei :",
+    "termes": [
+      "du",
+      "milieu"
+    ],
+    "sources": [
+      "G:du",
+      "G:milieu"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Please choose a panel for the new plugin:",
+    "bearnes": "Seleccionar un panèu entà l'empeuton navèth :",
+    "termes": [
+      "selectionner",
+      "pour",
+      "nouveau",
+      "panneau"
+    ],
+    "sources": [
+      "G:selectionner",
+      "G:pour",
+      "G:nouveau",
+      "G:panneau"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Show 'Open in _Terminal'",
+    "bearnes": "Afichar « Obrir dens un _terminal »",
+    "termes": [
+      "afficher",
+      "ouvrir",
+      "dans"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:ouvrir",
+      "G:dans"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Show '_Open _Folder'",
+    "bearnes": "Afichar « _Obrir lo _dossièr »",
+    "termes": [
+      "afficher",
+      "ouvrir",
+      "dossier"
+    ],
+    "sources": [
+      "G:afficher",
+      "G:ouvrir",
+      "G:dossier"
+    ]
+  },
+  {
+    "domaine": "xfce4-panel",
+    "msgid": "Time and Date _Settings...",
+    "bearnes": "_Paramètres òra e data...",
+    "termes": [
+      "parametres",
+      "heure",
+      "date"
+    ],
+    "sources": [
+      "G:parametres",
+      "G:heure",
+      "G:date"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Are you sure you want to terminate \"%s\"?",
+    "bearnes": "Méter fin a « %s » ?",
+    "termes": [
+      "mettre"
+    ],
+    "sources": [
+      "G:mettre"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "Always save the session when logging out",
+    "bearnes": "Totjorn enregistrar la session abans la desconnexion",
+    "termes": [
+      "toujours",
+      "enregistrer",
+      "session",
+      "deconnexion"
+    ],
+    "sources": [
+      "G:toujours",
+      "G:enregistrer",
+      "G:session",
+      "G:deconnexion"
+    ]
+  },
+  {
+    "domaine": "xfce4-session",
+    "msgid": "_Save session for future logins",
+    "bearnes": "_Enregistrar la session entà las connexions seguentas",
+    "termes": [
+      "enregistrer",
+      "session",
+      "pour",
+      "connexion"
+    ],
+    "sources": [
+      "G:enregistrer",
+      "G:session",
+      "G:pour",
+      "G:connexion"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "Apply to all _workspaces",
+    "bearnes": "Aplicar a tots los espacis de _tribalh",
+    "termes": [
+      "appliquer",
+      "tous",
+      "travail"
+    ],
+    "sources": [
+      "G:appliquer",
+      "G:tous",
+      "G:travail"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "Change the _background ",
+    "bearnes": "Cambiar lo _hons d'ecran ",
+    "termes": [
+      "fond",
+      "ecran"
+    ],
+    "sources": [
+      "G:fond",
+      "G:ecran"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "Could not create a new document from the template",
+    "bearnes": "Impossible de crear un document navèth a partir deu modèle",
+    "termes": [
+      "impossible",
+      "creer",
+      "document",
+      "nouveau",
+      "du",
+      "modele"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:creer",
+      "G:document",
+      "G:nouveau",
+      "G:du",
+      "G:modele"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "Mo_ve to Trash",
+    "bearnes": "Desplaçar dens l'_escobilhièr",
+    "termes": [
+      "deplacer",
+      "dans"
+    ],
+    "sources": [
+      "G:deplacer",
+      "G:dans"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "The file could not be opened",
+    "bearnes": "Impossible d'obrir lo fichèr",
+    "termes": [
+      "impossible",
+      "ouvrir",
+      "fichier"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:ouvrir",
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "The folder could not be opened",
+    "bearnes": "Impossible d'obrir lo dossièr",
+    "termes": [
+      "impossible",
+      "ouvrir",
+      "dossier"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:ouvrir",
+      "G:dossier"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "The selected files could not be deleted",
+    "bearnes": "Impossible de suprimir los fichèrs seleccionats",
+    "termes": [
+      "impossible",
+      "supprimer",
+      "fichier"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:supprimer",
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "xfdesktop",
+    "msgid": "The selected files could not be moved to the trash",
+    "bearnes": "Impossible de desplaçar los fichèrs seleccionats dens l'escobilhièr",
+    "termes": [
+      "impossible",
+      "deplacer",
+      "fichier",
+      "dans"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:deplacer",
+      "G:fichier",
+      "G:dans"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Mo_ve to Trash",
+    "bearnes": "Desplaçar dens l'_escobilhièr",
+    "termes": [
+      "deplacer",
+      "dans"
+    ],
+    "sources": [
+      "G:deplacer",
+      "G:dans"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Remove all files and folders from the Trash?",
+    "bearnes": "Suprimir tots los fichèrs e dossièrs de l'escobilhièr ?",
+    "termes": [
+      "supprimer",
+      "tous",
+      "fichier",
+      "dossier"
+    ],
+    "sources": [
+      "G:supprimer",
+      "G:tous",
+      "G:fichier",
+      "G:dossier"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Select all files in this window",
+    "bearnes": "Seleccionar tots los fichèrs de la frinèsta",
+    "termes": [
+      "selectionner",
+      "tous",
+      "fichier",
+      "fenetre"
+    ],
+    "sources": [
+      "G:selectionner",
+      "G:tous",
+      "G:fichier",
+      "G:fenetre"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Select an Application",
+    "bearnes": "Causir ua aplicacion",
+    "termes": [
+      "choisir",
+      "une",
+      "application"
+    ],
+    "sources": [
+      "G:choisir",
+      "G:une",
+      "G:application"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Select this option to run the command in a terminal window.",
+    "bearnes": "Seleccionar aquera opcion entà executar la comanda dens ua frinèsta de terminal.",
+    "termes": [
+      "selectionner",
+      "option",
+      "pour",
+      "executer",
+      "dans",
+      "une",
+      "fenetre"
+    ],
+    "sources": [
+      "G:selectionner",
+      "G:option",
+      "G:pour",
+      "G:executer",
+      "G:dans",
+      "G:une",
+      "G:fenetre"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Send \"%s\" as compressed archive?",
+    "bearnes": "Enviar « %s » en tant qu'archiu compressat ?",
+    "termes": [
+      "envoyer"
+    ],
+    "sources": [
+      "G:envoyer"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Unselect all files in this window",
+    "bearnes": "Deseleccionar tots los fichèrs de la frinèsta",
+    "termes": [
+      "tous",
+      "fichier",
+      "fenetre"
+    ],
+    "sources": [
+      "G:tous",
+      "G:fichier",
+      "G:fenetre"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "Use as _default for this kind of file",
+    "bearnes": "Utilizar per _defaut entà aqueth tipe de fichèr",
+    "termes": [
+      "utiliser",
+      "pour",
+      "type",
+      "fichier"
+    ],
+    "sources": [
+      "G:utiliser",
+      "G:pour",
+      "G:type",
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "_Close Window",
+    "bearnes": "_Barrar la frinèsta",
+    "termes": [
+      "fermer",
+      "fenetre"
+    ],
+    "sources": [
+      "G:fermer",
+      "G:fenetre"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "_Skip This File",
+    "bearnes": "_Ignorar lo fichèr",
+    "termes": [
+      "fichier"
+    ],
+    "sources": [
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "with the following file?",
+    "bearnes": "dab lo fichèr seguent ?",
+    "termes": [
+      "avec",
+      "fichier",
+      "suivant"
+    ],
+    "sources": [
+      "G:avec",
+      "G:fichier",
+      "G:suivant"
+    ]
+  },
+  {
+    "domaine": "thunar",
+    "msgid": "with the following folder?",
+    "bearnes": "dab lo dossièr seguent ?",
+    "termes": [
+      "avec",
+      "dossier",
+      "suivant"
+    ],
+    "sources": [
+      "G:avec",
+      "G:dossier",
+      "G:suivant"
+    ]
+  },
+  {
+    "domaine": "xfwm4",
+    "msgid": "When _moving",
+    "bearnes": "Au moment deu _desplaçament",
+    "termes": [
+      "au",
+      "du"
+    ],
+    "sources": [
+      "G:au",
+      "G:du"
+    ]
+  },
+  {
+    "domaine": "xfwm4",
+    "msgid": "When _resizing",
+    "bearnes": "Au moment deu _redimensionament",
+    "termes": [
+      "au",
+      "du"
+    ],
+    "sources": [
+      "G:au",
+      "G:du"
+    ]
+  },
+  {
+    "domaine": "xfwm4",
+    "msgid": "With a _dragged window",
+    "bearnes": "Dab ua frinèsta _rebalada",
+    "termes": [
+      "avec",
+      "une",
+      "fenetre"
+    ],
+    "sources": [
+      "G:avec",
+      "G:une",
+      "G:fenetre"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "You can’t print yet!",
+    "bearnes": "Impossible d'imprimir enqüèra !",
+    "termes": [
+      "impossible",
+      "imprimer",
+      "encore"
+    ],
+    "sources": [
+      "G:impossible",
+      "G:imprimer",
+      "G:encore"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Are you sure you want to delete image '%s' from disk?",
+    "bearnes": "Suprimir l'imatge « %s » deu disc ?",
+    "termes": [
+      "supprimer",
+      "image",
+      "du",
+      "disque"
+    ],
+    "sources": [
+      "G:supprimer",
+      "G:image",
+      "G:du",
+      "G:disque"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Are you sure you want to send image '%s' to trash?",
+    "bearnes": "Méter l'imatge « %s » dens l'escobilhièr ?",
+    "termes": [
+      "mettre",
+      "image",
+      "dans"
+    ],
+    "sources": [
+      "G:mettre",
+      "G:image",
+      "G:dans"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Close this image",
+    "bearnes": "Barrar l'imatge",
+    "termes": [
+      "fermer",
+      "image"
+    ],
+    "sources": [
+      "G:fermer",
+      "G:image"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Delete this image from disk",
+    "bearnes": "Suprimir l'imatge deu disc",
+    "termes": [
+      "supprimer",
+      "image",
+      "du",
+      "disque"
+    ],
+    "sources": [
+      "G:supprimer",
+      "G:image",
+      "G:du",
+      "G:disque"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Do _not show this message again",
+    "bearnes": "Non pas tornar afichar aqueth _messatge",
+    "termes": [
+      "non",
+      "retour",
+      "afficher",
+      "message"
+    ],
+    "sources": [
+      "G:non",
+      "G:retour",
+      "G:afficher",
+      "G:message"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Normal",
+    "bearnes": "Talha normau",
+    "termes": [
+      "taille",
+      "normal"
+    ],
+    "sources": [
+      "G:taille",
+      "G:normal"
+    ]
+  },
+  {
+    "domaine": "ristretto",
+    "msgid": "Use as _default for this kind of file",
+    "bearnes": "Utilizar per _defaut entà aqueth tipe de fichèr",
+    "termes": [
+      "utiliser",
+      "pour",
+      "type",
+      "fichier"
+    ],
+    "sources": [
+      "G:utiliser",
+      "G:pour",
+      "G:type",
+      "G:fichier"
+    ]
+  },
+  {
+    "domaine": "tuxpaint",
+    "msgid": "Quit",
+    "bearnes": "Quitar",
+    "termes": ["quitter"],
+    "sources": ["G:quitter"]
+  }
+]

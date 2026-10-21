@@ -1,0 +1,19 @@
+{
+  "xfce4-session": [
+    "Unable to create user interface from embedded definition data",
+    "Unable to load a failsafe session",
+    "Failed to hybrid sleep session"
+  ],
+  "thunar": [
+    "Could not move \"%s\" directly. Collecting files for copying...",
+    "Mixed file owners",
+    "Invalid filename provided by XDS drag site",
+    "Starting... (User request)"
+  ],
+  "xfdesktop": [
+    "Use custom _font size:"
+  ],
+  "xfwm4": [
+    "Notify of _urgency by making window's decoration blink"
+  ]
+}

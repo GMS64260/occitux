@@ -29,12 +29,13 @@ def main():
                     continue
                 po = R / "sources/po" / langue / (mo.stem + ".po")
                 po.parent.mkdir(parents=True, exist_ok=True)
-                subprocess.run(["msgunfmt", str(mo), "-o", str(po)], check=True)
+                resultat = subprocess.run(["msgunfmt", str(mo)], check=True, text=True, capture_output=True)
+                po.write_text(resultat.stdout, encoding="utf-8")
                 # Un MO vide (LightDM oc dans Noble) ne produit aucun fichier.
                 info["catalogues"].append({"langue": langue, "domaine": mo.stem,
                     "chemin": str(mo.relative_to(racine)),
                     "sha256": hashlib.sha256(mo.read_bytes()).hexdigest(),
-                    "vide": not po.exists()})
+                    "vide": not resultat.stdout.strip()})
         paquets.append(info)
     (R / "provenance.json").write_text(json.dumps({
         "distribution": "Ubuntu 24.04 noble / noble-updates",

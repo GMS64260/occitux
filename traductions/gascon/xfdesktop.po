@@ -1,0 +1,595 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux xfdesktop\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (https://www.transifex.com/xfce/teams/16840/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Xfce Bot <transifex@xfce.org>, 2022\n"
+
+#. Glossaire : des, du, fichier
+#. Attestations : C00956 ; C07423 ; C07828
+#, c-format
+msgid "    Desktop File Icons:  %s\n"
+msgstr "   Icònas deus fichèrs deu burèu :  %s\n"
+
+#. Glossaire : du
+#. Attestations : C07423
+#, c-format
+msgid "    Desktop Icons:       %s\n"
+msgstr "    Icònas deu burèu :       %s\n"
+
+#. Glossaire : du
+#. Attestations : C07423
+#, c-format
+msgid "    Desktop Menu:        %s\n"
+msgstr "    Menú deu burèu :        %s\n"
+
+#. Glossaire : derniere
+#. Attestations : C05271
+#, c-format
+msgid ""
+"%s\n"
+"Size: %s\n"
+"Last modified: %s"
+msgstr ""
+"%s\n"
+"Talha : %s\n"
+"Darrèra modificacion : %s"
+
+#. Glossaire : inconnu
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+msgid "(unknown)"
+msgstr "(desconeishut)"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "<b>Desktop Menu</b>"
+msgstr "<b>Menú deu burèu</b>"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "<b>Window List Menu</b>"
+msgstr "<b>Menú de la lista de la frinèsta</b>"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "<b>Workspace %d</b>"
+msgstr "<b>Espaci de tribalh %d</b>"
+
+#. Glossaire : actuel, au, fond, travail
+#. Attestations : C00847 ; C03272 ; C07415 ; C08020
+msgid "Advance to the next wallpaper on the current workspace"
+msgstr "Avançar cap au hons d’ecran venant sus l’espaci de tribalh actuau"
+
+#. Glossaire : appliquer, tous, travail
+#. Attestations : G:appliquer ; G:tous ; G:travail
+msgid "Apply to all _workspaces"
+msgstr "Aplicar a tots los espacis de _tribalh"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Arrange Desktop _Icons"
+msgstr "_Arrengar las icònas deu burèu"
+
+#. Glossaire : sur_le
+#. Attestations : C02084
+msgid "Automatically arrange all the icons on the desktop"
+msgstr "Organizar automaticament totas las icònas suu burèu"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Bottom Right Horizontal"
+msgstr "D’enbàs a la dreta a l’orizontala"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Bottom Right Vertical"
+msgstr "D’enbàs a dreta a la verticala"
+
+#. Glossaire : avec
+#. Attestations : C07792
+#, c-format
+msgid "Built with GTK+ %d.%d.%d, linked with GTK+ %d.%d.%d."
+msgstr "Construsís dab GTK+ %d.%d.%d, ligat dab GTK+ %d.%d.%d."
+
+#. Glossaire : fond, ecran
+#. Attestations : G:fond ; G:ecran
+msgid "Change the _background "
+msgstr "Cambiar lo _hons d'ecran "
+
+#. Glossaire : ici
+#. Attestations : C03171
+msgid "Copy _Here"
+msgstr "_Copiar ací"
+
+#. Glossaire : impossible, creer, document, nouveau, du, modele
+#. Attestations : G:impossible ; G:creer ; G:document ; G:nouveau ; G:du ; G:modele
+msgid "Could not create a new document from the template"
+msgstr "Impossible de crear un document navèth a partir deu modèle"
+
+#. Glossaire : fichier, nouveau
+#. Attestations : C03184 ; C07373
+msgid "Could not create a new file"
+msgstr "Impossible de crear un fichèr navèth"
+
+#. Glossaire : dossier, du
+#. Attestations : C02764 ; C07423
+#, c-format
+msgid "Could not create the desktop folder \"%s\""
+msgstr "Impossible de crear lo dossièr deu burèu « %s »"
+
+#. Glossaire : vider
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=vider
+msgid "Could not empty the trash"
+msgstr "Impossible de vueitar l'escobilhièr"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Create Document Error"
+msgstr "Error de creacion deu document"
+
+#. Glossaire : du, fichier
+#. Attestations : C03184 ; C07423
+msgid "Create File Error"
+msgstr "Error de creacion deu fichèr"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Create _Folder..."
+msgstr "Crear un _dossièr..."
+
+#. Glossaire : dans, dossier, du
+#. Attestations : C02764 ; C07423 ; C07533
+msgid "Desktop Folder Error"
+msgstr "Error dens lo dossièr deu burèu"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Desktop Settings"
+msgstr "Paramètres deu burèu"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Desktop _Settings..."
+msgstr "Paramètres deu _burèu..."
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Ejecting device"
+msgstr "Ejeccion deu periferic"
+
+#. Glossaire : au, fichier
+#. Attestations : C03184 ; C03272
+msgid "Enable \"Delete\" option in file context menu"
+msgstr "Activar l’opcion « Suprimir » au menú contextual fichèr"
+
+#. Glossaire : dossier, du
+#. Attestations : C02764 ; C07423
+msgid "Failed to load the desktop folder"
+msgstr "Impossible de cargar lo dossièr deu burèu"
+
+#. Glossaire : des
+#. Attestations : C07828
+#, c-format
+msgid "Failed to parse arguments: %s\n"
+msgstr "Fracàs de l'analisi deus arguments : %s\n"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "File Properties Error"
+msgstr "Error de proprietats de fichèr"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "File System"
+msgstr "Sistèma de fichèrs"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "File/launcher icons"
+msgstr "Icònas fichèr / aviador"
+
+#. Glossaire : dossier, personnel
+#. Attestations : C02764 ; C08411
+msgid "Home"
+msgstr "Dossièr personau"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Image files"
+msgstr "Fichèrs imatges"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "Launch Error"
+msgstr "Error au moment de l'aviada"
+
+#. Glossaire : deplacer, dans
+#. Attestations : G:deplacer ; G:dans
+msgid "Mo_ve to Trash"
+msgstr "Desplaçar dens l'_escobilhièr"
+
+#. Glossaire : derniere
+#. Attestations : C05271
+#, c-format
+msgid ""
+"Name: %s\n"
+"Type: %s\n"
+"Size: %s\n"
+"Last modified: %s"
+msgstr ""
+"Nom : %s\n"
+"Tipe : %s\n"
+"Talha : %s\n"
+"Darrèra modificacion : %s"
+
+#. Glossaire : modele
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+msgid "No templates installed"
+msgstr "Cap de modèle pas installat"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+msgid "Open With"
+msgstr "Obrir dab"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+#, c-format
+msgid "Open With \"%s\""
+msgstr "Obrir dab « %s »"
+
+#. Glossaire : autre, avec, ouvrir, une
+#. Attestations : C00011 ; C05883 ; C07792 ; C07967
+msgid "Open With Other _Application..."
+msgstr "Obrir dab ua auta _aplicacion..."
+
+#. Glossaire : autres
+#. Attestations : C05287
+msgid "Other Devices"
+msgstr "Autes periferics"
+
+#. Glossaire : dans, dossier
+#. Attestations : C02764 ; C07533
+msgid "Paste Into Folder"
+msgstr "Pegar dens lo dossièr"
+
+#. Glossaire : actuel, faire, souris
+#. Attestations : C00847 ; C01269 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Pop up the menu (at the current mouse position)"
+msgstr "Har aparéisser lo menú (a la posicion actuau de la soritz)"
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "Reload all settings"
+msgstr "Recargar tots los paramètres"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Suprimir l'espaci de tribalh %d"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "Remove Workspace '%s'"
+msgstr "Suprimir l'espaci de tribalh « %s »"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Right"
+msgstr "Alinhat a dreta"
+
+#. Glossaire : premiere
+#. Attestations : C04787
+msgid "Select First Color"
+msgstr "Seleccionar la purmèra color"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Select a Directory"
+msgstr "Seleccionar un Dossièr"
+
+#. Glossaire : du, fond
+#. Attestations : C07415 ; C07423
+msgid "Set desktop background and menu and icon behavior"
+msgstr "Reglar lo hons d'ecran deu burèu, lo menú e lo comportament de las icònas"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Settings manager socket"
+msgstr "Socket deu gestionari de paramètres"
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "Sh_ow application icons in menu"
+msgstr "Afichar las icònas _de las aplicacions dens lo menú"
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "Show _application icons in menu"
+msgstr "Afichar _las icònas de las aplicacions dens lo menú"
+
+#. Glossaire : ajouter, travail
+#. Attestations : C07955 ; C08020
+msgid "Show a_dd and remove workspace options in list"
+msgstr "Afichar las opcions _ajustar e suprimir d’espacis de tribalh a la lista"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Show hidden files on the desktop"
+msgstr "Afichar los fichèrs amagats pel burèu"
+
+#. Glossaire : dans, des, travail
+#. Attestations : C07533 ; C07828 ; C08020
+msgid "Show workspace _names in list"
+msgstr "Afichar los _noms deus espacis de tribalh dens la lista"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Specifies the \"right\" or \"bottom\" color of the gradient."
+msgstr "Especifica la color unida, o aquela de drech o d’enbàs deu degradat."
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Specifies the solid color, or the \"left\" or \"top\" color of the gradient."
+msgstr "Especifica la color unida, o aquela d’esquèrra o d’ennaut deu degradat."
+
+#. Glossaire : fond
+#. Attestations : C07415
+msgid "Specify how often the background will change."
+msgstr "Especificar la frequéncia que lo hons d’ecran cambiarà."
+
+#. Glossaire : derriere, fond
+#. Attestations : C07415 ; C07790
+msgid "Specify the style of the color drawn behind the backdrop image."
+msgstr "Especificar l’estil de la color ajustada darrèr l’imatge de hons."
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "The Xfce development team. All rights reserved."
+msgstr "L'equipa de desvolopament Xfce. Tots los dreches reservats."
+
+#. Glossaire : impossible, ouvrir, fichier
+#. Attestations : G:impossible ; G:ouvrir ; G:fichier
+msgid "The file could not be opened"
+msgstr "Impossible d'obrir lo fichèr"
+
+#. Glossaire : impossible, ouvrir, dossier
+#. Attestations : G:impossible ; G:ouvrir ; G:dossier
+msgid "The folder could not be opened"
+msgstr "Impossible d'obrir lo dossièr"
+
+#. Glossaire : impossible, supprimer, fichier
+#. Attestations : G:impossible ; G:supprimer ; G:fichier
+msgid "The selected files could not be deleted"
+msgstr "Impossible de suprimir los fichèrs seleccionats"
+
+#. Glossaire : impossible, deplacer, fichier, dans
+#. Attestations : G:impossible ; G:deplacer ; G:fichier ; G:dans
+msgid "The selected files could not be moved to the trash"
+msgstr "Impossible de desplaçar los fichèrs seleccionats dens l'escobilhièr"
+
+#. Glossaire : aujourdhui
+#. Attestations : C06779
+#, c-format
+msgid "Today at %X"
+msgstr "Uei a %X"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Top Right Horizontal"
+msgstr "D’ennaut a dreta a l’orizontala"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Top Right Vertical"
+msgstr "D’ennaut a dreta a la verticala"
+
+#. Glossaire : vide
+#. Attestations : C03871
+msgid "Trash is empty"
+msgstr "Escobilhièr vueit"
+
+#. Glossaire : inconnu
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+msgid "Unknown"
+msgstr "Desconeishut"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Unmounting device"
+msgstr "Desmontatge deu periferic"
+
+#. Glossaire : sans
+#. Attestations : C01077
+msgid "Untitled document"
+msgstr "Document shens nom"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Use _submenus for the windows in each workspace"
+msgstr "Utilizar de _sosmenús per cada espaci de tribalh"
+
+#. Glossaire : fond
+#. Attestations : C07415
+#, c-format
+msgid "Wallpaper for %s"
+msgstr "Hons d'ecran per %s"
+
+#. Glossaire : fond, sur_le
+#. Attestations : C02084 ; C07415
+#, c-format
+msgid "Wallpaper for %s on Monitor %d"
+msgstr "Hons d'ecran per %s suu monitor %d"
+
+#. Glossaire : fond, sur_le
+#. Attestations : C02084 ; C07415
+#, c-format
+msgid "Wallpaper for %s on Monitor %d (%s)"
+msgstr "Hons d'ecran per %s suu monitor %d (%s)"
+
+#. Glossaire : fond, pour_le
+#. Attestations : C07050 ; C07415
+#, c-format
+msgid "Wallpaper for Monitor %d"
+msgstr "Hons d'ecran entau monitor %d "
+
+#. Glossaire : fond
+#. Attestations : C07415
+msgid "Wallpaper for my desktop"
+msgstr "Hons d'ecran per mon burèu"
+
+#. Glossaire : donnees, sur_le
+#. Attestations : C02084 ; C04120
+msgid "Writing data to device"
+msgstr "Escritura de las dadas suu periferic"
+
+#. Glossaire : hier
+#. Attestations : C02028
+#, c-format
+msgid "Yesterday at %X"
+msgstr "Ger a %X"
+
+#. Glossaire : ajouter, travail
+#. Attestations : C07955 ; C08020
+msgid "_Add Workspace"
+msgstr "_Ajustar un espaci de tribalh"
+
+#. Glossaire : fond
+#. Attestations : C07415
+msgid "_Background"
+msgstr "_Hons d'ecran"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "_Close"
+msgstr "_Barrar"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "_Edit Launcher"
+msgstr "_Modificar l'aviador"
+
+#. Glossaire : du, modifier
+#. Attestations : C07341 ; C07423
+msgid "_Edit desktop menu"
+msgstr "Modificar lo _menú deu burèu"
+
+#. Glossaire : fichier, vide
+#. Attestations : C03184 ; C03871
+msgid "_Empty File"
+msgstr "_Fichèr vueit"
+
+#. Glossaire : vider
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=vider
+msgid "_Empty Trash"
+msgstr "_Vueitar l'escobilhièr"
+
+#. Glossaire : ici
+#. Attestations : C03171
+msgid "_Link Here"
+msgstr "_Ligar ací"
+
+#. Glossaire : verrouiller
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=verrouiller
+msgid "_Lock Volume"
+msgstr "_Varrolhar lo volum"
+
+#. Glossaire : ici
+#. Attestations : C03171
+msgid "_Move Here"
+msgstr "_Desplaçar ací"
+
+#. Glossaire : fond
+#. Attestations : C07415
+msgid "_Next Background"
+msgstr "Hons d’ecran _seguent"
+
+#. Glossaire : accord
+#. Attestations : C01955
+msgid "_OK"
+msgstr "_D'acòrd"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "_Open"
+msgstr "_Obrir"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+#, c-format
+msgid "_Open With \"%s\""
+msgstr "_Obrir dab « %s »"
+
+#. Glossaire : ouvrir, tous
+#. Attestations : C05883 ; C06780
+msgid "_Open all"
+msgstr "_Obrir tots"
+
+#. Glossaire : dans, fenetre, nouvelle, ouvrir, une
+#. Attestations : C03100 ; C05883 ; C06017 ; C07533 ; C07967
+msgid "_Open in New Window"
+msgstr "_Obrir dens ua navèra frinèsta"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "_Remove Workspace %d"
+msgstr "_Suprimir l'espaci de tribalh %d"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "_Remove Workspace '%s'"
+msgstr "_Suprimir l'espaci de tribalh « %s »"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "_Window Actions"
+msgstr "_Accions de la frinèsta"
+
+#. Glossaire : jour
+#. Attestations : C04483
+msgid "every day"
+msgstr "cada dia"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "every hour"
+msgstr "cada òra"
+
+#. Glossaire : heure
+#. Attestations : C06599
+msgid "in hours:"
+msgstr "en òras :"

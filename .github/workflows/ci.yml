@@ -50,7 +50,7 @@ jobs:
             test ! -e /usr/lib/firefox/defaults/pref/occitux.js
             sed -i "s/^LANGUE=.*/LANGUE=bearnes/" /etc/occitux/occitux.conf
             occitux-config
-            grep -x "LANGUAGE=oc@gascon:oc:fr" /etc/default/locale
+            grep -x "LANGUAGE=oc_FR@gascon:oc:fr" /etc/default/locale
             test -d /usr/share/locale/oc@gascon/LC_MESSAGES
             apt-get purge -y -q occitux
             test ! -e /etc/apt/apt.conf.d/51occitux-unattended-upgrades

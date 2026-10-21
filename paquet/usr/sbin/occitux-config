@@ -41,7 +41,7 @@ appliquer_langue() {
     # passent d'abord ; ce qu'ils ne traduisent pas retombe sur l'occitan,
     # puis sur le français.
     case "$LANGUE" in
-        bearnes) lang=oc_FR.UTF-8; language=oc@gascon:oc:fr ;;
+        bearnes) lang=oc_FR.UTF-8; language=oc_FR@gascon:oc:fr ;;
         oc)      lang=oc_FR.UTF-8; language=oc:fr ;;
         fr)      lang=fr_FR.UTF-8; language=fr ;;
         *)       echo "occitux-config : LANGUE=$LANGUE inconnue (bearnes, oc ou fr)" >&2; return 1 ;;

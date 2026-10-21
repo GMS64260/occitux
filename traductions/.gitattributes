@@ -1,0 +1,3 @@
+# L'audit conserve exactement les espaces des chaînes sources, y compris
+# à la fin des lignes internes aux champs CSV multilignes.
+audit.csv whitespace=-blank-at-eol

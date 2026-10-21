@@ -27,7 +27,7 @@ jobs:
           docker run --rm -v "$PWD/construction:/deb:ro" ubuntu:24.04 bash -euxc '
             export DEBIAN_FRONTEND=noninteractive
             apt-get update -q
-            # Réglage GCompris d'un élève PrimTux (dossier personnel et modèle)
+            # Réglage GCompris pour un élève PrimTux (dossier personnel et modèle)
             for d in /home/jerry /etc/skel-jerry; do
               mkdir -p $d/.config/gcompris
               printf "[%%General]\nlocale=system\n" > $d/.config/gcompris/gcompris-qt.conf

@@ -95,7 +95,7 @@ def main():
         elif cle in decisions["composes"]:
             choix = decisions["composes"][cle]
             forme = choix["forme"]
-            source = " + ".join(choix["sources"]) + " + " + url_dic("démarrer")
+            source = " + ".join(choix["sources"] + [url_dic(m) for m in choix.get("dictionnaires", [])])
             oc = " / ".join(extrait(index[x]["oc"], "aviar") for x in choix["sources"])
             fr = " / ".join(index[x]["fr"] for x in choix["sources"])
             note = choix["note"]

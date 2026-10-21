@@ -346,7 +346,8 @@
     "bureau": "C03746",
     "bas": "C06213",
     "recherche": "C07502",
-    "heure": "C08080"
+    "heure": "C08080",
+    "comme": "C06366"
   },
   "formes": {
     "heure": "òra"
@@ -358,7 +359,14 @@
         "C05067",
         "C03287"
       ],
+      "dictionnaires": ["démarrer"],
       "note": "Construction de tornar + infinitif attestée en C05067 ; aviar pour démarrer : Per Noste, entrée démarrer. C03287 atteste torna aviar. Traduction composée, pas une citation."
+    },
+    "fermer_session": {
+      "forme": "barrar la session",
+      "sources": ["C06639"],
+      "dictionnaires": ["fermer"],
+      "note": "Libellé composé : barrar (Per Noste, fermer) + session (C06639). Désigne la fermeture de session, distincte de desconnectar un périphérique."
     }
   },
   "conserver": {

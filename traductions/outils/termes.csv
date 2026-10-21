@@ -1,5 +1,5 @@
 clau;frances;candidat;formes_oc
-enregistrer;enregistrer;enregistrar;enregistrar
+enregistrer;enregistrer;enregistrar;enregistrar|salvar
 imprimer;imprimer;imprimir;imprimir
 annuler;annuler;anullar;anullar
 ouvrir;ouvrir;obrir;dobrir|dubrir
@@ -98,7 +98,7 @@ fenetre;fenêtre;frinèsta;fenèstra
 menu;menu;menú;menú
 bouton;bouton;boton;boton
 icone;icône;icòna;icòna
-panneau;panneau;panèu;panèl
+panneau;panneau;panèu;panèl|tablèu de bòrd
 barre;barre;barra;barra
 outil;outil;utís;esplech|aisina
 parametres;paramètres;paramètres;paramètres
@@ -269,7 +269,7 @@ bord;bord;bòrd;bòrd
 gomme;gomme;goma;goma
 pinceau;pinceau;pincèu;bròssa
 tampon;tampon;tampon;tampon
-police;police de caractères;polissa;polissa
+police;police de caractères;polissa;polissa|poliça
 gras;gras;gras;gras
 italique;italique;italica;italica
 normal;normal;normau;normal
@@ -303,3 +303,15 @@ ecole;école;escòla;escòla
 enseignant;enseignant;regent;ensenhaire
 occitan;occitan;occitan;occitan
 francais;français;francés;francés
+ensuite;ensuite;puish;puèi
+comme;comme;com;coma
+pour_le;pour le;entau;pel
+pour_les;pour les;entaus;pels
+par_le;par le;peu;pel
+par_les;par les;peus;pels
+dessous_ici;ci-dessous;ací devath;çaijós
+tres;très;hòrt;fòrt
+element;élément;element;element
+session_pluriel;sessions;sessions;sesilhas
+saisir;saisir;picar;picar
+fermer_session;se déconnecter;barrar la session;desconnexion

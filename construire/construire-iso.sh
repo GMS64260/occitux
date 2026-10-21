@@ -3,6 +3,10 @@
 #
 #   sudo ./construire/construire-iso.sh <PrimTux.iso> <occitux_x.y.z_all.deb> [sortie.iso]
 #
+# OCCITUX_LANGUE=bearnes|oc|fr choisit la langue par défaut des PC installés
+# depuis cette ISO (par défaut : celle du paquet, oc). En béarnais, les menus
+# de démarrage viennent de traductions/occitux.csv.
+#
 # On ouvre le système de l'ISO (casper/filesystem.squashfs), on y installe le
 # paquet occitux, on le referme, et xorriso recopie l'ISO d'origine en ne
 # remplaçant que les fichiers modifiés : le démarrage BIOS et UEFI de PrimTux
@@ -19,6 +23,25 @@ ISO=$(realpath "$1")
 DEB=$(realpath "$2")
 VERSION=$(dpkg-deb -f "$DEB" Version)
 SORTIE=$(realpath -m "${3:-occitux-${VERSION}.iso}")
+
+LANGUE=${OCCITUX_LANGUE:-}
+case "$LANGUE" in
+    ''|bearnes|oc|fr) ;;
+    *) die "OCCITUX_LANGUE=$LANGUE inconnue (bearnes, oc ou fr)" ;;
+esac
+
+# Texte béarnais d'une clé de traductions/occitux.csv (clau;frances;bearnes),
+# ou le texte français donné en second argument.
+TEXTES="$ICI/../traductions/occitux.csv"
+texte() {
+    local cle=$1 francais=$2 bearnes=
+    if [ "$LANGUE" = bearnes ] && [ -f "$TEXTES" ]; then
+        bearnes=$(awk -F';' -v c="$cle" '$1 == c { print $3 }' "$TEXTES")
+    fi
+    echo "${bearnes:-$francais}"
+}
+ESSAYER=$(texte demarrage.essayer "Essayer Occitux")
+INSTALLER=$(texte demarrage.installer "Installer Occitux")
 
 [ "$(id -u)" -eq 0 ] || die "à lancer avec sudo (montages et chroot)"
 [ -f "$ISO" ] || die "ISO introuvable : $ISO"
@@ -91,6 +114,11 @@ chroot "$RACINE" /usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C.UTF-8 sh -
     apt-get install -y -q /tmp/occitux.deb &&
     apt-get clean
 '
+if [ -n "$LANGUE" ]; then
+    echo "Langue par défaut : $LANGUE"
+    sed -i "s/^LANGUE=.*/LANGUE=$LANGUE/" "$RACINE/etc/occitux/occitux.conf"
+    chroot "$RACINE" /usr/bin/env LC_ALL=C.UTF-8 occitux-config
+fi
 
 rm -f "$RACINE/tmp/occitux.deb" "$RACINE/usr/sbin/policy-rc.d"
 rm -f "$RACINE/etc/resolv.conf"
@@ -145,7 +173,9 @@ for menu in /boot/grub/grub.cfg /boot/grub/live-theme/theme.txt \
     chmod u+w "$copie"
     sed -i -e 's/^\(menuentry "[^"]*\)PrimTux"/\1Occitux"/' \
            -e 's/^\(\s*menu \(label\|title\) .*\)PrimTux$/\1Occitux/' \
-           -e 's/^title-text: "PrimTux"$/title-text: "Occitux"/' "$copie"
+           -e 's/^title-text: "PrimTux"$/title-text: "Occitux"/' \
+           -e "s/^\(menuentry \"\|\s*menu label \)Essayer Occitux/\1$ESSAYER/" \
+           -e "s/^\(menuentry \"\|\s*menu label \)Installer Occitux/\1$INSTALLER/" "$copie"
     # grub.cfg de PrimTux 9 se termine par un « EOF » oublié, que GRUB lit
     # comme une commande inconnue.
     [ "$menu" = /boot/grub/grub.cfg ] && sed -i '${/^EOF$/d}' "$copie"

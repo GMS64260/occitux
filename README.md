@@ -65,6 +65,12 @@ make iso ISO=~/Téléchargements/PrimTux9-M22.3-64bit-2026-02-27.iso
 
 Le script vérifie que l'ISO est une version connue de PrimTux (`construire/sources-primtux.txt`), installe le paquet dans son système, puis réécrit l'ISO en gardant le démarrage de PrimTux intact.
 
+Pour une ISO dont les PC s'installent directement en béarnais, avec les menus de démarrage en béarnais (« Ensajar Occitux », « Installar Occitux ») :
+
+```sh
+sudo OCCITUX_LANGUE=bearnes ./construire/construire-iso.sh PrimTux9-….iso construction/occitux_x.y.z_all.deb
+```
+
 ## Organisation du dépôt
 
 ```

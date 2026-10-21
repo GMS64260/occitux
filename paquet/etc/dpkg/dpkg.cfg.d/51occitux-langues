@@ -1,0 +1,9 @@
+# Occitux : garder les traductions occitanes et béarnaises.
+#
+# PrimTux règle localepurge pour que dpkg écarte toute traduction autre que
+# le français (50localepurge). Sans ces lignes, chaque mise à jour d'un
+# logiciel effacerait sa traduction occitane. Lues après celles de PrimTux,
+# elles l'emportent.
+path-include=/usr/share/locale/oc/*
+path-include=/usr/share/locale/oc_FR/*
+path-include=/usr/share/locale/oc@gascon/*

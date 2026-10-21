@@ -33,7 +33,20 @@ jobs:
               printf "[%%General]\nlocale=system\n" > $d/.config/gcompris/gcompris-qt.conf
             done
             mkdir -p /usr/lib/firefox/defaults/pref
+            # Élagage des traductions de PrimTux (localepurge) : seul le français passe
+            mkdir -p /etc/dpkg/dpkg.cfg.d
+            printf "path-exclude=/usr/share/locale/*\npath-include=/usr/share/locale/fr/*\n" > /etc/dpkg/dpkg.cfg.d/50localepurge
             apt-get install -y -q --no-install-recommends /deb/occitux_*_all.deb
+            test -L /usr/share/locale/oc@gascon
+            test -d /usr/share/locale/oc@gascon/LC_MESSAGES
+            # Un logiciel installé ensuite garde sa traduction occitane
+            mkdir -p /tmp/essai/DEBIAN /tmp/essai/usr/share/locale/oc/LC_MESSAGES /tmp/essai/usr/share/locale/de/LC_MESSAGES
+            printf "Package: essai-langues\nVersion: 1\nArchitecture: all\nMaintainer: Occitux <occitux@example.org>\nDescription: essai\n" > /tmp/essai/DEBIAN/control
+            touch /tmp/essai/usr/share/locale/oc/LC_MESSAGES/essai.mo /tmp/essai/usr/share/locale/de/LC_MESSAGES/essai.mo
+            dpkg-deb --build /tmp/essai /tmp/essai.deb
+            dpkg -i /tmp/essai.deb
+            test -e /usr/share/locale/oc/LC_MESSAGES/essai.mo
+            test ! -e /usr/share/locale/de/LC_MESSAGES/essai.mo
             grep -q "\"oc, fr-FR, fr, en-US, en\"" /usr/lib/firefox/defaults/pref/occitux.js
             grep -x "locale=fr_FR.UTF-8" /home/jerry/.config/gcompris/gcompris-qt.conf
             grep -x "locale=fr_FR.UTF-8" /etc/skel-jerry/.config/gcompris/gcompris-qt.conf
@@ -51,9 +64,9 @@ jobs:
             sed -i "s/^LANGUE=.*/LANGUE=bearnes/" /etc/occitux/occitux.conf
             occitux-config
             grep -x "LANGUAGE=oc_FR@gascon:oc:fr" /etc/default/locale
-            test -d /usr/share/locale/oc@gascon/LC_MESSAGES
             apt-get purge -y -q occitux
             test ! -e /etc/apt/apt.conf.d/51occitux-unattended-upgrades
+            test ! -e /usr/share/locale/oc@gascon
           '
 
       - uses: actions/upload-artifact@v7

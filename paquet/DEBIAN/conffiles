@@ -1,1 +1,2 @@
 /etc/occitux/occitux.conf
+/etc/dpkg/dpkg.cfg.d/51occitux-langues

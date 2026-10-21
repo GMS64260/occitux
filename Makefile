@@ -3,9 +3,12 @@ DEB     := construction/occitux_$(VERSION)_all.deb
 SCRIPTS := paquet/usr/sbin/occitux-config paquet/DEBIAN/postinst paquet/DEBIAN/postrm construire/construire-iso.sh
 
 # Catalogues béarnais : traductions/gascon/<domaine>.po → <domaine>.mo, installés
-# dans /usr/share/locale/oc@gascon (voir LANGUE=bearnes).
+# dans /usr/share/occitux/locale/oc@gascon. dpkg écarterait tout fichier posé
+# directement dans /usr/share/locale (localepurge de PrimTux) : occitux-config
+# y crée un lien oc@gascon vers ce dossier (voir LANGUE=bearnes).
 PO      := $(wildcard traductions/gascon/*.po)
 RACINE  := construction/racine
+CATALOGUES := $(RACINE)/usr/share/occitux/locale/oc@gascon/LC_MESSAGES
 
 .PHONY: paquet iso verifier propre
 
@@ -16,9 +19,9 @@ $(DEB): $(shell find paquet -type f) $(PO)
 	mkdir -p $(RACINE)
 	cp -a paquet/. $(RACINE)/
 	chmod 0755 $(RACINE)/usr/sbin/occitux-config $(RACINE)/DEBIAN/postinst $(RACINE)/DEBIAN/postrm
-	mkdir -p $(RACINE)/usr/share/locale/oc@gascon/LC_MESSAGES
+	mkdir -p $(CATALOGUES)
 	for po in $(PO); do \
-		msgfmt --check -o $(RACINE)/usr/share/locale/oc@gascon/LC_MESSAGES/$$(basename $$po .po).mo $$po || exit 1; \
+		msgfmt --check -o $(CATALOGUES)/$$(basename $$po .po).mo $$po || exit 1; \
 	done
 	dpkg-deb --root-owner-group -Zxz --build $(RACINE) $@
 

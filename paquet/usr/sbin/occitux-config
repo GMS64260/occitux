@@ -37,9 +37,9 @@ fixer() {
 
 appliquer_langue() {
     local lang language
-    # bearnes : les catalogues béarnais d'Occitux (/usr/share/locale/oc@gascon)
-    # passent d'abord ; ce qu'ils ne traduisent pas retombe sur l'occitan,
-    # puis sur le français.
+    # bearnes : les catalogues béarnais d'Occitux (/usr/share/locale/oc@gascon,
+    # voir appliquer_catalogues) passent d'abord ; ce qu'ils ne traduisent pas
+    # retombe sur l'occitan, puis sur le français.
     case "$LANGUE" in
         bearnes) lang=oc_FR.UTF-8; language=oc_FR@gascon:oc:fr ;;
         oc)      lang=oc_FR.UTF-8; language=oc:fr ;;
@@ -145,6 +145,18 @@ EOF
     echo "mises à jour automatiques : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint})"
 }
 
+# Le paquet livre ses catalogues béarnais hors de /usr/share/locale, où dpkg
+# les écarterait (localepurge de PrimTux) ; un lien les y rend visibles.
+CATALOGUES=/usr/share/occitux/locale/oc@gascon
+appliquer_catalogues() {
+    local lien=/usr/share/locale/oc@gascon
+    [ -d "$CATALOGUES" ] || return 0
+    if [ -L "$lien" ] || [ ! -e "$lien" ]; then
+        ln -sfn "$CATALOGUES" "$lien"
+    fi
+}
+
+appliquer_catalogues
 appliquer_langue
 appliquer_applications
 appliquer_clavier

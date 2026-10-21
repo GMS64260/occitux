@@ -1,0 +1,182 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux tuxpaint\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) <oc@li.org>\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+"X-Launchpad-Export-Date: 2008-02-06 14:36+0000\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: \n"
+
+#. Glossaire : logiciel, dessin, pour_les, enfant
+#. Attestations : G:logiciel ; G:dessin ; G:pour_les ; G:enfant
+msgid "A drawing program for children."
+msgstr "Un logiciau de dessenh entaus mainatges."
+
+#. Glossaire : bleu
+#. Attestations : G:bleu
+msgid "Blue!"
+msgstr "Blu !"
+
+#. Glossaire : logiciel
+#. Attestations : C01719
+msgid "Drawing program"
+msgstr "Logiciau de dessenh"
+
+#. Glossaire : gomme
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=gomme
+msgid "Eraser"
+msgstr "Gòma"
+
+#. Glossaire : effacer
+#. Attestations : G:effacer
+msgid "Eraser!"
+msgstr "Desfaçar !"
+
+#. Glossaire : remplir
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=remplir
+msgid "Fill"
+msgstr "Plear"
+
+#. Glossaire : remplir
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=remplir
+msgid "Fills"
+msgstr "Plear"
+
+#. Glossaire : travail
+#. Attestations : G:travail
+msgid "Good job!"
+msgstr "Bon tribalh !"
+
+#. Glossaire : continuer
+#. Attestations : G:continuer
+msgid "Keep it up!"
+msgstr "Contunhar !"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "New"
+msgstr "Navèth"
+
+#. Glossaire : non, quitter, sans, enregistrer
+#. Attestations : G:non ; G:quitter ; G:sans ; G:enregistrer
+msgid "No, don’t bother saving!"
+msgstr "Non, quitar shens enregistrar !"
+
+#. Glossaire : non, annuler
+#. Attestations : G:non ; G:annuler
+msgid "No, don’t erase it!"
+msgstr "Non, anullar !"
+
+#. Glossaire : non, retour
+#. Attestations : G:non ; G:retour
+msgid "No, take me back!"
+msgstr "Non, tornar !"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open"
+msgstr "Obrir"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open…"
+msgstr "Obrir…"
+
+#. Glossaire : attendre
+#. Attestations : G:attendre
+msgid "Please wait…"
+msgstr "Esperar…"
+
+#. Glossaire : imprimer, image, maintenant
+#. Attestations : G:imprimer ; G:image ; G:maintenant
+msgid "Print your picture now?"
+msgstr "Imprimir l'imatge ara ?"
+
+#. Glossaire : violet
+#. Attestations : G:violet
+msgid "Purple!"
+msgstr "Vriulet !"
+
+#. Glossaire : quitter
+#. Attestations : G:quitter
+msgid "Quit"
+msgstr "Quitar"
+
+#. Glossaire : rouge
+#. Attestations : G:rouge
+msgid "Red!"
+msgstr "Roi !"
+
+#. Glossaire : refaire
+#. Attestations : C05067
+msgid "Redo"
+msgstr "Tornar har"
+
+#. Glossaire : refaire
+#. Attestations : G:refaire
+msgid "Redo!"
+msgstr "Tornar har !"
+
+#. Glossaire : bleu
+#. Attestations : G:bleu ; C02424
+msgid "Sky blue!"
+msgstr "Blu cèu !"
+
+#. Glossaire : texte
+#. Attestations : C08058
+msgid "Text"
+msgstr "Tèxte"
+
+#. Glossaire : aucun, fichier
+#. Attestations : G:aucun ; G:fichier ; C05987
+msgid "There are no saved files!"
+msgstr "Nat fichèr enregistrat !"
+
+#. Glossaire : outil
+#. Attestations : C01016
+msgid "Tools"
+msgstr "Utís"
+
+#. Glossaire : oui, quitter
+#. Attestations : G:oui ; G:quitter
+msgid "Yes, I’m done!"
+msgstr "Òc, quitar !"
+
+#. Glossaire : oui, supprimer
+#. Attestations : G:oui ; G:supprimer
+msgid "Yes, erase it!"
+msgstr "Òc, suprimir !"
+
+#. Glossaire : oui, imprimer
+#. Attestations : G:oui ; G:imprimer
+msgid "Yes, print it!"
+msgstr "Òc, imprimir !"
+
+#. Glossaire : oui, enregistrer
+#. Attestations : G:oui ; G:enregistrer
+msgid "Yes, save it!"
+msgstr "Òc, enregistrar !"
+
+#. Glossaire : impossible, imprimer, encore
+#. Attestations : G:impossible ; G:imprimer ; G:encore
+msgid "You can’t print yet!"
+msgstr "Impossible d'imprimir enqüèra !"

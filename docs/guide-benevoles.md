@@ -19,6 +19,25 @@ Au démarrage, entrer dans le BIOS (souvent touche `F2`, `F10`, `Suppr` ou `Éch
 - **désactiver le Secure Boot** : PrimTux ne démarre pas sans ça ;
 - mettre la clé USB en premier dans l'ordre de démarrage.
 
+### Vérifier la mémoire des PC reconditionnés
+
+Sur un PC d'occasion, la mémoire vive est souvent la pièce qui pose problème : barrette fatiguée, ou barrettes ajoutées qui ne vont pas ensemble. Le PC peut sembler marcher sous Windows et planter avec Occitux.
+
+**Le symptôme** : le PC plante en quelques secondes, avant tout affichage d'Occitux, avec un message qui finit par
+
+```
+Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000009
+```
+
+et, plus haut, des mots comme `kmalloc`. Ce message ne dit pas « mémoire », mais c'est presque toujours elle.
+
+**Que faire** :
+
+1. Au menu de démarrage de la clé, choisir **« Tester la mémoire »**. Le test tourne tout seul ; au bout d'un passage complet (une demi-heure environ), la case `Errors` doit rester à `0`. Une seule erreur suffit à condamner une barrette.
+2. S'il y a plusieurs barrettes, essayer **une seule barrette à la fois**, dans le premier emplacement, pour trouver la mauvaise.
+3. Sur les PC d'avant 2012 environ, **ne pas mélanger de la DDR3L (basse tension, 1,35 V) avec de la DDR3 (1,5 V)** : ces PC n'acceptent que la DDR3 à 1,5 V. L'étiquette de la barrette indique `PC3L` pour la DDR3L et `PC3` pour la DDR3.
+4. Mieux vaut **une seule bonne barrette de 4 Go** que 6 Go faits de barrettes dépareillées : Occitux tourne avec 2 Go, 4 Go est confortable.
+
 ## 2. Préparer la clé USB (une seule fois)
 
 Suivre les étapes 1 et 2 de la [notice de l'outil de déploiement](https://framagit.org/primtux/outil-de-deploiement-primtux) : un script crée la clé, puis on y copie le fichier `deploiement-primtux.iso`.
@@ -59,6 +78,8 @@ sudo ./chnompc.sh calandreta-pc1
 ## En cas de problème
 
 - **Le PC ne démarre pas sur la clé** : le Secure Boot est encore actif, ou la clé n'est pas en premier dans l'ordre de démarrage.
+- **`Kernel panic` dès le démarrage** : voir « Vérifier la mémoire des PC reconditionnés » plus haut.
+- **La clé se comporte bizarrement** (plantages différents à chaque essai, clé invisible) : les clés sans marque sont souvent en cause. Prendre une clé de marque.
 - **La copie refuse de se faire** : le disque du PC est plus petit que celui du modèle.
 - **Une question sur PrimTux** : le [forum PrimTux](https://forum.primtux.fr) est très actif.
 - **Une question sur Occitux** : ouvrir un ticket sur [GitHub](https://github.com/GMS64260/occitux/issues).

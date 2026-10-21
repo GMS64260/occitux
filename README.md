@@ -15,7 +15,7 @@ Occitux vise les PC des Calandretas, souvent reconditionnés. Les besoins sont d
 |---|---|
 | **Langue** | Interface en occitan (`oc_FR`). Ce qui n'est pas traduit s'affiche en français, pas en anglais. Option béarnais (`LANGUE=bearnes`) : les traductions béarnaises d'Occitux passent devant l'occitan. |
 | **Logiciels** | Firefox et LibreOffice en occitan, dictionnaire occitan pour LibreOffice. Les sites web sans occitan s'affichent en français. GCompris, qui n'existe pas en occitan, reste en français au lieu de basculer en anglais. |
-| **Démarrage** | Menus de démarrage « Essayer Occitux » et « Installer Occitux ». |
+| **Démarrage** | Menus de démarrage « Essayer Occitux », « Installer Occitux » et « Tester la mémoire », pour les PC reconditionnés. |
 | **Clavier** | AZERTY occitan (`fr(oci)`) : les lettres occitanes en accès direct. |
 | **Mises à jour** | Correctifs de sécurité Ubuntu et Mint installés automatiquement. |
 

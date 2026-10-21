@@ -17,6 +17,7 @@
 - [x] Firefox : les sites sans occitan s'affichent en français, pas en anglais
 - [x] Menus de démarrage « Essayer Occitux » et « Installer Occitux »
 - [x] Option `LANGUE=bearnes` : béarnais, puis occitan, puis français
+- [x] Entrée « Tester la mémoire » (memtest86+, BIOS et UEFI) et section mémoire du guide des bénévoles, après un Acer Aspire 4820TG qui plantait au démarrage à cause d'une barrette
 - [ ] Premiers catalogues béarnais (`traductions/gascon/`) : bureau XFCE, Thunar, Tux Paint, écran de connexion
 
 ## 0.2 : l'identité de l'école

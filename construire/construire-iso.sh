@@ -112,6 +112,29 @@ REMPLACER=(
     -map "$TRAVAIL/filesystem.size" /casper/filesystem.size
 )
 
+# Entrée « Tester la mémoire » : memtest86+ est sur l'ISO de PrimTux, mais
+# absent de ses menus. Sur les PC reconditionnés, une barrette défectueuse ou
+# mal assortie fait planter le noyau dès son démarrage (kernel panic dans
+# l'allocateur de mémoire), un message qui ne fait pas penser à la mémoire.
+ajouter_test_memoire() {
+    local menu=$1 copie=$2
+    case "$menu" in
+        /boot/grub/grub.cfg)
+            xorriso -indev "$ISO" -ls /boot/memtest64.efi >/dev/null 2>&1 || return 0
+            cat >> "$copie" <<'EOF'
+
+menuentry "Tester la mémoire" {
+	linux	/boot/memtest64.efi
+}
+EOF
+            ;;
+        /isolinux/menu.cfg)
+            xorriso -indev "$ISO" -ls /boot/memtest64.bin >/dev/null 2>&1 || return 0
+            sed -i 's|^menu clear$|label memtest\n  menu label Tester la memoire\n  linux /boot/memtest64.bin\n\nmenu clear|' "$copie"
+            ;;
+    esac
+}
+
 # Menus de démarrage UEFI (GRUB) et BIOS (isolinux) : « Occitux » à la place
 # de « PrimTux » dans les seuls textes affichés, jamais dans les chemins.
 mkdir -p "$TRAVAIL/menus"
@@ -126,6 +149,7 @@ for menu in /boot/grub/grub.cfg /boot/grub/live-theme/theme.txt \
     # grub.cfg de PrimTux 9 se termine par un « EOF » oublié, que GRUB lit
     # comme une commande inconnue.
     [ "$menu" = /boot/grub/grub.cfg ] && sed -i '${/^EOF$/d}' "$copie"
+    ajouter_test_memoire "$menu" "$copie"
     REMPLACER+=(-map "$copie" "$menu")
 done
 # Le contrôle d'intégrité du menu de démarrage lit md5sum.txt, s'il existe.

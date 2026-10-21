@@ -6,8 +6,11 @@
 - [x] Réglages dans un seul fichier, `occitux-config` pour les appliquer
 - [x] Script de construction de l'ISO à partir de l'ISO officielle de PrimTux 9
 - [x] Test automatique du paquet sur Ubuntu 24.04
-- [ ] Construire l'ISO et la démarrer en machine virtuelle
-- [ ] Vérifier que les sessions élèves de PrimTux suivent bien la langue et le clavier du système
+- [x] Construire l'ISO à partir de PrimTux 9 et la démarrer en machine virtuelle (UEFI, session live) : la session élève s'ouvre, la date s'affiche en occitan
+- [x] Les sessions élèves de PrimTux (Jerry, Koda, Léon, Poe) n'imposent ni langue ni clavier : elles suivent ceux du système
+- [ ] Démarrage en BIOS ancien (Legacy)
+- [ ] Installation sur disque, puis vérification du service de premier démarrage
+- [ ] Vérifier la frappe au clavier occitan dans une session élève
 - [ ] Installer sur un vrai PC reconditionné
 
 ## 0.2 : l'identité de l'école

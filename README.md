@@ -7,7 +7,7 @@ Occitux est une variante de [PrimTux](https://primtux.fr), la distribution Linux
 
 Occitux vise les PC des Calandretas, souvent reconditionnés. Les besoins sont donc ceux de PrimTux 9 : PC 64 bits de 2010 ou plus récent, 2 Go de mémoire (4 Go recommandés), 40 Go de disque (SSD conseillé), Secure Boot désactivé.
 
-> **État : version 0.1, en construction.** Le paquet est testé automatiquement sur Ubuntu 24.04, la base de Linux Mint 22.3. L'ISO complète n'a pas encore été essayée sur un vrai PC d'école.
+> **État : version 0.1, en construction.** Le paquet est testé automatiquement sur Ubuntu 24.04, la base de Linux Mint 22.3. L'ISO Occitux, construite à partir de PrimTux 9, démarre en machine virtuelle et ouvre les sessions élèves en occitan. Elle n'a pas encore été installée sur un vrai PC d'école.
 
 ## Ce qu'apporte Occitux
 

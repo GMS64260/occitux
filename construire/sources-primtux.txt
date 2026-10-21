@@ -2,3 +2,4 @@
 # Nom du fichier, puis somme SHA-256. PrimTux ne publie qu'une somme MD5 :
 # on vérifie l'ISO avec celle-ci, puis on note ici sa SHA-256.
 # Source : https://primtux.fr/telecharger-primtux/
+PrimTux9-M22.3-64bit-2026-02-27.iso b5ed0d9da70d5ec1679f1bd08c03eba4aa1c3c604b4c9bc334f73224f928a4be

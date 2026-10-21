@@ -38,8 +38,24 @@ TRAVAIL=$(mktemp -d "${TMPDIR:-/var/tmp}/occitux.XXXXXX")
 RACINE="$TRAVAIL/racine"
 MONTAGES=()
 
+# Arrête les processus restés dans le système (le menu PrimTux en lance un
+# à chaque installation de paquet), sinon /dev/pts refuse de se démonter.
+arreter_processus_chroot() {
+    local signal p
+    for signal in TERM KILL; do
+        for p in /proc/[0-9]*; do
+            if [ "$(readlink "$p/root" 2>/dev/null)" = "$RACINE" ]; then
+                kill "-$signal" "${p#/proc/}" 2>/dev/null || true
+            fi
+        done
+        sleep 2
+    done
+    return 0
+}
+
 nettoyer() {
     local i
+    arreter_processus_chroot
     for ((i = ${#MONTAGES[@]} - 1; i >= 0; i--)); do
         umount -l "${MONTAGES[i]}" 2>/dev/null || true
     done
@@ -50,9 +66,10 @@ trap nettoyer EXIT
 # 2. Extraction du système.
 echo "Extraction du système (plusieurs minutes)..."
 xorriso -osirrox on -indev "$ISO" \
-    -extract /casper/filesystem.squashfs "$TRAVAIL/filesystem.squashfs" \
-    -extract /md5sum.txt "$TRAVAIL/md5sum.txt" 2>/dev/null \
+    -extract /casper/filesystem.squashfs "$TRAVAIL/filesystem.squashfs" 2>/dev/null \
     || die "pas de /casper/filesystem.squashfs dans l'ISO : est-ce bien une PrimTux basée sur Mint ?"
+# md5sum.txt sert au contrôle d'intégrité du menu de démarrage ; facultatif.
+xorriso -osirrox on -indev "$ISO" -extract /md5sum.txt "$TRAVAIL/md5sum.txt" >/dev/null 2>&1 || true
 COMPRESSION=$(unsquashfs -s "$TRAVAIL/filesystem.squashfs" | awk '/^Compression/ { print $2 }')
 unsquashfs -q -d "$RACINE" "$TRAVAIL/filesystem.squashfs"
 rm "$TRAVAIL/filesystem.squashfs"
@@ -80,6 +97,7 @@ rm -f "$RACINE/etc/resolv.conf"
 mv "$TRAVAIL/resolv.conf.origine" "$RACINE/etc/resolv.conf"
 # shellcheck disable=SC2016 # format de dpkg-query, pas une variable du shell
 chroot "$RACINE" dpkg-query -W --showformat='${Package} ${Version}\n' > "$TRAVAIL/filesystem.manifest"
+arreter_processus_chroot
 for ((i = ${#MONTAGES[@]} - 1; i >= 0; i--)); do umount "${MONTAGES[i]}"; done
 MONTAGES=()
 
@@ -88,21 +106,26 @@ echo "Compression du système ($COMPRESSION, plusieurs minutes)..."
 du -sx --block-size=1 "$RACINE" | cut -f1 > "$TRAVAIL/filesystem.size"
 mksquashfs "$RACINE" "$TRAVAIL/filesystem.squashfs" -comp "$COMPRESSION" -noappend -quiet
 
-# Le contrôle d'intégrité du menu de démarrage lit md5sum.txt.
-for f in filesystem.squashfs filesystem.manifest filesystem.size; do
-    somme=$(md5sum "$TRAVAIL/$f" | cut -d' ' -f1)
-    sed -i "s|^[0-9a-f]\{32\}  \./casper/$f\$|$somme  ./casper/$f|" "$TRAVAIL/md5sum.txt"
-done
+REMPLACER=(
+    -map "$TRAVAIL/filesystem.squashfs" /casper/filesystem.squashfs
+    -map "$TRAVAIL/filesystem.manifest" /casper/filesystem.manifest
+    -map "$TRAVAIL/filesystem.size" /casper/filesystem.size
+)
+# Le contrôle d'intégrité du menu de démarrage lit md5sum.txt, s'il existe.
+if [ -f "$TRAVAIL/md5sum.txt" ]; then
+    for f in filesystem.squashfs filesystem.manifest filesystem.size; do
+        somme=$(md5sum "$TRAVAIL/$f" | cut -d' ' -f1)
+        sed -i "s|^[0-9a-f]\{32\}  \./casper/$f\$|$somme  ./casper/$f|" "$TRAVAIL/md5sum.txt"
+    done
+    REMPLACER+=(-map "$TRAVAIL/md5sum.txt" /md5sum.txt)
+fi
 
 # 5. Nouvelle ISO : copie de l'originale, fichiers modifiés remplacés.
 echo "Écriture de $SORTIE..."
 rm -f "$SORTIE"
 xorriso -indev "$ISO" -outdev "$SORTIE" \
     -compliance iso_9660_level=3 \
-    -map "$TRAVAIL/filesystem.squashfs" /casper/filesystem.squashfs \
-    -map "$TRAVAIL/filesystem.manifest" /casper/filesystem.manifest \
-    -map "$TRAVAIL/filesystem.size" /casper/filesystem.size \
-    -map "$TRAVAIL/md5sum.txt" /md5sum.txt \
+    "${REMPLACER[@]}" \
     -boot_image any replay
 (cd "$(dirname "$SORTIE")" && sha256sum "$(basename "$SORTIE")" > "$(basename "$SORTIE").sha256")
 

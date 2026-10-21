@@ -1,0 +1,12 @@
+[Unit]
+Description=Occitux : réglages occitans au premier démarrage
+ConditionPathExists=!/var/lib/occitux/premier-demarrage-fait
+After=local-fs.target
+Before=display-manager.service accounts-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/occitux-config --premier-demarrage
+
+[Install]
+WantedBy=multi-user.target

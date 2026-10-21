@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = configure ]; then
+    occitux-config || echo "occitux : réglages incomplets, ils seront refaits au prochain démarrage" >&2
+    deb-systemd-helper enable occitux-premier-demarrage.service >/dev/null || true
+fi

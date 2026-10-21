@@ -1,0 +1,116 @@
+#!/bin/bash
+# occitux-config : applique /etc/occitux/occitux.conf au système.
+#
+# Lancé par le paquet à l'installation, puis une fois au premier démarrage
+# (l'installateur réécrit la langue et le clavier après la copie du système),
+# puis à la main après chaque modification des réglages.
+#
+#   sudo occitux-config                     applique les réglages
+#   occitux-config --premier-demarrage      utilisé par le service systemd
+set -euo pipefail
+
+CONF=/etc/occitux/occitux.conf
+ETAT=/var/lib/occitux
+APT_CONF=/etc/apt/apt.conf.d
+
+LANGUE=oc
+CLAVIER=oci
+MISES_A_JOUR_AUTO=oui
+# shellcheck source=/dev/null
+[ -r "$CONF" ] && . "$CONF"
+
+if [ "$(id -u)" -ne 0 ]; then
+    echo "occitux-config : à lancer avec sudo" >&2
+    exit 1
+fi
+
+# Remplace KEY=... dans un fichier, ou l'ajoute s'il n'y est pas.
+fixer() {
+    local fichier=$1 cle=$2 valeur=$3
+    touch "$fichier"
+    if grep -q "^${cle}=" "$fichier"; then
+        sed -i "s|^${cle}=.*|${cle}=${valeur}|" "$fichier"
+    else
+        echo "${cle}=${valeur}" >> "$fichier"
+    fi
+}
+
+appliquer_langue() {
+    local lang language
+    case "$LANGUE" in
+        oc) lang=oc_FR.UTF-8; language=oc:fr ;;
+        fr) lang=fr_FR.UTF-8; language=fr ;;
+        *)  echo "occitux-config : LANGUE=$LANGUE inconnue (oc ou fr)" >&2; return 1 ;;
+    esac
+
+    locale-gen "$lang" fr_FR.UTF-8 >/dev/null
+    # LANGUAGE=oc:fr : un logiciel non traduit en occitan s'affiche en
+    # français, et non en anglais.
+    update-locale LANG="$lang" LANGUAGE="$language"
+
+    # La langue choisie par compte (outil « Langues » de Mint, installateur)
+    # passe avant celle du système : on l'aligne.
+    local compte
+    for compte in /var/lib/AccountsService/users/*; do
+        [ -f "$compte" ] || continue
+        if grep -q '^Language=' "$compte"; then
+            sed -i "s|^Language=.*|Language=${lang}|" "$compte"
+        fi
+    done
+    echo "langue : $lang (repli : $language)"
+}
+
+appliquer_clavier() {
+    local variante
+    case "$CLAVIER" in
+        oci)    variante=oci ;;
+        azerty) variante= ;;
+        *)      echo "occitux-config : CLAVIER=$CLAVIER inconnu (oci ou azerty)" >&2; return 1 ;;
+    esac
+    fixer /etc/default/keyboard XKBLAYOUT '"fr"'
+    fixer /etc/default/keyboard XKBVARIANT "\"${variante}\""
+    echo "clavier : fr${variante:+($variante)}"
+}
+
+appliquer_mises_a_jour() {
+    local actif ubuntu mint
+    case "$MISES_A_JOUR_AUTO" in
+        oui) actif=1 ;;
+        non) actif=0 ;;
+        *)   echo "occitux-config : MISES_A_JOUR_AUTO=$MISES_A_JOUR_AUTO inconnu (oui ou non)" >&2; return 1 ;;
+    esac
+
+    # shellcheck source=/dev/null
+    . /etc/os-release
+    ubuntu=${UBUNTU_CODENAME:-$VERSION_CODENAME}
+    mint=
+    [ "$VERSION_CODENAME" != "$ubuntu" ] && mint=$VERSION_CODENAME
+
+    # Sur Mint, ${distro_codename} vaut le nom de code Mint (zena) : les règles
+    # Ubuntu fournies par défaut ne désignent alors aucun dépôt. On les nomme
+    # en dur. Firefox vient du dépôt Mint, d'où la seconde ligne.
+    {
+        echo "// Généré par occitux-config : modifier /etc/occitux/occitux.conf à la place."
+        echo "Unattended-Upgrade::Origins-Pattern {"
+        echo "        \"origin=Ubuntu,archive=${ubuntu}-security\";"
+        [ -n "$mint" ] && echo "        \"origin=linuxmint,archive=${mint}\";"
+        echo "};"
+    } > "$APT_CONF/51occitux-unattended-upgrades"
+    cat > "$APT_CONF/52occitux-periodic" <<EOF
+// Généré par occitux-config : modifier /etc/occitux/occitux.conf à la place.
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "${actif}";
+EOF
+    echo "mises à jour automatiques : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint})"
+}
+
+appliquer_langue
+appliquer_clavier
+appliquer_mises_a_jour
+
+if [ "${1:-}" = --premier-demarrage ]; then
+    mkdir -p "$ETAT"
+    touch "$ETAT/premier-demarrage-fait"
+else
+    echo "Redémarrer le PC pour que tout soit pris en compte."
+fi

@@ -1,0 +1,53 @@
+name: paquet
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+jobs:
+  paquet:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vérifier les scripts
+        run: make verifier
+
+      - name: Construire le paquet
+        run: make paquet
+
+      # Même base que Linux Mint 22 (Ubuntu 24.04). Sans les recommandations :
+      # sur Ubuntu, firefox-locale-oc tirerait le snap de Firefox.
+      - name: Installer le paquet dans Ubuntu 24.04
+        run: |
+          docker run --rm -v "$PWD/construction:/deb:ro" ubuntu:24.04 bash -euxc '
+            export DEBIAN_FRONTEND=noninteractive
+            apt-get update -q
+            apt-get install -y -q --no-install-recommends /deb/occitux_*_all.deb
+            grep -x "LANG=oc_FR.UTF-8" /etc/default/locale
+            grep -x "LANGUAGE=oc:fr" /etc/default/locale
+            locale -a | grep -qi "^oc_FR.utf8$"
+            grep -x "XKBVARIANT=\"oci\"" /etc/default/keyboard
+            grep -q "noble-security" /etc/apt/apt.conf.d/51occitux-unattended-upgrades
+            sed -i "s/^LANGUE=.*/LANGUE=fr/; s/^CLAVIER=.*/CLAVIER=azerty/" /etc/occitux/occitux.conf
+            occitux-config
+            grep -x "LANG=fr_FR.UTF-8" /etc/default/locale
+            grep -x "XKBVARIANT=\"\"" /etc/default/keyboard
+            apt-get purge -y -q occitux
+            test ! -e /etc/apt/apt.conf.d/51occitux-unattended-upgrades
+          '
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: occitux-deb
+          path: construction/*.deb
+
+      - name: Publier le paquet avec la version
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" construction/*.deb --title "Occitux $GITHUB_REF_NAME" --notes "Paquet occitux à installer sur PrimTux 9 : sudo apt install ./occitux_*_all.deb"

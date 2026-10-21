@@ -1,0 +1,17 @@
+#!/bin/sh
+# La langue et le clavier restent tels quels après la désinstallation :
+# ce sont des réglages du système, que l'on change avec les outils de Mint.
+set -e
+
+case "$1" in
+    remove|purge)
+        rm -f /etc/apt/apt.conf.d/51occitux-unattended-upgrades \
+              /etc/apt/apt.conf.d/52occitux-periodic
+        deb-systemd-helper disable occitux-premier-demarrage.service >/dev/null || true
+        ;;
+esac
+
+if [ "$1" = purge ]; then
+    rm -rf /var/lib/occitux
+    deb-systemd-helper purge occitux-premier-demarrage.service >/dev/null || true
+fi

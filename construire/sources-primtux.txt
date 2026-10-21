@@ -1,0 +1,4 @@
+# ISO officielles de PrimTux acceptées par construire-iso.sh.
+# Nom du fichier, puis somme SHA-256. PrimTux ne publie qu'une somme MD5 :
+# on vérifie l'ISO avec celle-ci, puis on note ici sa SHA-256.
+# Source : https://primtux.fr/telecharger-primtux/

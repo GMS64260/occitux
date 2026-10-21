@@ -13,6 +13,12 @@
 - [ ] Vérifier la frappe au clavier occitan dans une session élève
 - [ ] Installer sur un vrai PC reconditionné
 
+- [x] GCompris reste en français au lieu de basculer en anglais (il n'a pas de traduction occitane)
+- [x] Firefox : les sites sans occitan s'affichent en français, pas en anglais
+- [x] Menus de démarrage « Essayer Occitux » et « Installer Occitux »
+- [x] Option `LANGUE=bearnes` : béarnais, puis occitan, puis français
+- [ ] Premiers catalogues béarnais (`traductions/gascon/`) : bureau XFCE, Thunar, Tux Paint, écran de connexion
+
 ## 0.2 : l'identité de l'école
 
 - [ ] Fond d'écran, écran de connexion et écran de démarrage Occitux

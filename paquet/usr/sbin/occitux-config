@@ -37,10 +37,14 @@ fixer() {
 
 appliquer_langue() {
     local lang language
+    # bearnes : les catalogues béarnais d'Occitux (/usr/share/locale/oc@gascon)
+    # passent d'abord ; ce qu'ils ne traduisent pas retombe sur l'occitan,
+    # puis sur le français.
     case "$LANGUE" in
-        oc) lang=oc_FR.UTF-8; language=oc:fr ;;
-        fr) lang=fr_FR.UTF-8; language=fr ;;
-        *)  echo "occitux-config : LANGUE=$LANGUE inconnue (oc ou fr)" >&2; return 1 ;;
+        bearnes) lang=oc_FR.UTF-8; language=oc@gascon:oc:fr ;;
+        oc)      lang=oc_FR.UTF-8; language=oc:fr ;;
+        fr)      lang=fr_FR.UTF-8; language=fr ;;
+        *)       echo "occitux-config : LANGUE=$LANGUE inconnue (bearnes, oc ou fr)" >&2; return 1 ;;
     esac
 
     locale-gen "$lang" fr_FR.UTF-8 >/dev/null
@@ -58,6 +62,43 @@ appliquer_langue() {
         fi
     done
     echo "langue : $lang (repli : $language)"
+}
+
+# Les logiciels qui ne connaissent pas l'occitan et ne savent pas se replier
+# sur le français : on les règle en français.
+#
+# GCompris, réglé sur « system », cherche une traduction oc_FR, ne la trouve
+# pas et s'affiche en anglais, sans voix. PrimTux le livre avec seulement
+# l'anglais et le français. Ses réglages vivent dans le dossier de chaque
+# élève et dans le modèle /etc/skel-<élève> dont PrimTux le recrée.
+GCOMPRIS_TRADUCTIONS=/opt/gcompris-qt/usr/share/gcompris-qt/translations
+FIREFOX_PREFS=/usr/lib/firefox/defaults/pref
+appliquer_applications() {
+    local conf avant apres
+    if [ "$LANGUE" = fr ] || compgen -G "$GCOMPRIS_TRADUCTIONS/gcompris_oc*.qm" >/dev/null; then
+        avant=fr_FR.UTF-8; apres=system
+    else
+        avant=system; apres=fr_FR.UTF-8
+    fi
+    for conf in /home/*/.config/gcompris/gcompris-qt.conf /etc/skel*/.config/gcompris/gcompris-qt.conf; do
+        [ -f "$conf" ] || continue
+        sed -i "s|^locale=${avant}\$|locale=${apres}|" "$conf"
+    done
+    echo "GCompris : ${apres/system/langue du système}"
+
+    # Firefox en occitan demande aux sites « occitan, puis anglais » : un site
+    # sans occitan s'afficherait en anglais. On intercale le français.
+    if [ -d "$FIREFOX_PREFS" ]; then
+        if [ "$LANGUE" = fr ]; then
+            rm -f "$FIREFOX_PREFS/occitux.js"
+        else
+            cat > "$FIREFOX_PREFS/occitux.js" <<'EOF'
+// Généré par occitux-config : modifier /etc/occitux/occitux.conf à la place.
+pref("intl.accept_languages", "oc, fr-FR, fr, en-US, en");
+EOF
+            echo "Firefox : sites en occitan, puis en français"
+        fi
+    fi
 }
 
 appliquer_clavier() {
@@ -105,6 +146,7 @@ EOF
 }
 
 appliquer_langue
+appliquer_applications
 appliquer_clavier
 appliquer_mises_a_jour
 

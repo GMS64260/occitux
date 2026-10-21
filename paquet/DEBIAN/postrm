@@ -6,7 +6,8 @@ set -e
 case "$1" in
     remove|purge)
         rm -f /etc/apt/apt.conf.d/51occitux-unattended-upgrades \
-              /etc/apt/apt.conf.d/52occitux-periodic
+              /etc/apt/apt.conf.d/52occitux-periodic \
+              /usr/lib/firefox/defaults/pref/occitux.js
         deb-systemd-helper disable occitux-premier-demarrage.service >/dev/null || true
         ;;
 esac

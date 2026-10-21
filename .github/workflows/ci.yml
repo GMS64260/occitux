@@ -27,7 +27,16 @@ jobs:
           docker run --rm -v "$PWD/construction:/deb:ro" ubuntu:24.04 bash -euxc '
             export DEBIAN_FRONTEND=noninteractive
             apt-get update -q
+            # Réglage GCompris d'un élève PrimTux (dossier personnel et modèle)
+            for d in /home/jerry /etc/skel-jerry; do
+              mkdir -p $d/.config/gcompris
+              printf "[%%General]\nlocale=system\n" > $d/.config/gcompris/gcompris-qt.conf
+            done
+            mkdir -p /usr/lib/firefox/defaults/pref
             apt-get install -y -q --no-install-recommends /deb/occitux_*_all.deb
+            grep -q "\"oc, fr-FR, fr, en-US, en\"" /usr/lib/firefox/defaults/pref/occitux.js
+            grep -x "locale=fr_FR.UTF-8" /home/jerry/.config/gcompris/gcompris-qt.conf
+            grep -x "locale=fr_FR.UTF-8" /etc/skel-jerry/.config/gcompris/gcompris-qt.conf
             grep -x "LANG=oc_FR.UTF-8" /etc/default/locale
             grep -x "LANGUAGE=oc:fr" /etc/default/locale
             locale -a | grep -qi "^oc_FR.utf8$"
@@ -37,6 +46,12 @@ jobs:
             occitux-config
             grep -x "LANG=fr_FR.UTF-8" /etc/default/locale
             grep -x "XKBVARIANT=\"\"" /etc/default/keyboard
+            grep -x "locale=system" /home/jerry/.config/gcompris/gcompris-qt.conf
+            test ! -e /usr/lib/firefox/defaults/pref/occitux.js
+            sed -i "s/^LANGUE=.*/LANGUE=bearnes/" /etc/occitux/occitux.conf
+            occitux-config
+            grep -x "LANGUAGE=oc@gascon:oc:fr" /etc/default/locale
+            test -d /usr/share/locale/oc@gascon/LC_MESSAGES
             apt-get purge -y -q occitux
             test ! -e /etc/apt/apt.conf.d/51occitux-unattended-upgrades
           '

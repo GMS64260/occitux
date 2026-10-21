@@ -111,6 +111,23 @@ REMPLACER=(
     -map "$TRAVAIL/filesystem.manifest" /casper/filesystem.manifest
     -map "$TRAVAIL/filesystem.size" /casper/filesystem.size
 )
+
+# Menus de démarrage UEFI (GRUB) et BIOS (isolinux) : « Occitux » à la place
+# de « PrimTux » dans les seuls textes affichés, jamais dans les chemins.
+mkdir -p "$TRAVAIL/menus"
+for menu in /boot/grub/grub.cfg /boot/grub/live-theme/theme.txt \
+            /isolinux/menu.cfg /isolinux/live.cfg /isolinux/install.cfg; do
+    copie="$TRAVAIL/menus/$(echo "${menu#/}" | tr / _)"
+    xorriso -osirrox on -indev "$ISO" -extract "$menu" "$copie" >/dev/null 2>&1 || continue
+    chmod u+w "$copie"
+    sed -i -e 's/^\(menuentry "[^"]*\)PrimTux"/\1Occitux"/' \
+           -e 's/^\(\s*menu \(label\|title\) .*\)PrimTux$/\1Occitux/' \
+           -e 's/^title-text: "PrimTux"$/title-text: "Occitux"/' "$copie"
+    # grub.cfg de PrimTux 9 se termine par un « EOF » oublié, que GRUB lit
+    # comme une commande inconnue.
+    [ "$menu" = /boot/grub/grub.cfg ] && sed -i '${/^EOF$/d}' "$copie"
+    REMPLACER+=(-map "$copie" "$menu")
+done
 # Le contrôle d'intégrité du menu de démarrage lit md5sum.txt, s'il existe.
 if [ -f "$TRAVAIL/md5sum.txt" ]; then
     for f in filesystem.squashfs filesystem.manifest filesystem.size; do

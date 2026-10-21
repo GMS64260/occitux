@@ -8,7 +8,7 @@ Pour une Calandreta gasconne ou béarnaise, l'interface est donc dans un occitan
 
 - **accepter le languedocien** pour les menus : c'est ce que fait Occitux par défaut (`LANGUE=oc`) ;
 - **garder l'interface en français** (`LANGUE=fr`) et réserver l'occitan aux contenus et aux activités ;
-- à terme, **produire des traductions gasconnes**. C'est un vrai travail de traduction, à faire avec Tot en òc et Lo Congrès, et il faut que les logiciels sachent proposer une variante.
+- **passer en béarnais** (`LANGUE=bearnes`) : Occitux installe ses propres traductions béarnaises (`traductions/gascon/`, dans `/usr/share/locale/oc@gascon`). Un logiciel les utilise d'abord, puis retombe sur l'occitan pour ce qu'elles ne couvrent pas, puis sur le français. On peut donc traduire en béarnais logiciel par logiciel, en commençant par ce que les enfants voient le plus, sans attendre que tout soit fait.
 
 ## Où en sont les traductions (octobre 2026)
 

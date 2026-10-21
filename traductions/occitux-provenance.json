@@ -1,0 +1,7 @@
+{
+  "fichier": "paquet/usr/sbin/occitux-config",
+  "sha256": "1e07d633e77e57e99d6e1662503bd3cde2c1b1cf7ba910bfb53a9c2d3c2d212b",
+  "revision_main_observee": "fc93b78",
+  "date": "2026-10-21",
+  "note": "Lecture du fichier courant dans le travail parallèle, sans modification. Les messages supposent LANGUE=bearnes, oc ou fr. Vérifier cette empreinte avant intégration."
+}

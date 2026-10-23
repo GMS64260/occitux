@@ -11,7 +11,7 @@ SCRIPTS := paquet/usr/sbin/occitux-config paquet/DEBIAN/postinst paquet/DEBIAN/p
 PO      := $(wildcard traductions/gascon/*.po)
 # Tables de textes (menu des élèves, écran de connexion, menus de démarrage…)
 # et logo : /usr/share/occitux/textes et /usr/share/occitux/identite.
-CSV     := $(wildcard traductions/*.csv)
+CSV     := traductions/occitux.csv traductions/primtuxmenu.csv traductions/systeme.csv
 IDENTITE := identite/occitux.svg identite/occitux.png identite/occitux-blanc.png
 RACINE  := construction/racine
 CATALOGUES := $(RACINE)/usr/share/occitux/locale/oc@gascon/LC_MESSAGES
@@ -26,7 +26,7 @@ $(DEB): $(shell find paquet -type f) $(PO) $(CSV) $(IDENTITE) depot/occitux-apt.
 	cp -a paquet/. $(RACINE)/
 	chmod 0755 $(RACINE)/usr/sbin/occitux-config $(RACINE)/usr/share/occitux/traduire.py \
 	           $(RACINE)/DEBIAN/postinst $(RACINE)/DEBIAN/prerm $(RACINE)/DEBIAN/postrm
-	mkdir -p $(RACINE)/usr/share/occitux/textes $(RACINE)/usr/share/occitux/identite
+	mkdir -p $(RACINE)/usr/share/occitux/textes $(RACINE)/usr/share/occitux/identite $(RACINE)/usr/share/keyrings
 	cp $(CSV) $(RACINE)/usr/share/occitux/textes/
 	cp $(IDENTITE) $(RACINE)/usr/share/occitux/identite/
 	gpg --batch --yes --dearmor -o $(RACINE)/usr/share/keyrings/occitux.gpg depot/occitux-apt.asc

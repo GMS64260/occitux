@@ -1,7 +1,8 @@
 VERSION := $(shell sed -n 's/^Version: //p' paquet/DEBIAN/control)
 DEB     := construction/occitux_$(VERSION)_all.deb
 SCRIPTS := paquet/usr/sbin/occitux-config paquet/DEBIAN/postinst paquet/DEBIAN/prerm paquet/DEBIAN/postrm \
-           construire/construire-iso.sh construire/essayer-vm.sh construire/preseed/choisir-disque.sh construire/preseed/apres-installation.sh
+           construire/construire-iso.sh construire/essayer-vm.sh construire/depot-apt.sh \
+           construire/preseed/choisir-disque.sh construire/preseed/apres-installation.sh
 
 # Catalogues béarnais : traductions/gascon/<domaine>.po → <domaine>.mo, installés
 # dans /usr/share/occitux/locale/oc@gascon. dpkg écarterait tout fichier posé
@@ -19,7 +20,7 @@ CATALOGUES := $(RACINE)/usr/share/occitux/locale/oc@gascon/LC_MESSAGES
 
 paquet: $(DEB)
 
-$(DEB): $(shell find paquet -type f) $(PO) $(CSV) $(IDENTITE)
+$(DEB): $(shell find paquet -type f) $(PO) $(CSV) $(IDENTITE) depot/occitux-apt.asc
 	rm -rf $(RACINE)
 	mkdir -p $(RACINE)
 	cp -a paquet/. $(RACINE)/
@@ -28,6 +29,7 @@ $(DEB): $(shell find paquet -type f) $(PO) $(CSV) $(IDENTITE)
 	mkdir -p $(RACINE)/usr/share/occitux/textes $(RACINE)/usr/share/occitux/identite
 	cp $(CSV) $(RACINE)/usr/share/occitux/textes/
 	cp $(IDENTITE) $(RACINE)/usr/share/occitux/identite/
+	gpg --batch --yes --dearmor -o $(RACINE)/usr/share/keyrings/occitux.gpg depot/occitux-apt.asc
 	mkdir -p $(CATALOGUES)
 	for po in $(PO); do \
 		msgfmt --check -o $(CATALOGUES)/$$(basename $$po .po).mo $$po || exit 1; \

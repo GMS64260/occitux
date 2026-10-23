@@ -137,11 +137,14 @@ appliquer_mises_a_jour() {
     # Sur Mint, ${distro_codename} vaut le nom de code Mint (zena) : les règles
     # Ubuntu fournies par défaut ne désignent alors aucun dépôt. On les nomme
     # en dur. Firefox vient du dépôt Mint, d'où la seconde ligne.
+    # Le dépôt d'Occitux (sources.list.d/occitux.sources) : les nouvelles
+    # versions du paquet occitux s'installent avec les correctifs.
     {
         echo "// Généré par occitux-config : modifier /etc/occitux/occitux.conf à la place."
         echo "Unattended-Upgrade::Origins-Pattern {"
         echo "        \"origin=Ubuntu,archive=${ubuntu}-security\";"
         [ -n "$mint" ] && echo "        \"origin=linuxmint,archive=${mint}\";"
+        echo "        \"origin=Occitux,suite=occitux\";"
         echo "};"
     } > "$APT_CONF/51occitux-unattended-upgrades"
     cat > "$APT_CONF/52occitux-periodic" <<EOF
@@ -149,7 +152,7 @@ appliquer_mises_a_jour() {
 APT::Periodic::Update-Package-Lists "1";
 APT::Periodic::Unattended-Upgrade "${actif}";
 EOF
-    echo "mises à jour automatiques : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint})"
+    echo "mises à jour automatiques : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint}, Occitux)"
 }
 
 # Le paquet livre ses catalogues béarnais hors de /usr/share/locale, où dpkg

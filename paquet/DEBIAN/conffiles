@@ -1,2 +1,3 @@
 /etc/occitux/occitux.conf
 /etc/dpkg/dpkg.cfg.d/zz-occitux-langues
+/etc/apt/sources.list.d/occitux.sources

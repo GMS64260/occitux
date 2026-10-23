@@ -20,6 +20,7 @@ journal() { echo "occitux : $*" >&2; logger -t occitux "$*" 2>/dev/null || true;
 # disponible ; la question peut ne pas exister encore (seul son modèle existe) :
 # on l'enregistre alors.
 if [ -n "${DEBIAN_HAS_FRONTEND:-}" ]; then
+    # shellcheck disable=SC1091
     . /usr/share/debconf/confmodule
     definir() {
         db_set "$1" "$2" 2>/dev/null && return 0

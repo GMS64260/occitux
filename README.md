@@ -18,7 +18,7 @@ Occitux vise les PC des Calandretas, souvent reconditionnés. Les besoins sont d
 | **Installation** | Entrée « Installer Occitux automatiquement » : le PC s'installe sans une question (tout le disque est effacé). Avec l'ISO de déploiement, il suffit de démarrer sur la clé. Entrée « Tester la mémoire » pour les PC reconditionnés. |
 | **Identité** | Le PC se présente comme Occitux : nom du système, menus de démarrage, fonds d'écran des sessions, écran de connexion, menu des élèves. |
 | **Clavier** | AZERTY occitan (`fr(oci)`) : les lettres occitanes en accès direct. |
-| **Mises à jour** | Correctifs de sécurité Ubuntu et Mint installés automatiquement. |
+| **Mises à jour** | Correctifs de sécurité Ubuntu et Mint, et nouvelles versions d'Occitux (dépôt apt du projet), installés automatiquement. |
 
 Tout se règle dans un seul fichier, `/etc/occitux/occitux.conf` : interface en français, clavier français habituel, mises à jour manuelles.
 
@@ -36,7 +36,7 @@ Tout se règle dans un seul fichier, `/etc/occitux/occitux.conf` : interface en 
 sudo apt install ./occitux_*_all.deb
 ```
 
-Redémarrer le PC. C'est tout.
+Redémarrer le PC. C'est tout. Le paquet ajoute le dépôt apt d'Occitux (`https://gms64260.github.io/occitux`, clé dans `/usr/share/keyrings/occitux.gpg`) : les versions suivantes s'installent toutes seules.
 
 **Sur plusieurs PC** : suivre le [guide des bénévoles](docs/guide-benevoles.md). On prépare un PC modèle, puis l'[outil de déploiement de PrimTux](https://framagit.org/primtux/outil-de-deploiement-primtux) le copie sur les autres en quelques minutes chacun.
 
@@ -86,6 +86,14 @@ Elle produit `occitux-x.y.z-deploiement.iso`. **Tout PC démarré sur cette clé
 
 Pour essayer une ISO dans une machine virtuelle (QEMU, disque vierge de 40 Go) : `./construire/essayer-vm.sh construction/occitux-x.y.z.iso`.
 
+### Publier une version
+
+```sh
+git tag v0.2.0 && git push --tags
+```
+
+La CI construit le paquet, le publie en release, puis met à jour le **dépôt apt** (branche `gh-pages`, servie par GitHub Pages, signée avec la clé du secret `OCCITUX_CLE_APT` ; clé publique dans `depot/occitux-apt.asc`). Tous les PC Occitux installent la nouvelle version à leur prochaine mise à jour automatique, sans intervention. Le dépôt se construit aussi à la main : `./construire/depot-apt.sh <dossier> construction/occitux_*.deb`.
+
 ## Organisation du dépôt
 
 ```
@@ -96,6 +104,7 @@ paquet/            le paquet occitux, tel qu'il sera installé
   usr/share/occitux/ traduire.py, qui remplace les textes de PrimTux par ceux d'Occitux
 traductions/       traductions béarnaises (gascon/<logiciel>.po), tables de textes (*.csv)
 identite/          logo Occitux (croix occitane)
+depot/             clé publique du dépôt apt
 construire/        fabrication de l'ISO à partir de celle de PrimTux, preseed de l'installation automatique
 docs/              guide des bénévoles, langue, feuille de route
 ```

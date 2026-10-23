@@ -1,0 +1,56 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux xfce4-pulseaudio-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (http://app.transifex.com/xfce/xfce-panel-plugins/language/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Quentin PAGÈS, 2022\n"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Adjust the audio volume of the PulseAudio sound system"
+msgstr "Ajustar lo volum deu sistèma àudio PulseAudio"
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "All"
+msgstr "Tots"
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "Clear Known Items"
+msgstr "Desfaçar los elements coneguts"
+
+#. Glossaire : clavier, du, pour_le
+#. Attestations : C06853 ; C07050 ; C07423
+msgid "Enable keyboard _shortcuts for volume control"
+msgstr "Activar los acorchi_s de clavèr entau contraròtle deu volum"
+
+#. Glossaire : general
+#. Attestations : C03230
+msgid "General"
+msgstr "Generau"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "Not connected to the PulseAudio server"
+msgstr "Pas connectat au servidor PulseAudio"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "PulseAudio Panel Plugin"
+msgstr "Empeuton deu panèu PulseAudio"

@@ -1,0 +1,1617 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux thunar\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (https://www.transifex.com/xfce/teams/16840/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Quentin PAGÈS, 2022\n"
+
+#. Glossaire : des, modele
+#. Attestations : C00195 ; C07828
+msgid "About Templates"
+msgstr "A prepaus deus modèles"
+
+#. Glossaire : sur_le
+#. Attestations : C02084
+#, c-format
+msgid "Acquired the name '%s' on the session message bus\n"
+msgstr "Nom « %s » obtengut suu bus de messatge session\n"
+
+#. Glossaire : ajouter, nouvelle, une
+#. Attestations : C03100 ; C07955 ; C07967
+msgid "Add a new custom action."
+msgstr "Ajustar ua navèra accion personalizada."
+
+#. Glossaire : fichier, tous
+#. Attestations : C00956 ; C06780
+msgid "All Files"
+msgstr "Tots los fichèrs"
+
+#. Glossaire : ouvrir
+#. Attestations : C06047
+msgid "Aperture Value:"
+msgstr "Valor de obertura :"
+
+#. Glossaire : au, dossier
+#. Attestations : C02764 ; C03272
+msgid "Apply to Folder Only"
+msgstr "Aplicar au dossièr unicament"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Audio Files"
+msgstr "Fichèrs àudio"
+
+#. Glossaire : reseau
+#. Attestations : G:reseau
+msgid "Browse Network"
+msgstr "Percórrer lo hialat"
+
+#. Glossaire : connexion, du, reseau
+#. Attestations : G:connexion ; G:du ; G:reseau
+msgid "Browse local network connections"
+msgstr "Percórrer las connexions deu hialat locau"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Browse recently used files"
+msgstr "Percórrer los fichèrs recentament utilizats"
+
+#. Glossaire : ordinateur
+#. Attestations : C06011
+msgid "Browse the computer"
+msgstr "Percórrer l’ordinator"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Browse the file system"
+msgstr "Percórrer lo sistèma de fichèrs"
+
+#. Glossaire : fichier, ouvrir, une
+#. Attestations : C00956 ; C05883 ; C07967
+#, c-format
+msgid "Browse the file system to select an application to open files of type \"%s\"."
+msgstr ""
+"Percórrer lo sistèma de fichèrs per seleccionar ua aplicacion per obrir los fichèrs de"
+" tipe « %s »."
+
+#. Glossaire : avec, fichier
+#. Attestations : C00956 ; C07792
+msgid "Browse the filesystem with the file manager"
+msgstr "Percórrer lo sistèma de fichèrs dab lo gestionari de fichèrs"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Bulk Rename - Rename Multiple Files"
+msgstr "Renomenar en massa - Renomenar mantun fichèr"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "C_lose Tab"
+msgstr "_Barrar l'onglet"
+
+#. Glossaire : modele
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+msgid "Camera Model:"
+msgstr "Modèle de l'aparelh :"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Cancel search for files"
+msgstr "Anullar la recèrca de fichèrs"
+
+#. Glossaire : fichier, pour_les
+#. Attestations : C00956 ; C07689
+#, c-format
+msgid "Change the default application for files of type \"%s\" to the selected application."
+msgstr ""
+"Modificar l'aplicacion per defaut entaus fichèrs de tipe « %s » per l'aplicacion "
+"seleccionada."
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Change the visibility of this window's statusbar"
+msgstr "Cambiar la visibilitat de la barra d'estatut de la frinèsta"
+
+#. Glossaire : dans, ordre
+#. Attestations : C06213 ; C07533
+msgid ""
+"Choose the order of information to appear in the\n"
+"detailed list view."
+msgstr ""
+"Causir l'òrdi de las informacions a paréisser dens\n"
+"l'afichatge de la lista detalhada."
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "Clear"
+msgstr "Desfaçar"
+
+#. Glossaire : vider, liste, fichier, dessous_ici
+#. Attestations : G:vider ; G:liste ; G:fichier ; G:dessous_ici
+msgid "Clear the file list below"
+msgstr "Vueitar la lista de fichèrs ací devath"
+
+#. Glossaire : dossier, du, ici
+#. Attestations : C02764 ; C03171 ; C07423
+msgid "Click here to automatically fix the folder permissions."
+msgstr "Clicar ací per corregir automaticament los dreches deu dossièr."
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "Close tab"
+msgstr "Barrar l'onglet"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Collecting files..."
+msgstr "Recuperacion deus fichèrs..."
+
+#. Glossaire : des, dossier
+#. Attestations : C03179 ; C07828
+msgid "Compact directory listing"
+msgstr "Lista compacta deus dossièrs"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Compressing files..."
+msgstr "Compression deus fichèrs..."
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "Configure Columns in the Detailed List View"
+msgstr "Configurar las colomnas dens la Lista detalhada"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Configure the Thunar file manager"
+msgstr "Configurar lo gestionari de fichèrs Thunar"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Confirm to replace files"
+msgstr "Confirmar lo remplaçament deus fichèrs"
+
+#. Glossaire : contenu
+#. Attestations : C07033
+msgid "Content:"
+msgstr "Contiengut :"
+
+#. Glossaire : dans, des, fichier
+#. Attestations : C00956 ; C07533 ; C07828
+#, c-format
+msgid "Copying files to \"%s\"..."
+msgstr "Còpia deus fichèrs dens « %s »..."
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Copying files..."
+msgstr "Còpia deus fichèrs..."
+
+#. Glossaire : fichier
+#. Attestations : C03184
+#, c-format
+msgid "Could not delete file \"%s\": %s"
+msgstr "Impossible de suprimir lo fichèr « %s » : %s"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Create Action"
+msgstr "Crear ua accion"
+
+#. Glossaire : avec, modele
+#. Attestations : C07792 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+#, c-format
+msgid "Create Document from template \"%s\""
+msgstr "Crear un document dab lo modèle « %s »"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Create File"
+msgstr "Crear un fichèr"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Create Folder"
+msgstr "Crear un dossièr"
+
+#. Glossaire : fichier, nouveau
+#. Attestations : C03184 ; C07373
+msgid "Create New File"
+msgstr "Crear un fichèr navèth"
+
+#. Glossaire : dossier, nouveau
+#. Attestations : C02764 ; C07373
+msgid "Create New Folder"
+msgstr "Crear un dossièr navèth"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Create _Folder..."
+msgstr "Crear un _dossièr..."
+
+#. Glossaire : modele, nouveau
+#. Attestations : C07373 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+msgid "Create a new document from a template"
+msgstr "Crear un document navèth a partir d’un modèle"
+
+#. Glossaire : creer, dossier, vide, dans
+#. Attestations : G:creer ; G:dossier ; G:vide ; G:dans
+msgid "Create an empty folder within the current folder"
+msgstr "Crear un dossièr vueit dens lo dossièr corrent"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Create directory"
+msgstr "Crear un dossièr"
+
+#. Glossaire : des, dossier
+#. Attestations : C03179 ; C07828
+msgid "Creating directories..."
+msgstr "Creacion deus dossièrs..."
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Creating files..."
+msgstr "Creacion deus fichèrs..."
+
+#. Glossaire : dans
+#. Attestations : C07533
+#, c-format
+msgid "Creating symbolic links in \"%s\"..."
+msgstr "Creacion de ligams simbolics dens « %s » ..."
+
+#. Glossaire : supprimer, tous, fichier, dossier
+#. Attestations : G:supprimer ; G:tous ; G:fichier ; G:dossier
+msgid "Delete all files and folders in the Trash"
+msgstr "Suprimir tots los fichèrs e dossièrs de l'escobilhièr"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Deleting files..."
+msgstr "Supression deus fichèrs..."
+
+#. Glossaire : des, dossier
+#. Attestations : C03179 ; C07828
+msgid "Detailed directory listing"
+msgstr "Lista detalhada deus dossièrs"
+
+#. Glossaire : manuel, utilisateur
+#. Attestations : C07982 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=manuel
+msgid "Display Thunar user manual"
+msgstr "Afichar lo manuau utilizator de Thunar"
+
+#. Glossaire : afficher, contenu, du, dossier, liste
+#. Attestations : G:afficher ; G:contenu ; G:du ; G:dossier ; G:liste
+msgid "Display folder content in a compact list view"
+msgstr "Afichar lo contiengut deu dossièr en lista compacta"
+
+#. Glossaire : afficher, contenu, du, dossier, liste
+#. Attestations : G:afficher ; G:contenu ; G:du ; G:dossier ; G:liste
+msgid "Display folder content in a detailed list view"
+msgstr "Afichar lo contiengut deu dossièr en lista detalhada"
+
+#. Glossaire : afficher, contenu, du, dossier, avec, icone
+#. Attestations : G:afficher ; G:contenu ; G:du ; G:dossier ; G:avec ; G:icone
+msgid "Display folder content in an icon view"
+msgstr "Afichar lo contiengut deu dossièr dab icònas"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Display recently used files"
+msgstr "Afichar los fichèrs recentament utilizats"
+
+#. Glossaire : contenu
+#. Attestations : C07033
+msgid "Display the contents of the trash can"
+msgstr "Afichar lo contiengut de l'escobilhièr"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Draw frames around thumbnails"
+msgstr "Dessenhar ua bordadura a l'entorn de las miniaturas"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "Edit Action"
+msgstr "Modificar l'accion"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "Edit Thunars Preferences"
+msgstr "Modificar las preferéncias de Thunar"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "Edit the currently selected action."
+msgstr "Modificar l'accion actualament seleccionada."
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Ejecting device"
+msgstr "Ejeccion deu periferic"
+
+#. Glossaire : vider
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=vider
+msgid "Empty Trash"
+msgstr "Vueitar l’escobilhièr"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "Enter the new name:"
+msgstr "Entrar lo navèth nom :"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+#, c-format
+msgid "Error removing file: %s"
+msgstr "Error de supression fichèr : %s"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Example for a custom action"
+msgstr "Exemple d'ua accion personalizada"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Executable Files"
+msgstr "Fichèrs executables"
+
+#. Glossaire : ajouter, nouvelle
+#. Attestations : C03100 ; C07955
+#, c-format
+msgid "Failed to add new application \"%s\""
+msgstr "Impossible d'ajustar la navèra aplicacion « %s »"
+
+#. Glossaire : ajouter, nouveau
+#. Attestations : C07373 ; C07955
+msgid "Failed to add new shortcut"
+msgstr "Impossible d'ajustar un acorchi navèth"
+
+#. Glossaire : impossible, reseau
+#. Attestations : G:impossible ; G:reseau
+msgid "Failed to browse the network"
+msgstr "Impossible de percórrer lo hialat"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "Failed to compose new email"
+msgstr "Impossible de compausar un navèth email"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+#, c-format
+msgid "Failed to create directory \"%s\": %s"
+msgstr "Impossible de crear lo dossièr « %s » : %s"
+
+#. Glossaire : fichier, vide
+#. Attestations : C03184 ; C03871
+#, c-format
+msgid "Failed to create empty file \"%s\": %s"
+msgstr "Impossible de crear lo fichèr vueit « %s » : %s"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Failed to create temporary directory"
+msgstr "Impossible de crear lo dossièr temporari"
+
+#. Glossaire : contenu
+#. Attestations : C07033
+msgid "Failed to display the contents of the trash can"
+msgstr "Impossible d'afichar lo contiengut de l'escobilhièr"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+#, c-format
+msgid "Failed to execute file \"%s\""
+msgstr "Impossible d'executar lo fichèr « %s »"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+#, c-format
+msgid "Failed to open \"%s\""
+msgstr "Impossible d'obrir « %s »"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+#, c-format
+msgid "Failed to open \"%s\": %s"
+msgstr "Impossible d'obrir « %s » : %s"
+
+#. Glossaire : dossier, ouvrir
+#. Attestations : C02764 ; C05883
+#, c-format
+msgid "Failed to open directory \"%s\""
+msgstr "Impossible d'obrir lo dossièr « %s »"
+
+#. Glossaire : fichier, ouvrir
+#. Attestations : C03184 ; C05883
+#, c-format
+msgid "Failed to open file \"%s\""
+msgstr "Impossible d'obrir lo fichèr « %s »"
+
+#. Glossaire : dossier, ouvrir
+#. Attestations : C02764 ; C05883
+msgid "Failed to open parent folder"
+msgstr "Impossible d'obrir lo dossièr parent"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Failed to open the documentation browser"
+msgstr "Impossible d'obrir lo navigador de documentacion"
+
+#. Glossaire : dossier, du, fichier, ouvrir
+#. Attestations : C00956 ; C02764 ; C05883 ; C07423
+msgid "Failed to open the file system root folder"
+msgstr "Impossible d'obrir lo dossièr raiç deu sistèma de fichèrs"
+
+#. Glossaire : dossier, ouvrir, personnel
+#. Attestations : C02764 ; C05883 ; C08411
+msgid "Failed to open the home folder"
+msgstr "Impossible d'obrir lo dossièr personau"
+
+#. Glossaire : du, fichier
+#. Attestations : C03184 ; C07423
+#, c-format
+msgid "Failed to parse the desktop file: %s"
+msgstr "Impossible d'analisar lo fichèr deu burèu : « %s »"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+#, c-format
+msgid "Failed to restore the folder \"%s\""
+msgstr "Impossible de restablir lo dossièr « %s »"
+
+#. Glossaire : enregistrer
+#. Attestations : C07946
+#, c-format
+msgid "Failed to save \"%s\"."
+msgstr "Impossible de enregistrar « %s »"
+
+#. Glossaire : enregistrer, sur_le
+#. Attestations : C02084 ; C07946
+msgid "Failed to save actions to disk."
+msgstr "Impossible de enregistrar d'accions suu disc."
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "File"
+msgstr "Fichèr"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "File Manager"
+msgstr "Gestionari de fichèrs"
+
+#. Glossaire : du, fichier
+#. Attestations : C00956 ; C07423
+msgid "File Manager Preferences"
+msgstr "Preferéncias deu gestionari de fichèrs"
+
+#. Glossaire : du, fichier
+#. Attestations : C00956 ; C07423
+msgid "File Manager Settings"
+msgstr "Paramètres deu gestionari de fichèrs"
+
+#. Glossaire : du, fichier
+#. Attestations : C03184 ; C07423
+msgid "File Name"
+msgstr "Nom deu fichèr"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "File Operation Progress"
+msgstr "Fichèr en cors de tractament"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "File System"
+msgstr "Sistèma de fichèrs"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "File Transfer"
+msgstr "Transferiment de fichèrs"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Filetype"
+msgstr "Tipe de fichèr"
+
+#. Glossaire : premiere
+#. Attestations : C04787
+msgid "First character uppercase"
+msgstr "Purmèra letra en majuscula"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Flash Fired:"
+msgstr "Utilizacion deu flash :"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Focal Length:"
+msgstr "Longor deu focus :"
+
+#. Glossaire : dossier, du
+#. Attestations : C02764 ; C07423
+msgid "Folder Permissions"
+msgstr "Permissions deu dossièr"
+
+#. Glossaire : dossier, du
+#. Attestations : C02764 ; C07423
+msgid "Folder permissions"
+msgstr "Permissions deu dossièr"
+
+#. Glossaire : libre
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=libre
+#, c-format
+msgid "Free space: %s"
+msgstr "Espaci libre : %s"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "From the back (right)"
+msgstr "A partir de dreta"
+
+#. Glossaire : general
+#. Attestations : C03230
+msgid "General"
+msgstr "Generau"
+
+#. Glossaire : au, dossier, du
+#. Attestations : C02764 ; C03272 ; C07423
+msgid "Go to the desktop folder"
+msgstr "Anar au dossièr deu burèu"
+
+#. Glossaire : au, dossier, personnel
+#. Attestations : C02764 ; C03272 ; C08411
+msgid "Go to the home folder"
+msgstr "Anar au dossièr personau"
+
+#. Glossaire : au, dossier
+#. Attestations : C02764 ; C03272
+msgid "Go to the next visited folder"
+msgstr "Anar cap au dossièr visitat seguent"
+
+#. Glossaire : au, dossier
+#. Attestations : C02764 ; C03272
+msgid "Go to the previous visited folder"
+msgstr "Anar cap au dossièr visitat precedent"
+
+#. Glossaire : au, des, dossier, modele
+#. Attestations : C00195 ; C02764 ; C03272 ; C07828
+msgid "Go to the templates folder"
+msgstr "Anar cap au dossièr deus modèles"
+
+#. Glossaire : dossier, personnel
+#. Attestations : C02764 ; C08411
+msgid "Home"
+msgstr "Dossièr personau"
+
+#. Glossaire : des, dossier
+#. Attestations : C03179 ; C07828
+msgid "Icon based directory listing"
+msgstr "Lista deus dossièrs jos la fòrma d'icònas"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Image Files"
+msgstr "Fichèrs imatge"
+
+#. Glossaire : dans, fichier
+#. Attestations : C00956 ; C07533
+msgid "Include additional files in the list of files to be renamed"
+msgstr "Inclure de fichèrs addicionals dens la lista de fichèrs de renomenar"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "Insert Date / Time"
+msgstr "Inserir la data / l'òra"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Invalid desktop file"
+msgstr "Fichèr de burèu invalid"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+#, c-format
+msgid "Invalid filename \"%s\""
+msgstr "Nom de fichèr invalid « %s »"
+
+#. Glossaire : du
+#. Attestations : C07423
+#, c-format
+msgid "Invalid regular expression, at character position %ld: %s"
+msgstr "Expression regulara invalida, a la posicion deu caractèr %ld : %s"
+
+#. Glossaire : clavier
+#. Attestations : C06853
+msgid "Keyboard _Shortcut:"
+msgstr "Acorchis de _clavèr :"
+
+#. Glossaire : clavier, deja
+#. Attestations : C06853 ; C08098
+msgid "Keyboard shortcut already in use"
+msgstr "Acorchis de clavèr dejà utilizat"
+
+#. Glossaire : derniere
+#. Attestations : C05271
+msgid "Last Active View"
+msgstr "Darrèra vista activa"
+
+#. Glossaire : derniere
+#. Attestations : C05271
+msgid "Last Modified"
+msgstr "Darrèra modificacion"
+
+#. Glossaire : derniere
+#. Attestations : C05271
+#, c-format
+msgid "Last Modified: %s"
+msgstr "Darrèra modificacion : %s"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Link Target:"
+msgstr "Cibla deu ligam :"
+
+#. Glossaire : contenu, dossier, du
+#. Attestations : C02764 ; C07033 ; C07423
+msgid "Loading folder contents..."
+msgstr "Cargament deu contiengut deu dossièr..."
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Local Files Only"
+msgstr "Fichèrs locals solament"
+
+#. Glossaire : deplacer, dans
+#. Attestations : G:deplacer ; G:dans
+msgid "Mo_ve to Trash"
+msgstr "Desplaçar dens l'_escobilhièr"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+#, c-format
+msgid "Mount and open %s (%s)"
+msgstr "Montar e obrir %s (%s)"
+
+#. Glossaire : fichier, une
+#. Attestations : C00956 ; C07967
+msgid "Move or copy files previously selected by a Cut or Copy command"
+msgstr ""
+"Desplaçar o copiar de fichèrs prealablament seleccionats per ua comanda Talhar o "
+"Copiar"
+
+#. Glossaire : dans, dossier, fichier, une
+#. Attestations : C00956 ; C02764 ; C07533 ; C07967
+msgid ""
+"Move or copy files previously selected by a Cut or Copy command into the selected "
+"folder"
+msgstr ""
+"Desplaçar o copiar de fichèrs prealablament seleccionats per ua comanda Talhar o "
+"Copiar dens lo dossièr seleccionat"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Move the currently selected action down by one row."
+msgstr "Davalar d'ua linha l'accion actualament seleccionada."
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Move the currently selected action up by one row."
+msgstr "Montar d'ua linha l'accion actualament seleccionada."
+
+#. Glossaire : des, fichier
+#. Attestations : G:des ; G:fichier
+msgid "Moving files ..."
+msgstr "Desplaçament deus fichèrs..."
+
+#. Glossaire : dans, des, fichier
+#. Attestations : C00956 ; C07533 ; C07828
+#, c-format
+msgid "Moving files into \"%s\"..."
+msgstr "Desplaçament deus fichèrs dens « %s » ..."
+
+#. Glossaire : dans, des, fichier
+#. Attestations : C00956 ; C07533 ; C07828
+msgid "Moving files into the trash..."
+msgstr "Desplaçament deus fichèrs dens l'escobilhièr..."
+
+#. Glossaire : sur_le
+#. Attestations : C02084
+#, c-format
+msgid "Name '%s' lost on the message dbus."
+msgstr "Nom « %s » perdut suu dbus de messatge."
+
+#. Glossaire : jamais
+#. Attestations : C02685
+msgid "Never"
+msgstr "Pas jamèi"
+
+#. Glossaire : fichier, nouveau, vide
+#. Attestations : C03184 ; C03871 ; C07373
+msgid "New Empty File"
+msgstr "Navèth fichèr vueit"
+
+#. Glossaire : fichier, nouveau, vide
+#. Attestations : C03184 ; C03871 ; C07373
+msgid "New Empty File..."
+msgstr "Navèth fichèr vueit..."
+
+#. Glossaire : fichier, nouveau
+#. Attestations : C03184 ; C07373
+msgid "New File"
+msgstr "Fichèr navèth"
+
+#. Glossaire : dossier, nouveau
+#. Attestations : C02764 ; C07373
+msgid "New Folder"
+msgstr "Dossièr navèth"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "New Name"
+msgstr "Nom navèth"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "New _Tab"
+msgstr "Ongle_t navèth"
+
+#. Glossaire : fenetre, nouvelle
+#. Attestations : C03100 ; C06017
+msgid "New _Window"
+msgstr "Frinèsta _navèra"
+
+#. Glossaire : dans, modele
+#. Attestations : C07533 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+#, c-format
+msgid ""
+"No templates installed in\n"
+"\"%s\""
+msgstr ""
+"Cap de modèle pas installat dens\n"
+" « %s »"
+
+#. Glossaire : normal
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=normal
+msgid "Normal Si_ze"
+msgstr "Talha _normau"
+
+#. Glossaire : faire, fichier, pour_les, voir
+#. Attestations : C00956 ; C01269 ; C07559 ; C07689
+msgid "Only show thumbnails for files smaller than:"
+msgstr "Har véder las miniaturas sonque entaus fichèrs inferiors a :"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open"
+msgstr "Obrir"
+
+#. Glossaire : autres, avec, fichier, ouvrir
+#. Attestations : C00956 ; C05287 ; C05883 ; C07792
+#, c-format
+msgid "Open <i>%s</i> and other files of type \"%s\" with:"
+msgstr "Obrir <i>%s</i>  e autes fichèrs de tipe « %s » dab :"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open Item Location"
+msgstr "Obrir l'emplaçament de l'element"
+
+#. Glossaire : ici, ouvrir
+#. Attestations : C03171 ; C05883
+msgid "Open Terminal Here"
+msgstr "Obrir un terminal ací"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+msgid "Open With"
+msgstr "Obrir dab"
+
+#. Glossaire : autre, avec, ouvrir, une
+#. Attestations : C00011 ; C05883 ; C07792 ; C07967
+msgid "Open With Other _Application..."
+msgstr "Obrir dab ua auta _aplicacion..."
+
+#. Glossaire : dossier, ouvrir
+#. Attestations : C02764 ; C05883
+msgid "Open _Parent"
+msgstr "Obrir lo dossièr _parent"
+
+#. Glossaire : fenetre, nouvelle, ouvrir, une
+#. Attestations : C03100 ; C05883 ; C06017 ; C07967
+msgid "Open a new Thunar window for the displayed location"
+msgstr "Obrir ua frinèsta navèra Thunar per l'endrech afichat"
+
+#. Glossaire : ouvrir, nouveau, pour
+#. Attestations : G:ouvrir ; G:nouveau ; G:pour
+msgid "Open a new tab for the displayed location"
+msgstr "Obrir un onglet navèth entà l'endrech afichat"
+
+#. Glossaire : dans, dossier, fenetre, nouvelle, ouvrir, une
+#. Attestations : C02764 ; C03100 ; C05883 ; C06017 ; C07533 ; C07967
+msgid "Open current folder in a new window"
+msgstr "Obrir lo dossièr corrent dens ua frinèsta navèra"
+
+#. Glossaire : dossier, ouvrir
+#. Attestations : C03179 ; C05883
+msgid "Open folders"
+msgstr "Obrir los dossièrs"
+
+#. Glossaire : avec, dans, dossier, nouveau, ouvrir, souris
+#. Attestations : C03179 ; C05883 ; C07373 ; C07533 ; C07792 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Open folders in new tabs on middle click"
+msgstr "Obrir los dossièrs dens un onglet navèth dab lo clic de la rodeta de la soritz"
+
+#. Glossaire : dans, nouveau, ouvrir
+#. Attestations : C05883 ; C07373 ; C07533
+msgid "Open in new _Tab"
+msgstr "Obrir dens un _onglet navèth"
+
+#. Glossaire : dans, fenetre, nouvelle, ouvrir, une
+#. Attestations : C03100 ; C05883 ; C06017 ; C07533 ; C07967
+msgid "Open in new _Window"
+msgstr "Obrir dens ua _frinèsta navèra"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open the bulk rename dialog"
+msgstr "Obrir la bóstia de dialòg de cambiament de nom en massa"
+
+#. Glossaire : dossier, du, ouvrir
+#. Attestations : C02764 ; C05883 ; C07423
+msgid "Open the desktop folder"
+msgstr "Obrir lo dossièr deu burèu"
+
+#. Glossaire : dossier, ouvrir, personnel
+#. Attestations : C02764 ; C05883 ; C08411
+msgid "Open the home folder"
+msgstr "Obrir lo dossièr personau"
+
+#. Glossaire : dossier, ouvrir
+#. Attestations : C02764 ; C05883
+msgid "Open the parent folder"
+msgstr "Obrir lo dossièr parent"
+
+#. Glossaire : autre
+#. Attestations : C00011
+msgid "Other Application..."
+msgstr "Auta aplicacion..."
+
+#. Glossaire : autre
+#. Attestations : C05702
+msgid "Other Applications"
+msgstr "Autas aplicacions"
+
+#. Glossaire : autres
+#. Attestations : C05287
+msgid "Others"
+msgstr "Autes"
+
+#. Glossaire : personnel
+#. Attestations : C08411
+msgid "PDA"
+msgstr "Assistent personau"
+
+#. Glossaire : coller, contenu, du
+#. Attestations : G:coller ; G:contenu ; G:du
+msgid "Paste the clipboard"
+msgstr "Pegar lo contiengut deu quichapapièrs"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Quit a running Thunar instance"
+msgstr "Quitar ua instància de Thunar en cors d'execucion"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Reload the current folder"
+msgstr "Recargar lo dossièr corrent"
+
+#. Glossaire : supprimer, tous, fichier, dossier
+#. Attestations : G:supprimer ; G:tous ; G:fichier ; G:dossier
+msgid "Remove all files and folders from the Trash?"
+msgstr "Suprimir tots los fichèrs e dossièrs de l'escobilhièr ?"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Remove the selected files from Recent"
+msgstr "Suprimir los fichèrs seleccionats de la lista deus Recents"
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "Rena_me All"
+msgstr "Reno_menar tots"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Rename Multiple Files"
+msgstr "Renomenar mantun fichèr"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "Restoring files..."
+msgstr "Restabliment deus fichèrs..."
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "Run in _terminal"
+msgstr "Executar dens un _terminal"
+
+#. Glossaire : chercher
+#. Attestations : C07498
+msgid "Search"
+msgstr "Cercar"
+
+#. Glossaire : fichier, tous
+#. Attestations : C00956 ; C06780
+msgid "Select _all Files"
+msgstr "Seleccionar _tots los fichèrs"
+
+#. Glossaire : selectionner, tous, fichier, fenetre
+#. Attestations : G:selectionner ; G:tous ; G:fichier ; G:fenetre
+msgid "Select all files in this window"
+msgstr "Seleccionar tots los fichèrs de la frinèsta"
+
+#. Glossaire : choisir, une, application
+#. Attestations : G:choisir ; G:une ; G:application
+msgid "Select an Application"
+msgstr "Causir ua aplicacion"
+
+#. Glossaire : une
+#. Attestations : C07967
+#, c-format
+msgid "Select an Icon for \"%s\""
+msgstr "Seleccionar ua icòna per « %s »"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Select files to rename"
+msgstr "Seleccionar los fichèrs de renomenar"
+
+#. Glossaire : selectionner, option, pour, executer, dans, une, fenetre
+#. Attestations : G:selectionner ; G:option ; G:pour ; G:executer ; G:dans ; G:une ;
+#. G:fenetre
+msgid "Select this option to run the command in a terminal window."
+msgstr ""
+"Seleccionar aquera opcion entà executar la comanda dens ua frinèsta de terminal."
+
+#. Glossaire : envoyer
+#. Attestations : G:envoyer
+#, c-format
+msgid "Send \"%s\" as compressed archive?"
+msgstr "Enviar « %s » en tant qu'archiu compressat ?"
+
+#. Glossaire : envoyer
+#. Attestations : C07376
+msgid "Send _directly"
+msgstr "Enviar _dirèctament"
+
+#. Glossaire : envoyer
+#. Attestations : C07376
+msgid "Send as _archive"
+msgstr "Enviar en tant qu'_archiu"
+
+#. Glossaire : envoyer
+#. Attestations : C07376
+msgid "Send com_pressed"
+msgstr "Enviar com_pressat"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "Send to _Desktop"
+msgstr "Enviar au _burèu"
+
+#. Glossaire : premier
+#. Attestations : C06406
+msgid "Set _Foreground"
+msgstr "Definir _purmèr plan"
+
+#. Glossaire : comme, fond
+#. Attestations : C06366 ; C07415
+msgid "Set as wallpaper"
+msgstr "Definir com hons d'ecran"
+
+#. Glossaire : dans, du, fichier
+#. Attestations : C00956 ; C07423 ; C07533
+msgid "Setup custom actions that will appear in the file managers context menus"
+msgstr ""
+"Configurar las accions personalizadas qu'apareisseràn dens los menús contextuals deu "
+"gestionari de fichèrs"
+
+#. Glossaire : des, panneau
+#. Attestations : C07828 ; C08268
+msgid "Shortcuts Pane"
+msgstr "Panèu deus acorchis"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "Show Icon _Emblems"
+msgstr "Afichar l’icòna deus _emblèmas"
+
+#. Glossaire : faire, fichier, voir
+#. Attestations : C00956 ; C01269 ; C07559
+msgid "Show _Hidden Files"
+msgstr "Har véder los fichèrs a_magats"
+
+#. Glossaire : dossier, fichier
+#. Attestations : C00956 ; C03179
+msgid "Show action to permanently delete files and folders"
+msgstr "Afichar la foncion per suprimir definitivament los fichèrs e dossièrs"
+
+#. Glossaire : au, des, fichier
+#. Attestations : C00956 ; C03272 ; C07828
+msgid "Show file size in binary format"
+msgstr "Afichar la talha deus fichèrs au format binari."
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Show filetype"
+msgstr "Afichar lo tipe de fichèr"
+
+#. Glossaire : derniere
+#. Attestations : C05191
+msgid "Show last modified"
+msgstr "Afichar las darrèras modificacions"
+
+#. Glossaire : afficher, contenu, avec, une, taille, normal
+#. Attestations : G:afficher ; G:contenu ; G:avec ; G:une ; G:taille ; G:normal
+msgid "Show the contents at the normal size"
+msgstr "Afichar lo contiengut dab ua talha normau"
+
+#. Glossaire : avec, contenu, moins
+#. Attestations : C06550 ; C07033 ; C07792
+msgid "Show the contents in less detail"
+msgstr "Afichar lo contiengut dab mensh de detalhs"
+
+#. Glossaire : avec, contenu, plus
+#. Attestations : C03180 ; C07033 ; C07792
+msgid "Show the contents in more detail"
+msgstr "Afichar lo contiengut dab mei de detalhs"
+
+#. Glossaire : faire, voir
+#. Attestations : C01269 ; C07559
+msgid "Show thumbnails:"
+msgstr "Har véder las miniaturas :"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Side Pane"
+msgstr "Panèu lateral"
+
+#. Glossaire : logiciel
+#. Attestations : C04225
+msgid "Software:"
+msgstr "Logiciaus :"
+
+#. Glossaire : dossier, fichier
+#. Attestations : C00956 ; C03179
+msgid "Sort _folders before files"
+msgstr "Triar los _dossièrs abans los fichèrs"
+
+#. Glossaire : ordre
+#. Attestations : C06213
+msgid "Sort items in ascending order"
+msgstr "Triar los elements per òrdi creissent"
+
+#. Glossaire : ordre
+#. Attestations : C06213
+msgid "Sort items in descending order"
+msgstr "Triar los elements per òrdi descreissent"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Specify a location to open"
+msgstr "Especificar un emplaçament d'obrir"
+
+#. Glossaire : modele
+#. Attestations : C00195
+msgid "T_emplates"
+msgstr "Modè_les"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Text _Format:"
+msgstr "_Format deu tèxte :"
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "The Thunar development team. All rights reserved."
+msgstr "L'equipa de desvolopament de Thunar. Tots los dreches reservats."
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "The URL to the documentation of the renamer"
+msgstr "L'URL de la documentacion deu renomenador"
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "The generic name of the entry, for example \"Web Browser\" in case of Firefox."
+msgstr ""
+"Lo nom generic de l'entrada, per exemple « Navigador Web » dens lo cas de Firefox."
+
+#. Glossaire : pour_le
+#. Attestations : C07050
+msgid "The icon size for the path entry"
+msgstr "La talha de l'icòna entau camin d'accès"
+
+#. Glossaire : clavier
+#. Attestations : C06853
+msgid "The keyboard shortcut for the action."
+msgstr "L’acorchi de clavèr per l'action."
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "The name of the action that will be displayed in the context menu."
+msgstr "Lo nom de l'accion qu'apareisserà dens lo menú contextual."
+
+#. Glossaire : avec
+#. Attestations : C07792
+msgid "The program to execute, possibly with arguments."
+msgstr "Lo programa d'executar, dab sos arguments eventuals."
+
+#. Glossaire : du, utilisateur
+#. Attestations : C07423 ; C07982
+msgid "The user visible name of the renamer"
+msgstr "Lo nom d'utilizator visible deu renomenador"
+
+#. Glossaire : dossier, pour_le, travail
+#. Attestations : C02764 ; C07050 ; C08020
+msgid "The working directory for the program."
+msgstr "Lo dossièr de tribalh entau programa."
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Thunar File Manager"
+msgstr "Gestionari de Fichèrs Thunar"
+
+#. Glossaire : aujourdhui
+#. Attestations : C06779
+msgid "Today"
+msgstr "Uei"
+
+#. Glossaire : aujourdhui
+#. Attestations : C06779
+msgid "Today / Custom"
+msgstr "Uei / Personalizat"
+
+#. Glossaire : aujourdhui
+#. Attestations : C06779
+#, c-format
+msgid "Today at %X"
+msgstr "Uei a %X"
+
+#. Glossaire : dans, faire, fenetre, fichier, voir
+#. Attestations : C00956 ; C01269 ; C06017 ; C07533 ; C07559
+msgid "Toggles the display of hidden files in the current window"
+msgstr "Har véder/amagar los fichèrs amagats dens la frinèsta correnta"
+
+#. Glossaire : des, du, panneau
+#. Attestations : C07423 ; C07828 ; C08268
+msgid "Toggles the visibility of the shortcuts pane"
+msgstr "Cambiar la visibilitat deu panèu deus acorchis"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Toggles the visibility of the tree pane"
+msgstr "Cambiar la visibilitat deu panèu d'arborescéncia"
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid ""
+"Tooltip for the entry, for example \"View sites on the Internet\" in case of Firefox. "
+"Should not be redundant with the name or the description."
+msgstr ""
+"La bulla d'ajuda de l'entrda, per exemple « Visualizar los sites sus Internet » dens "
+"lo cas de Firefox. Lo tèxte deu evitar de repetir lo nom o la descripcion."
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Transfer files in parallel:"
+msgstr "Transferir los fichèrs en parallèl :"
+
+#. Glossaire : vide
+#. Attestations : C03871
+msgid "Trash is empty"
+msgstr "Escobilhièr vueit"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Tree Pane"
+msgstr "Panèu d'arborescéncia"
+
+#. Glossaire : fichier, tous
+#. Attestations : C00956 ; C06780
+msgid "U_nselect all Files"
+msgstr "_Deseleccionar tots los fichèrs"
+
+#. Glossaire : derniere
+#. Attestations : C05271
+msgid "Undo the latest operation"
+msgstr "Desfar la darrèra operacion"
+
+#. Glossaire : inconnu
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+msgid "Unknown"
+msgstr "Desconeishut"
+
+#. Glossaire : inconnu
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+#, c-format
+msgid "Unknown closing element <%s>"
+msgstr "Element de tampadura <%s> desconeishut"
+
+#. Glossaire : du, fichier, inconnu
+#. Attestations : C03184 ; C07423 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+msgid "Unknown file owner"
+msgstr "Proprietari deu fichèr desconeishut"
+
+#. Glossaire : inconnu, utilisateur
+#. Attestations : C07982 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+#, c-format
+msgid "Unknown user \"%s\""
+msgstr "Utilizator desconeishut « %s »"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Unmounting device"
+msgstr "Desmontatge deu periferic"
+
+#. Glossaire : tous, fichier, fenetre
+#. Attestations : G:tous ; G:fichier ; G:fenetre
+msgid "Unselect all files in this window"
+msgstr "Deseleccionar tots los fichèrs de la frinèsta"
+
+#. Glossaire : sans
+#. Attestations : C01077
+msgid "Untitled document"
+msgstr "Document shens nom"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Use a _custom command:"
+msgstr "Utilizar ua _comanda personalizada :"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid ""
+"Use a custom command for an application that is not available from the above "
+"application list."
+msgstr "Utilizar ua comanda personalizada per ua aplicacion absenta de la lista çaisús"
+
+#. Glossaire : utiliser, pour, type, fichier
+#. Attestations : G:utiliser ; G:pour ; G:type ; G:fichier
+msgid "Use as _default for this kind of file"
+msgstr "Utilizar per _defaut entà aqueth tipe de fichèr"
+
+#. Glossaire : actuel, dossier
+#. Attestations : C00847 ; C02764
+msgid "Use current folder icon"
+msgstr "Utilizar l’icòna de dossièr actuau"
+
+#. Glossaire : fichier, video
+#. Attestations : C00956 ; C03409
+msgid "Video Files"
+msgstr "Fichèrs video"
+
+#. Glossaire : dossier, nouveau, voir
+#. Attestations : C02764 ; C07373 ; C07559
+msgid "View _new folders using:"
+msgstr "Véder un _navèth dossièr en utilizant :"
+
+#. Glossaire : afficher, proprietes, du, fichier
+#. Attestations : G:afficher ; G:proprietes ; G:du ; G:fichier
+msgid "View the properties of the selected file"
+msgstr "Afichar las proprietats deu fichèr seleccionat"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Window"
+msgstr "Frinèsta"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Window Icon"
+msgstr "Icòna frinèsta"
+
+#. Glossaire : dossier, travail
+#. Attestations : C02764 ; C08020
+msgid "Working Directory:"
+msgstr "Dossièr de tribalh :"
+
+#. Glossaire : donnees, sur_le
+#. Attestations : C02084 ; C04120
+msgid "Writing data to device"
+msgstr "Escritura de las dadas suu periferic"
+
+#. Glossaire : hier
+#. Attestations : C02028
+msgid "Yesterday"
+msgstr "Ger"
+
+#. Glossaire : hier
+#. Attestations : C02028
+#, c-format
+msgid "Yesterday at %X"
+msgstr "Ger a %X"
+
+#. Glossaire : ajouter, aux
+#. Attestations : C03720 ; C07955
+msgid "_Add Bookmark"
+msgstr "_Ajustar aus marcapaginas"
+
+#. Glossaire : ajouter, fichier
+#. Attestations : C00956 ; C07955
+msgid "_Add Files..."
+msgstr "_Ajustar de fichèrs..."
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "_Audio Files"
+msgstr "Fichèrs _àudio"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "_Close"
+msgstr "_Barrar"
+
+#. Glossaire : fermer, fenetre
+#. Attestations : G:fermer ; G:fenetre
+msgid "_Close Window"
+msgstr "_Barrar la frinèsta"
+
+#. Glossaire : ici
+#. Attestations : C03171
+msgid "_Copy here"
+msgstr "_Copiar ací"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "_Edit Launcher"
+msgstr "_Modificar l'aviador"
+
+#. Glossaire : fichier, vide
+#. Attestations : C03184 ; C03871
+msgid "_Empty File"
+msgstr "_Fichèr vueit"
+
+#. Glossaire : vider
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=vider
+msgid "_Empty Trash"
+msgstr "_Vueitar l'escobilhièr"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "_File"
+msgstr "_Fichèr"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "_File Pattern:"
+msgstr "_Motiu deus fichèrs :"
+
+#. Glossaire : dossier, personnel
+#. Attestations : C02764 ; C08411
+msgid "_Home"
+msgstr "_Dossièr personau"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "_Image Files"
+msgstr "Fichèrs _imatge"
+
+#. Glossaire : ici
+#. Attestations : C03171
+msgid "_Link here"
+msgstr "_Ligar ací"
+
+#. Glossaire : verrouiller
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=verrouiller
+msgid "_Lock"
+msgstr "_Varrolhar"
+
+#. Glossaire : ici
+#. Attestations : C03171
+msgid "_Move here"
+msgstr "_Desplaçar ací"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "_Number Format:"
+msgstr "Format deus _nombres :"
+
+#. Glossaire : accord
+#. Attestations : C01955
+msgid "_OK"
+msgstr "_D'acòrd"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "_Open"
+msgstr "_Obrir"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "_Open Location..."
+msgstr "_Obrir l'emplaçament ..."
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+#, c-format
+msgid "_Open With \"%s\""
+msgstr "_Obrir dab « %s »"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+msgid "_Open With Default Applications"
+msgstr "_Obrir dab las aplicacions per defaut"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+msgid "_Open With:"
+msgstr "_Obrir dab :"
+
+#. Glossaire : autres, fichier
+#. Attestations : C00956 ; C05287
+msgid "_Other Files"
+msgstr "Autes _fichèrs"
+
+#. Glossaire : dans, dossier
+#. Attestations : C02764 ; C07533
+msgid "_Paste Into Folder"
+msgstr "_Pegar dens lo dossièr"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "_Remember view settings for each folder"
+msgstr "_Memorizar los reglatges d’afichatge per cada dossièr"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "_Remove from Recent"
+msgstr "_Suprimir deus recents"
+
+#. Glossaire : reinitialiser
+#. Attestations : C07477
+msgid "_Reset"
+msgstr "_Tornar inicializar"
+
+#. Glossaire : voir
+#. Attestations : C07559
+msgid "_Restore and Show"
+msgstr "_Restaurar e véder"
+
+#. Glossaire : fichier, voir
+#. Attestations : C03184 ; C07559
+msgid "_Restore and show the file(s)"
+msgstr "_Restaurar e véder lo(s) fichèr(s)"
+
+#. Glossaire : chercher, fichier
+#. Attestations : C00956 ; C07498
+msgid "_Search for Files..."
+msgstr "_Cercar de fichèrs..."
+
+#. Glossaire : envoyer
+#. Attestations : C07376
+msgid "_Send To"
+msgstr "_Enviar cap a"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "_Side Pane"
+msgstr "_Panèu lateral"
+
+#. Glossaire : fichier
+#. Attestations : G:fichier
+msgid "_Skip This File"
+msgstr "_Ignorar lo fichèr"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "_Text Files"
+msgstr "Fichèrs _tèxte"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "_Text beside icons"
+msgstr "_Tèxte au costat de las icònas"
+
+#. Glossaire : fichier, video
+#. Attestations : C00956 ; C03409
+msgid "_Video Files"
+msgstr "Fichèrs _video"
+
+#. Glossaire : dossier, fichier
+#. Attestations : C00956 ; C03179
+msgid "bulk;renamer;renaming;thunar;files;folders;directory;directories;"
+msgstr "massa;grop;renomenar;renomatge;thunar;fichèrs;dossièrs;dossièrs;dossièrs;"
+
+#. Glossaire : fichier, premier, sans
+#. Attestations : C01077 ; C03184 ; C06406
+msgid "the first selected filename (without path)"
+msgstr "lo purmèr nom de fichèr seleccionat (shens lo camin)"
+
+#. Glossaire : des, fichier, sans
+#. Attestations : C00956 ; C01077 ; C07828
+msgid "the selected filenames (without paths)"
+msgstr "los noms deus fichèrs seleccionats (shens los camins)"
+
+#. Glossaire : fichier, panneau
+#. Attestations : C03184 ; C08268
+msgid ""
+"thunar;settings;preferences;configure;thumbnails;file size;date format;shortcuts "
+"pane;tree view;tabs;"
+msgstr ""
+"thunar;paramètres;reglatges;preferéncias;configurar;vinhetas;miniaturas;talha de "
+"fichèr;format de data;acorchi;panèu;arbre;onglets;"
+
+#. Glossaire : inconnu
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=inconnu
+msgid "unknown"
+msgstr "Desconeishut"
+
+#. Glossaire : avec, fichier, suivant
+#. Attestations : G:avec ; G:fichier ; G:suivant
+msgid "with the following file?"
+msgstr "dab lo fichèr seguent ?"
+
+#. Glossaire : avec, dossier, suivant
+#. Attestations : G:avec ; G:dossier ; G:suivant
+msgid "with the following folder?"
+msgstr "dab lo dossièr seguent ?"

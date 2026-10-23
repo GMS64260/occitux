@@ -1,0 +1,391 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux ristretto\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (http://app.transifex.com/xfce/xfce-apps/language/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Quentin PAGÈS, 2022\n"
+
+#. Glossaire : couleur, du, texte, element, actif
+#. Attestations : G:couleur ; G:du ; G:texte ; G:element ; G:actif
+msgid "Active item text color"
+msgstr "Color deu tèxte de l'element actiu"
+
+#. Glossaire : fichier, tous
+#. Attestations : C00956 ; C06780
+msgid "All Files"
+msgstr "Tots los fichèrs"
+
+#. Glossaire : supprimer, image, du, disque
+#. Attestations : G:supprimer ; G:image ; G:du ; G:disque
+#, c-format
+msgid "Are you sure you want to delete image '%s' from disk?"
+msgstr "Suprimir l'imatge « %s » deu disc ?"
+
+#. Glossaire : mettre, image, dans
+#. Attestations : G:mettre ; G:image ; G:dans
+#, c-format
+msgid "Are you sure you want to send image '%s' to trash?"
+msgstr "Méter l'imatge « %s » dens l'escobilhièr ?"
+
+#. Glossaire : fond
+#. Attestations : C07415
+msgid "Choose 'set wallpaper' method"
+msgstr "Causir lo metòde per 'Utilizar en tant que hons d'ecran '"
+
+#. Glossaire : donnees, effacer, personnel
+#. Attestations : C04120 ; C06510 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "Clear private data"
+msgstr "Desfaçar las dadas personaus"
+
+#. Glossaire : fermer, image
+#. Attestations : G:fermer ; G:image
+msgid "Close this image"
+msgstr "Barrar l'imatge"
+
+#. Glossaire : enregistrer, fichier
+#. Attestations : C03184 ; C07946
+msgid "Could not save file"
+msgstr "Impossible de enregistrar lo fichèr"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Cursor item text color"
+msgstr "Color deu tèxte de l'element deu cursor"
+
+#. Glossaire : supprimer, image, du, disque
+#. Attestations : G:supprimer ; G:image ; G:du ; G:disque
+msgid "Delete this image from disk"
+msgstr "Suprimir l'imatge deu disc"
+
+#. Glossaire : manuel
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=manuel
+msgid "Display ristretto user manual"
+msgstr "Afichar lo manuau de ristretto"
+
+#. Glossaire : non, retour, afficher, message
+#. Attestations : G:non ; G:retour ; G:afficher ; G:message
+msgid "Do _not show this message again"
+msgstr "Non pas tornar afichar aqueth _messatge"
+
+#. Glossaire : avec, modifier
+#. Attestations : C07341 ; C07792
+msgid "Edit with"
+msgstr "Modificar dab"
+
+#. Glossaire : vide
+#. Attestations : C03871
+msgid "Empty"
+msgstr "Vueit"
+
+#. Glossaire : premier
+#. Attestations : C06406
+msgid "F_irst"
+msgstr "Pur_mèr"
+
+#. Glossaire : premier
+#. Attestations : C06406
+msgid "First image"
+msgstr "Purmèr imatge"
+
+#. Glossaire : general
+#. Attestations : C03230
+msgid "General"
+msgstr "Generau"
+
+#. Glossaire : modele
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+msgid "Icon Bar Model"
+msgstr "Modèle de barra d'icòna"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Image Viewer Preferences"
+msgstr "Preferéncias deu visionador d’imatges"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Invert zoom direction"
+msgstr "Inversar la direccion deu zoom"
+
+#. Glossaire : grand
+#. Attestations : C04304
+msgid "Large"
+msgstr "Gran"
+
+#. Glossaire : grand, plus
+#. Attestations : C03180 ; C04304
+msgid "Larger"
+msgstr "Mei gran"
+
+#. Glossaire : derniere, heure
+#. Attestations : G:derniere ; G:heure ; C04338 ; C05191 ; C06599
+msgid "Last Four Hours"
+msgstr "Las quate darrèras òras"
+
+#. Glossaire : derniere, heure
+#. Attestations : C05271 ; C08080
+msgid "Last Hour"
+msgstr "La darrèra òra"
+
+#. Glossaire : derniere, heure
+#. Attestations : G:derniere ; G:heure ; C05784 ; C05191 ; C06599
+msgid "Last Two Hours"
+msgstr "Las duas darrèras òras"
+
+#. Glossaire : derriere
+#. Attestations : C07790
+msgid "Last image"
+msgstr "Darrèr imatge"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Limit rendering quality"
+msgstr "Limitar la qualitat deu rendut"
+
+#. Glossaire : fenetre, ouvrir
+#. Attestations : C06017 ; C06047
+msgid "Maximize window on startup when opening an image"
+msgstr "Maximizar la frinèsta a la obertura d'un imatge"
+
+#. Glossaire : modele
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+msgid "Model for the icon bar"
+msgstr "Modèle per la barra d'icònas"
+
+#. Glossaire : taille, normal
+#. Attestations : G:taille ; G:normal
+msgid "Normal"
+msgstr "Talha normau"
+
+#. Glossaire : autres, avec, du, fichier, ouvrir
+#. Attestations : C00956 ; C05287 ; C05883 ; C07423 ; C07792
+#, c-format
+msgid "Open %s and other files of type %s with:"
+msgstr "Obrir %s e los autes fichèrs deu tipe %s dab :"
+
+#. Glossaire : autre, avec, ouvrir, une
+#. Attestations : C00011 ; C05883 ; C07792 ; C07967
+msgid "Open With Other _Application..."
+msgstr "Obrir dab ua auta _aplicacion..."
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open an image"
+msgstr "Obrir un imatge"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open image"
+msgstr "Obrir un imatge"
+
+#. Glossaire : autre
+#. Attestations : C05702
+msgid "Other Applications"
+msgstr "Autas aplicacions"
+
+#. Glossaire : mettre
+#. Attestations : C07049
+msgid "Pause slideshow"
+msgstr "Méter lo diaporama en pausa"
+
+#. Glossaire : ouvrir, pour, selectionner, image
+#. Attestations : G:ouvrir ; G:pour ; G:selectionner ; G:image
+msgid "Press open to select an image"
+msgstr "Obrir entà seleccionar un imatge"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Right"
+msgstr "Dreta"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Rotate _Right"
+msgstr "Rotacion cap a _dreta"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Save a copy of the image"
+msgstr "Enregistrar ua còpia de l'imatge"
+
+#. Glossaire : enregistrer, une
+#. Attestations : C07946 ; C07967
+msgid "Save copy"
+msgstr "Enregistrar ua còpia"
+
+#. Glossaire : souris
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Scroll wheel"
+msgstr "Rodeta de la soritz"
+
+#. Glossaire : comme, fond
+#. Attestations : C06366 ; C07415
+msgid "Set as _Wallpaper..."
+msgstr "_Utilizar com hons d'ecran ..."
+
+#. Glossaire : comme, fond
+#. Attestations : C06366 ; C07415
+msgid "Set as wallpaper"
+msgstr "Utilizar com hons d'ecran "
+
+#. Glossaire : du, fichier
+#. Attestations : C03184 ; C07423
+msgid "Show file properties"
+msgstr "Afichar las proprietats deu fichèr"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Show settings dialog"
+msgstr "Afichar la frinèsta de las preferéncias"
+
+#. Glossaire : petit
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=petit
+msgid "Small"
+msgstr "Petit"
+
+#. Glossaire : petit, plus
+#. Attestations : C03180 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=petit
+msgid "Smaller"
+msgstr "Mei petit"
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "Time range to clear:"
+msgstr "Periòde de temps a desfaçar : "
+
+#. Glossaire : aujourdhui
+#. Attestations : C06779
+msgid "Today"
+msgstr "Uei"
+
+#. Glossaire : haut
+#. Attestations : C07494
+msgid "Top"
+msgstr "Haut"
+
+#. Glossaire : utiliser, pour, type, fichier
+#. Attestations : G:utiliser ; G:pour ; G:type ; G:fichier
+msgid "Use as _default for this kind of file"
+msgstr "Utilizar per _defaut entà aqueth tipe de fichèr"
+
+#. Glossaire : grand, tres
+#. Attestations : C02679 ; C04304
+msgid "Very Large"
+msgstr "Hòrt gran"
+
+#. Glossaire : petit, tres
+#. Attestations : C02679 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=petit
+msgid "Very Small"
+msgstr "Hòrt petit"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "Wrap around images"
+msgstr "Enrodar a l'entorn deus imatges"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "Zoom _Fit"
+msgstr "Zoom au _melhor"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Zoom to fit window"
+msgstr "Zoomer per ajustar a la frinèsta"
+
+#. Glossaire : donnees, personnel
+#. Attestations : C04120 ; C06510
+msgid "_Clear private data..."
+msgstr "_Netejar las dadas personaus..."
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "_Close"
+msgstr "_Barrar"
+
+#. Glossaire : contenu
+#. Attestations : C07033
+msgid "_Contents"
+msgstr "_Contiengut"
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "_Delete"
+msgstr "_Desfaçar"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "_Edit"
+msgstr "_Modificar"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "_File"
+msgstr "_Fichèr"
+
+#. Glossaire : derriere
+#. Attestations : C07790
+msgid "_Last"
+msgstr "_Darrèr"
+
+#. Glossaire : normal
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=normal
+msgid "_Normal Size"
+msgstr "_Talha normau"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "_Open"
+msgstr "_Obrir"
+
+#. Glossaire : avec, ouvrir
+#. Attestations : C05883 ; C07792
+msgid "_Open with"
+msgstr "_Obrir dab"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "_Open..."
+msgstr "_Obrir..."
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "_Save copy..."
+msgstr "_Enregistrar ua còpia..."

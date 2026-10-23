@@ -1,0 +1,1064 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux xfce4-panel\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (https://www.transifex.com/xfce/teams/16840/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Quentin PAGÈS, 2023\n"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "%1 o'clock"
+msgstr "%1 òra"
+
+#. Glossaire : heure
+#. Attestations : C06599
+msgid "24-_hour clock"
+msgstr "Relòtge 24 _òras"
+
+#. Glossaire : general
+#. Attestations : C03230
+msgid "<b>General</b>"
+msgstr "<b>Generau</b>"
+
+#. Glossaire : ajouter, une
+#. Attestations : C07955 ; C07967
+msgid "Add Appli_cation"
+msgstr "_Ajustar ua aplicacion"
+
+#. Glossaire : ajouter
+#. Attestations : C07955
+msgid "Add New Item"
+msgstr "Ajustar un element"
+
+#. Glossaire : ajouter, nouveau
+#. Attestations : C05885 ; C07955
+msgid "Add New Items"
+msgstr "Ajustar d'elements navèths"
+
+#. Glossaire : ajouter, travail
+#. Attestations : C07955 ; C08020
+msgid "Add Workspace"
+msgstr "Ajustar un espaci de tribalh"
+
+#. Glossaire : ajouter, nouveau
+#. Attestations : C05885 ; C07955
+msgid "Add _New Items..."
+msgstr "Ajustar d'elements _navèths ..."
+
+#. Glossaire : ajouter, nouveau, vide
+#. Attestations : C03871 ; C07373 ; C07955
+msgid "Add a new empty item"
+msgstr "Ajustar un navèth element vueit"
+
+#. Glossaire : ajouter, nouveau
+#. Attestations : C07373 ; C07955
+msgid "Add a new hyperlink"
+msgstr "Ajustar un navèth iperligam"
+
+#. Glossaire : ajouter, nouveau, panneau
+#. Attestations : C07373 ; C07955 ; C08268
+msgid "Add a new panel"
+msgstr "Ajustar un navèth panèu"
+
+#. Glossaire : ajouter, au, nouveau, panneau
+#. Attestations : C03272 ; C07373 ; C07955 ; C08268
+msgid "Add a new plugin to the panel"
+msgstr "Ajustar un empeuton navèth au panèu"
+
+#. Glossaire : ajouter, au, nouveau, panneau
+#. Attestations : C03272 ; C07373 ; C07955 ; C08268
+msgid "Add new item to this panel"
+msgstr "Ajustar un element navèth au panèu"
+
+#. Glossaire : midi
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=midi
+msgid "Afternoon"
+msgstr "Aprèp mieidia"
+
+#. Glossaire : midi
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=midi
+msgid "Almost noon"
+msgstr "Gaireben mieidia"
+
+#. Glossaire : supprimer, liste, des, element
+#. Attestations : G:supprimer ; G:liste ; G:des ; G:element
+msgid "Are you sure you want to clear the list of known items?"
+msgstr "Suprimir la lista deus elements coneguts ?"
+
+#. Glossaire : fermer_session
+#. Attestations : G:fermer_session
+msgid "Are you sure you want to log out?"
+msgstr "Barrar la session ?"
+
+#. Glossaire : redemarrer
+#. Attestations : G:redemarrer
+msgid "Are you sure you want to restart?"
+msgstr "Tornar aviar ?"
+
+#. Glossaire : eteindre
+#. Attestations : G:eteindre
+msgid "Are you sure you want to shut down?"
+msgstr "Estupar ?"
+
+#. Glossaire : element, une, ligne
+#. Attestations : G:element ; G:une ; G:ligne
+msgid "Arrange _items in a single row"
+msgstr "Arrengar los _elements en ua sola linha"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Au_tomatically hide the panel:"
+msgstr "Amagar lo panèu au_tomaticament :"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "Binary time"
+msgstr "Òra binària"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Button _title:"
+msgstr "_Títol deu boton :"
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "C_lear Known Items"
+msgstr "De_sfaçar los elements coneguts"
+
+#. Glossaire : calendrier
+#. Attestations : C06538
+msgid "Calendar"
+msgstr "Calendari"
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "Clear"
+msgstr "Desfaçar"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Clock Options"
+msgstr "Opcions deu relòtge"
+
+#. Glossaire : fenetre, fermer
+#. Attestations : C06017 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "Close Window"
+msgstr "Barrar la frinèsta"
+
+#. Glossaire : creer, ouvrir
+#. Attestations : G:creer ; G:ouvrir
+msgid "Create & _Open"
+msgstr "Crear & _obrir"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Create Folder..."
+msgstr "Crear un dossièr…"
+
+#. Glossaire : panneau, sur_le
+#. Attestations : C02084 ; C08268
+msgid "Create Launcher on the panel"
+msgstr "Crear un aviador suu panèu"
+
+#. Glossaire : dossier, nouveau
+#. Attestations : C02764 ; C07373
+msgid "Create New Folder"
+msgstr "Crear un dossièr navèth"
+
+#. Glossaire : nouveau, texte
+#. Attestations : C07373 ; C08058
+msgid "Create New Text Document"
+msgstr "Crear document de tèxte navèth"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Customize the panel"
+msgstr "Personalizar lo panèu"
+
+#. Glossaire : au, fenetre
+#. Attestations : C03272 ; C06017
+msgid "D_raw window frame when hovering a button"
+msgstr "A_fichar lo quadre de la frinèsta au susvòl d'un boton"
+
+#. Glossaire : ensuite, heure
+#. Attestations : C03567 ; C08080
+msgid "Date, then time"
+msgstr "Data, puish òra"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Directory Menu"
+msgstr "Menú de dossièr"
+
+#. Glossaire : mettre
+#. Attestations : G:mettre
+msgid "Do you want to suspend to RAM?"
+msgstr "Méter en velha en memòria viva ?"
+
+#. Glossaire : mettre, sur_le, disque
+#. Attestations : G:mettre ; G:sur_le ; G:disque
+msgid "Do you want to suspend to disk?"
+msgstr "Méter en velha suu disc ?"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "Early morning"
+msgstr "D'òra lo matin"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "Ed_it Menu"
+msgstr "Mo_dificar lo menú"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "Edit the currently selected item"
+msgstr "Modificar l'element actualament seleccionat"
+
+#. Glossaire : saisir, mot, recherche, ici
+#. Attestations : G:saisir ; G:mot ; G:recherche ; G:ici
+msgid "Enter search phrase here"
+msgstr "Picar los mots de recèrca ací"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "Enter the new name:"
+msgstr "Entrar lo navèth nom :"
+
+#. Glossaire : du
+#. Attestations : C07423
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Impossible d'aquerir la seleccion deu gestionari per l'ecran %d"
+
+#. Glossaire : ajouter, dans, panneau
+#. Attestations : C07533 ; C07955 ; C08268
+msgid "Failed to add a plugin to the panel"
+msgstr "Impossible d'ajustar un empeuton dens lo panèu"
+
+#. Glossaire : dossier, du
+#. Attestations : C02764 ; C07423
+#, c-format
+msgid "Failed to create folder: %s"
+msgstr "Creacion impossibla deu dossièr : %s"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Failed to execute clock command"
+msgstr "Impossible d'executar la comanda deu relòtge"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Failed to open desktop item editor"
+msgstr "Impossible d'obrir l'editor d'elements de burèu"
+
+#. Glossaire : contenu
+#. Attestations : C07033
+#, c-format
+msgid "Failed to query content type for \"%s\""
+msgstr "Impossible de questionar lo tipe de contiengut per « %s »"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Failed to quit the panel"
+msgstr "Impossible de quitar lo panèu"
+
+#. Glossaire : panneau, redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer ; C08268
+msgid "Failed to restart the panel"
+msgstr "Impossible de tornar aviar lo panèu"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Failed to save the panel configuration"
+msgstr "Impossible d'enregistrar la configuracion deu panèu"
+
+#. Glossaire : envoyer
+#. Attestations : C07376
+msgid "Failed to send D-Bus message"
+msgstr "Impossible d'enviar un messatge D-Bus"
+
+#. Glossaire : ajouter, nouveau
+#. Attestations : C05885 ; C07955
+msgid "Failed to show the add new items dialog"
+msgstr "Impossible d'afichar la bóstia de dialòg « Ajustar d'elements navèths »"
+
+#. Glossaire : general
+#. Attestations : C03230
+msgid "General"
+msgstr "Generau"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Group title and timestamp"
+msgstr "Títol deu grop e orodatatge"
+
+#. Glossaire : du, fenetre
+#. Attestations : C06017 ; C07423
+msgid "Group title and window title"
+msgstr "Títol deu grop e de la frinèsta"
+
+#. Glossaire : ordinateur
+#. Attestations : C06011
+#, c-format
+msgid "Hibernating and Suspending computer in %d seconds."
+msgstr "Ibernacion e interrupcion de l’ordinator d’aquí %d segondas."
+
+#. Glossaire : dans
+#. Attestations : C07533
+#, c-format
+msgid "Hibernating computer in %d seconds."
+msgstr "Mesa en velha perlongada dens %d segondas."
+
+#. Glossaire : nouvelle
+#. Attestations : C03100
+msgid "Launch New Instance"
+msgstr "Aviar instància navèra"
+
+#. Glossaire : fermer_session
+#. Attestations : G:fermer_session
+msgid "Log Out"
+msgstr "Barrar la session"
+
+#. Glossaire : fermer_session
+#. Attestations : G:fermer_session
+msgid "Log Out..."
+msgstr "Barrar la session…"
+
+#. Glossaire : fermer_session
+#. Attestations : G:fermer_session
+msgid "Log _Out"
+msgstr "Barrar la _session"
+
+#. Glossaire : fermer_session
+#. Attestations : G:fermer_session
+msgid "Log _Out..."
+msgstr "Barrar la _session…"
+
+#. Glossaire : autre
+#. Attestations : C05702
+msgid "Log out, lock or other system actions"
+msgstr "Desconnexion, varrolhatge o autas accions sistèma"
+
+#. Glossaire : fermer_session, dans, seconde
+#. Attestations : G:fermer_session ; G:dans ; G:seconde
+#, c-format
+msgid "Logging out in %d seconds."
+msgstr "Barrar la session dens %d segondas."
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Menu File"
+msgstr "Fichèr de menú"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Menu _file:"
+msgstr "_Fichèr menú :"
+
+#. Glossaire : du, milieu
+#. Attestations : G:du ; G:milieu
+msgid "Mi_ddle click action:"
+msgstr "Accion deu clic deu _miei :"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Minimize Window"
+msgstr "Minimizar la frinèsta"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Modifying the panel is not allowed"
+msgstr "Modificacion deu panèu interdicha"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Move currently selected item down by one row"
+msgstr "Desplaçar l'element actualament seleccionat d'ua linha cap aval"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Move currently selected item up by one row"
+msgstr "Desplaçar l'element actualament seleccionat d'ua linha cap amont"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Move the selected item one row down"
+msgstr "Desplaçar l'element seleccionat d'ua linha cap aval"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Move the selected item one row up"
+msgstr "Desplaçar l'element seleccionat d'ua linha cap amont"
+
+#. Glossaire : sur_le
+#. Attestations : C02084
+#, c-format
+msgid "Name %s lost on the message dbus, exiting."
+msgstr "Nom %s perdut suu messatge dbus, sortida."
+
+#. Glossaire : jamais
+#. Attestations : C02685
+msgid "Never"
+msgstr "Pas jamèi"
+
+#. Glossaire : nouvelle
+#. Attestations : C03100
+msgid "New Instance"
+msgstr "Instància navèra"
+
+#. Glossaire : nouvelle
+#. Attestations : C03100
+msgid "New _Application"
+msgstr "Na_vèra aplicacion"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "New _Link"
+msgstr "Ligam _navèth"
+
+#. Glossaire : nuit
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=nuit
+msgid "Night"
+msgstr "Nueit"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "No Windows"
+msgstr "Pas cap de frinèsta"
+
+#. Glossaire : midi
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=midi
+msgid "Noon"
+msgstr "Mieidia"
+
+#. Glossaire : dossier, ouvrir
+#. Attestations : C02764 ; C05883
+msgid "Open Folder"
+msgstr "Obrir lo dossièr"
+
+#. Glossaire : dans, ouvrir
+#. Attestations : C05883 ; C07533
+msgid "Open in Terminal"
+msgstr "Obrir dens un terminal"
+
+#. Glossaire : ouvrir
+#. Attestations : C05883
+msgid "Open launcher menu"
+msgstr "Obrir lo menú de l'aviador"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Pane_l"
+msgstr "_Panèu"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Panel"
+msgstr "Panèu"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+#, c-format
+msgid "Panel %d"
+msgstr "Panèu %d"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Panel Pr_eferences..."
+msgstr "Pr_eferéncias deu panèu..."
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Panel Preferences"
+msgstr "Preferéncias deu panèu"
+
+#. Glossaire : du, panneau, une
+#. Attestations : C07423 ; C07967 ; C08268
+msgid "Pick a Panel Color"
+msgstr "Seleccionar ua color deu panèu"
+
+#. Glossaire : selectionner, pour, nouveau, panneau
+#. Attestations : G:selectionner ; G:pour ; G:nouveau ; G:panneau
+msgid "Please choose a panel for the new plugin:"
+msgstr "Seleccionar un panèu entà l'empeuton navèth :"
+
+#. Glossaire : actuel, souris
+#. Attestations : C00847 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Popup menu at current mouse position"
+msgstr "Menú contextual a la posicion actuau de la soritz"
+
+#. Glossaire : avec
+#. Attestations : C07792
+msgid "Program launcher with optional menu"
+msgstr "Aviador de programa dab menú facultatiu"
+
+#. Glossaire : comme
+#. Attestations : C06366
+msgid "Provides status notifier items (application indicators) and legacy systray items"
+msgstr ""
+"Provesís d’elements de notificacion d’estat (indicador d’aplicacion) e d’elements de "
+"barra d’estat com sempre"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Quit the running panel instance"
+msgstr "Quitar l'instància deu panèu en cors d'execucion"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Suprimir l'espaci de tribalh « %s »"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Suprimir l'espaci de tribalh %d"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "Remove the currently selected panel"
+msgstr "Suprimir lo panèu actualament seleccionat"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Removing the item from the panel also means its configuration will be lost."
+msgstr ""
+"Suprimir l’element deu panèu significa tanben que sa configuracion serà perduda."
+
+#. Glossaire : des, reinitialiser
+#. Attestations : C07477 ; C07828
+msgid "Resets the list of items and their visibility settings"
+msgstr "Tornar inicializar la lista deus elements e lor paramètres de visibilitat"
+
+#. Glossaire : redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer
+msgid "Restart"
+msgstr "Tornar aviar"
+
+#. Glossaire : du, panneau, redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer ; C07423 ; C08268
+msgid "Restart the running panel instance"
+msgstr "Tornar aviar l'instància deu panèu en cors d'execucion"
+
+#. Glossaire : redemarrer, ordinateur, dans, seconde
+#. Attestations : G:redemarrer ; G:ordinateur ; G:dans ; G:seconde
+#, c-format
+msgid "Restarting computer in %d seconds."
+msgstr "Tornar aviar l'ordinator dens %d segondas."
+
+#. Glossaire : redemarrer
+#. Attestations : G:redemarrer
+msgid "Restarting..."
+msgstr "Tornar aviar..."
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Save the panel configuration"
+msgstr "Enregistrar la configuracion deu panèu"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "Select A Directory"
+msgstr "Seleccionar un dossièr"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Select A Menu File"
+msgstr "Seleccionar un fichèr de menú"
+
+#. Glossaire : session
+#. Attestations : C06639
+msgid "Session Menu"
+msgstr "Menú session"
+
+#. Glossaire : nouveau, texte
+#. Attestations : C07373 ; C08058
+msgid "Show 'New Text _Document'"
+msgstr "Afichar « _Document de tèxte navèth »"
+
+#. Glossaire : afficher, ouvrir, dans
+#. Attestations : G:afficher ; G:ouvrir ; G:dans
+msgid "Show 'Open in _Terminal'"
+msgstr "Afichar « Obrir dens un _terminal »"
+
+#. Glossaire : dossier, nouveau
+#. Attestations : C02764 ; C07373
+msgid "Show '_New Folder'"
+msgstr "Afichar « Dossièr _navèth »"
+
+#. Glossaire : afficher, ouvrir, dossier
+#. Attestations : G:afficher ; G:ouvrir ; G:dossier
+msgid "Show '_Open _Folder'"
+msgstr "Afichar « _Obrir lo _dossièr »"
+
+#. Glossaire : fichier
+#. Attestations : C00956
+msgid "Show _hidden files"
+msgstr "Afichar los fichèrs ama_gats"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Show a confirmation dialog with a 30 second timeout for some of the actions."
+msgstr ""
+"Afichar ua bóstia de dialòg de confirmacion pendent 30 segondas per d'unas accions."
+
+#. Glossaire : dans, dossier, une
+#. Attestations : C03179 ; C07533 ; C07967
+msgid "Show a directory tree in a menu"
+msgstr "Afichar ua arborescéncia de dossièrs dens un menú"
+
+#. Glossaire : dans, une
+#. Attestations : C07533 ; C07967
+msgid "Show application d_escription in tooltip"
+msgstr "Afichar la d_escripcion de l'aplicacion dens ua infobulla"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "Show button _labels"
+msgstr "Afichar los _noms deus botons"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "Show gri_d"
+msgstr "Afichar ua _grasilha"
+
+#. Glossaire : dans
+#. Attestations : C07533
+msgid "Show ic_ons in menu"
+msgstr "Afichar las _icònas dens lo menú"
+
+#. Glossaire : dans, derriere, panneau
+#. Attestations : C07533 ; C07790 ; C08268
+msgid "Show last _used item in panel"
+msgstr "Afichar lo _darrèr element utilizat dens lo panèu"
+
+#. Glossaire : ajouter, nouveau
+#. Attestations : C05885 ; C07955
+msgid "Show the 'Add New Items' dialog"
+msgstr "Afichar la bóstia de dialòg 'Ajustar d'elements navèths'"
+
+#. Glossaire : du, panneau
+#. Attestations : C07423 ; C08268
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Afichar la bóstia de dialòg 'Preferéncias deu panèu'"
+
+#. Glossaire : des, travail
+#. Attestations : C07828 ; C08020
+msgid "Show workspace _names"
+msgstr "Afichar lo _nom deus espacis de tribalh"
+
+#. Glossaire : des, travail
+#. Attestations : C07828 ; C08020
+msgid "Show workspace a_ctions"
+msgstr "Afichar las a_ccions deus espacis de tribalh"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Show workspace number"
+msgstr "Afichar lo numèro de l'espaci de tribalh"
+
+#. Glossaire : eteindre
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=%C3%A9teindre
+msgid "Shut Down"
+msgstr "Estupar"
+
+#. Glossaire : eteindre
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=%C3%A9teindre
+msgid "Shut _Down"
+msgstr "Es_tupar"
+
+#. Glossaire : ordre
+#. Attestations : C06213
+msgid "Sorting _order:"
+msgstr "Òr_di de triada :"
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "Span mo_nitors"
+msgstr "Espandir a tots los moni_tors"
+
+#. Glossaire : dans, ordinateur
+#. Attestations : C06011 ; C07533
+#, c-format
+msgid "Suspending computer in %d seconds."
+msgstr "Mesa en velha de l'ordinator dens %d segondas."
+
+#. Glossaire : utilisateur
+#. Attestations : C07982
+msgid "Switch User"
+msgstr "Cambiar d'utilizator"
+
+#. Glossaire : panneau
+#. Attestations : C08204
+msgid "Switch between panel presets"
+msgstr "Bascular entre los panèus predefinits"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Switch between virtual desktops"
+msgstr "Cambiar de pòstes de tribalh virtuals"
+
+#. Glossaire : avec, souris, travail
+#. Attestations : C07792 ; C08020 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Switch workspaces using the mouse wheel"
+msgstr "Cambiar d'espaci de tribalh dab l'ajuda de la rodeta de la soritz"
+
+#. Glossaire : tous
+#. Attestations : C06780
+msgid "The Xfce development team. All rights reserved."
+msgstr "L'equipa de desvolopament de Xfce. Tots los dreches reservats."
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Panèu de l'environament de burèu Xfce"
+
+#. Glossaire : deja, panneau
+#. Attestations : C08098 ; C08268
+msgid "There is already a running instance"
+msgstr "I a dejà un panèu en cors d'execucion"
+
+#. Glossaire : comme, du, fichier, nouveau, panneau, sur_le
+#. Attestations : C00956 ; C02084 ; C06366 ; C07373 ; C07423 ; C08268
+msgid ""
+"This will create a new launcher plugin on the panel and inserts the dropped files as "
+"menu items."
+msgstr ""
+"Aquò va crear un empeuton d'aviada navèth suu panèu e inserirà los fichèrs depausats "
+"com elements deu menú."
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "Time"
+msgstr "Òra"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "Time Only"
+msgstr "Òra solament"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "Time Settings"
+msgstr "Paramètres òra"
+
+#. Glossaire : parametres, heure, date
+#. Attestations : G:parametres ; G:heure ; G:date
+msgid "Time and Date _Settings..."
+msgstr "_Paramètres òra e data..."
+
+#. Glossaire : ensuite, heure
+#. Attestations : C03567 ; C08080
+msgid "Time, then date"
+msgstr "Òra, puish data"
+
+#. Glossaire : eteindre, ordinateur, dans, seconde
+#. Attestations : G:eteindre ; G:ordinateur ; G:dans ; G:seconde
+#, c-format
+msgid "Turning off computer in %d seconds."
+msgstr "Estupar l'ordinator dens %d segondas."
+
+#. Glossaire : ouvrir
+#. Attestations : C06047
+msgid "Unable to open the e-mail address"
+msgstr "Obertura impossibla de l’adreça electronica"
+
+#. Glossaire : ouvrir, travail
+#. Attestations : C05883 ; C08020
+msgid "Unable to open the workspace settings"
+msgstr "Impossible d'obrir los paramètres de l'espaci de tribalh"
+
+#. Glossaire : nouvelle
+#. Attestations : C03100
+#, c-format
+msgid "Unable to start new instance of '%s'"
+msgstr "Aviada impossibla de l'instància navèra de « %s »"
+
+#. Glossaire : sans
+#. Attestations : C01077
+msgid "Unnamed Item"
+msgstr "Element shens nom"
+
+#. Glossaire : sans
+#. Attestations : C01077
+msgid "Unnamed item"
+msgstr "Element shens nom"
+
+#. Glossaire : haut
+#. Attestations : C07494
+msgid "Up"
+msgstr "Haut"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "Use c_ustom menu file:"
+msgstr "Utilizar un fichèr de menú _personalizat :"
+
+#. Glossaire : utilisateur
+#. Attestations : C07982
+msgid "User ID"
+msgstr "ID utilizator"
+
+#. Glossaire : utilisateur
+#. Attestations : C07982
+msgid "Username"
+msgstr "Nom d’utilizator"
+
+#. Glossaire : heure
+#. Attestations : G:heure ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=heure
+msgid "What time is it?"
+msgstr "Quina òra ei ?"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Window Menu"
+msgstr "Menú de la frinèsta"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Window title"
+msgstr "Títol de la frinèsta"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "Workspace %d"
+msgstr "Espaci de tribalh %d"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Workspace Switcher"
+msgstr "Cambiador d'espaci de tribalh"
+
+#. Glossaire : des, travail
+#. Attestations : C07828 ; C08020
+msgid "Workspace _Settings..."
+msgstr "_Preferéncias deus espacis de tribalh..."
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Wrap around workspaces"
+msgstr "Plegar los espacis de tribalh"
+
+#. Glossaire : ajouter
+#. Attestations : C07955
+msgid "_Add"
+msgstr "_Ajustar"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "_Arrow button position:"
+msgstr "Posicion deu boton _flècha :"
+
+#. Glossaire : sauvegarder
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=sauvegarder
+msgid "_Backup and restore"
+msgstr "_Sauvaguardar e restaurar"
+
+#. Glossaire : dossier
+#. Attestations : C02764
+msgid "_Base Directory:"
+msgstr "Dossièr de _basa :"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "_Close"
+msgstr "_Barrar"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "_Close All"
+msgstr "_Barrar tot"
+
+#. Glossaire : modifier
+#. Attestations : C07341
+msgid "_Edit Item"
+msgstr "_Modificar l'element"
+
+#. Glossaire : des, fichier
+#. Attestations : C00956 ; C07828
+msgid "_File Pattern:"
+msgstr "_Motiu deus fichèrs :"
+
+#. Glossaire : fichier
+#. Attestations : C03184
+msgid "_File:"
+msgstr "_Fichèr :"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "_Lock Panel"
+msgstr "_Varrolhar lo panèu"
+
+#. Glossaire : panneau
+#. Attestations : C08268
+msgid "_Lock panel"
+msgstr "_Varrolhar lo panèu"
+
+#. Glossaire : fermer_session
+#. Attestations : G:fermer_session
+msgid "_Log Out"
+msgstr "_Barrar la session"
+
+#. Glossaire : nouveau
+#. Attestations : C07373
+msgid "_New Game"
+msgstr "Jòc _navèth"
+
+#. Glossaire : accord
+#. Attestations : C01955
+msgid "_OK"
+msgstr "_D'acòrd"
+
+#. Glossaire : aux, panneau, pour_le
+#. Attestations : C03720 ; C07050 ; C08268
+msgid "_Reserve space on screen edges for the panel"
+msgstr "_Gardar d’espaci aus caires de l’ecran entau panèu"
+
+#. Glossaire : redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer
+msgid "_Restart"
+msgstr "_Tornar aviar"
+
+#. Glossaire : chercher
+#. Attestations : C07498
+msgid "_Search:"
+msgstr "_Cercar :"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "_Show button title"
+msgstr "Afichar lo títol deu _boton"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgid "_Show confirmation dialog"
+msgstr "_Afichar ua bóstia de dialòg de confirmacion"
+
+#. Glossaire : utilisateur
+#. Attestations : C07982
+msgid "_Switch User"
+msgstr "_Cambiar d'utilizator"
+
+#. Glossaire : avec, fenetre, souris
+#. Attestations : C06017 ; C07792 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "_Switch windows using the mouse wheel"
+msgstr "_Cambiar de frinèsta dab l'ajuda de la rodeta de la soritz"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgctxt "am"
+msgid "one"
+msgstr "ua"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "five to %1"
+msgstr "%1 òra manca cinc"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "%1 òra"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgctxt "one"
+msgid "five to %1"
+msgstr "%1 òra manca cinc"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "%1 òra manca un quart"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "%1 òra manca vint e cinc"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "%1 òra manca vint"
+
+#. Glossaire : une
+#. Attestations : C07967
+msgctxt "pm"
+msgid "one"
+msgstr "ua"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "quarter to %1"
+msgstr "%1 òra manca un quart"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "twenty five to %1"
+msgstr "%1 òra manca vint e cinc"
+
+#. Glossaire : heure
+#. Attestations : C08080
+msgid "twenty to %1"
+msgstr "%1 òra manca vint"

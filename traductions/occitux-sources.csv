@@ -1,0 +1,16 @@
+clau;sources;notes
+demarrage.essayer;C08195;Construction Ensajar + nom du produit attestée avec Votz.
+demarrage.installer;C05184;Installar attesté pour installer un logiciel.
+readme.accroche;C07424 + C05882 + glossari:pour;Calandretas est le nom propre des écoles, attesté dans ce contexte gascon.
+config.sudo;glossari:lancer + glossari:avec;sudo reste le nom de la commande.
+config.langue_inconnue;glossari:erreur + C00006;Reformulation du diagnostic inconnu en error, sans altérer les valeurs admises. La conjonction o est attestée en C00006.
+config.langue;glossari:langue + glossari:ordre + C00077;Le repli est reformulé en ordre des langues. Les deux variables shell restent intactes.
+config.gcompris;glossari:langue + glossari:du + glossari:systeme;Seul le texte de remplacement de l'expansion Bash est traduit. La variable apres et le motif system restent intacts.
+config.gcompris_systeme;glossari:langue + glossari:du + glossari:systeme;Sous-chaîne affichée lorsque la valeur de apres est system.
+config.firefox;C00036 + C07424 + C03567 + C07425;Sites est attesté au pluriel en C00011. Firefox reste un nom propre.
+config.clavier_inconnu;glossari:erreur + C00006;Les identifiants oci et azerty ne sont pas des mots à traduire.
+config.clavier;C06853;L'expansion conditionnelle Bash est conservée exactement.
+config.maj_inconnues;glossari:erreur + C00006;oui et non sont les valeurs littérales du fichier de configuration, conservées comme telles.
+config.maj;C05763 + C04204;Actualizacion est attesté pour une mise à jour d'API. L'intitulé désigne le service au singulier. Les variables et les noms de dépôts restent intacts.
+config.redemarrer;glossari:redemarrer + glossari:pour + glossari:appliquer + C07332;Reformulation courte à l'infinitif, sans promesse supplémentaire.
+config.commentaire_genere;C04081 + glossari:modifier;Le chemin désigne le fichier à modifier. Le code produit dans les fichiers APT et Firefox n'est pas traduit.

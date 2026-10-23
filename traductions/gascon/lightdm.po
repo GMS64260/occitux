@@ -1,0 +1,19 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux lightdm\n"
+"Report-Msgid-Bugs-To: https://github.com/GMS64260/occitux/issues\n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitux - occitan gascon\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Catalogue source vide\n"

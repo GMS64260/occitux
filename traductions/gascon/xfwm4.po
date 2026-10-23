@@ -1,0 +1,350 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux xfwm4\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (http://www.transifex.com/xfce/xfwm4/language/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Quentin PAGÈS, 2020-2022\n"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "<b>Button layout</b>"
+msgstr "<b>Agençament deus botons</b>"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "<b>Double click _action</b>"
+msgstr "<b>_Accion deu clic doble</b>"
+
+#. Glossaire : modele
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=mod%C3%A8le
+msgid "<b>Focus model</b>"
+msgstr "<b>Modèle de focalizacion</b>"
+
+#. Glossaire : au, premier
+#. Attestations : C03272 ; C06406
+msgid "<b>Raise on click</b>"
+msgstr "<b>Mesa au purmèr plan per un clic</b>"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "<b>Title _alignment</b>"
+msgstr "<b>A_linhament deu títol</b>"
+
+#. Glossaire : du, police
+#. Attestations : C07423 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=police
+msgid "<b>Title fon_t</b>"
+msgstr "<b>_Polissa deu títol</b>"
+
+#. Glossaire : sur_les, travail
+#. Attestations : C02221 ; C08020
+msgid "Always on _Visible Workspace"
+msgstr "Totjorn _visible suus espacis de tribalh"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "At the c_enter of the screen"
+msgstr "Au _centre de l'ecran"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "By default, place windows:"
+msgstr "Per defaut, plaçar la frinèsta :"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+#, c-format
+msgid "Cannot spawn helper-dialog: %s\n"
+msgstr "Impossible d'aviar la frinèsta d'ajuda : %s\n"
+
+#. Glossaire : faire
+#. Attestations : C01269
+msgid "Click and drag the buttons to change the layout"
+msgstr "Har lisar los botons per modificar lor agençament"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "Close"
+msgstr "Barrar"
+
+#. Glossaire : des
+#. Attestations : C07828
+msgid "Could not create the settings dialog."
+msgstr "Impossible de crear la bóstia de dialòg deus paramètres."
+
+#. Glossaire : au, premier
+#. Attestations : C03272 ; C06406
+msgid "Delay _before raising focused window:"
+msgstr "Relambi a_bans la mesa au purmèr plan :"
+
+#. Glossaire : faire
+#. Attestations : C01269
+msgid "Do _nothing"
+msgstr "_Har pas res"
+
+#. Glossaire : au, donnees, du
+#. Attestations : C03272 ; C04120 ; C07423
+#, c-format
+msgid "Error reading data from child process: %s\n"
+msgstr "Error au moment de la lectura de las dadas deu processus filh : %s\n"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Fill window"
+msgstr "Espandir la frinèsta"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Hide window"
+msgstr "Redusir la frinèsta"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Leave _Fullscreen"
+msgstr "Sortir deu mòde _ecran complet"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Maximize window"
+msgstr "Maximizar la frinèsta"
+
+#. Glossaire : autre
+#. Attestations : C02254
+msgid "Move to Another Monitor"
+msgstr "Desplaçar cap a un aute ecran"
+
+#. Glossaire : autre, travail
+#. Attestations : C02254 ; C08020
+msgid "Move to Another _Workspace"
+msgstr "Desplaçar cap a un aute espaci de _tribalh"
+
+#. Glossaire : au, fenetre, mettre, premier, une
+#. Attestations : C03272 ; C06017 ; C06406 ; C07049 ; C07967
+msgid "Raise window when clicking _inside application window"
+msgstr "Méter ua frinèsta au purmèr plan en cl_icant a l'interior"
+
+#. Glossaire : actuel, fenetre
+#. Attestations : C00847 ; C06017
+msgid "Replace the existing window manager"
+msgstr "Remplaçar lo gestionari de frinèsta actuau"
+
+#. Glossaire : reinitialiser
+#. Attestations : C07477
+msgid "Reset to Defaults"
+msgstr "Tornar inicializar a las valors per defaut"
+
+#. Glossaire : redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer
+msgid "Restart"
+msgstr "Tornar aviar"
+
+#. Glossaire : droite
+#. Attestations : C06213
+msgid "Right"
+msgstr "Alinhat a dreta"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Roll Window Down"
+msgstr "Desenrotlar la frinèsta"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Roll Window Up"
+msgstr "Enrotlar la frinèsta"
+
+#. Glossaire : du, session_pluriel
+#. Attestations : C07423 ; C08171
+msgid "Session manager socket"
+msgstr "Socket deu gestionari de sessions"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Set the compositor mode"
+msgstr "Aplicar lo mòde deu composidor"
+
+#. Glossaire : du
+#. Attestations : C07423
+msgid "Settings manager socket"
+msgstr "Socket deu gestionari de paramètres"
+
+#. Glossaire : fenetre
+#. Attestations : C06017
+msgid "Shade window"
+msgstr "Enrotlar la frinèsta"
+
+#. Glossaire : fenetre, tous, travail
+#. Attestations : C06017 ; C06780 ; C08020
+msgid "Stick"
+msgstr "Frinèsta peganta (visibla sus tots los espacis de tribalh)"
+
+#. Glossaire : dans, fenetre, travail
+#. Attestations : C06017 ; C07533 ; C08020
+msgid "Switch to win_dow's workspace"
+msgstr "Bascuolar dens l'espaci _de tribalh de la frinèsta"
+
+#. Glossaire : au
+#. Attestations : C03272
+msgid "The action to perform when the title-bar is double-clicked"
+msgstr "Accion d'efectuar au moment d'un clic doble sus la barra de títol"
+
+#. Glossaire : souris
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "U_nder the mouse pointer"
+msgstr "Jol _puntador de la soritz"
+
+#. Glossaire : fenetre, souris
+#. Attestations : C06017 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Use mouse wheel on title bar to ro_ll up the window"
+msgstr "Utilizar la rodeta de la soritz sus la barra de títol per enrot_lar la frinèsta"
+
+#. Glossaire : au, du
+#. Attestations : G:au ; G:du
+msgid "When _moving"
+msgstr "Au moment deu _desplaçament"
+
+#. Glossaire : au, du
+#. Attestations : G:au ; G:du
+msgid "When _resizing"
+msgstr "Au moment deu _redimensionament"
+
+#. Glossaire : avec, une, fenetre
+#. Attestations : G:avec ; G:une ; G:fenetre
+msgid "With a _dragged window"
+msgstr "Dab ua frinèsta _rebalada"
+
+#. Glossaire : avec, souris
+#. Attestations : C07792 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "With the mouse _pointer"
+msgstr "Dab lo _puntador de la soritz"
+
+#. Glossaire : travail
+#. Attestations : C08020
+#, c-format
+msgid "Workspace %d"
+msgstr "Espaci de tribalh %d"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Workspace Name"
+msgstr "Nom de l'espaci de tribalh"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "Workspaces"
+msgstr "Espacis de tribalh"
+
+#. Glossaire : du, travail
+#. Attestations : C07423 ; C08020
+msgid "Wrap workspaces depending on the actual desktop _layout"
+msgstr "Cambiar d'espaci de tribalh en foncion de l'_agençament deu burèu"
+
+#. Glossaire : avec, souris
+#. Attestations : C07792 ;
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=souris
+msgid "Zoom desktop with mouse wheel"
+msgstr "Agrandir lo burèu dab rodeta de la soritz"
+
+#. Glossaire : dans, fenetre, travail
+#. Attestations : C06017 ; C07533 ; C08020
+msgid "_Bring window on current workspace"
+msgstr "_Plaçar la frinèsta dens l'espaci de tribalh actiu"
+
+#. Glossaire : effacer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=effacer
+msgid "_Clear"
+msgstr "_Desfaçar"
+
+#. Glossaire : fermer
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=fermer
+msgid "_Close"
+msgstr "_Barrar"
+
+#. Glossaire : fenetre, une
+#. Attestations : C06017 ; C07967
+msgid "_Delay before window receives focus:"
+msgstr "_Relambi abans focalizacion sus ua frinèsta :"
+
+#. Glossaire : au, fenetre
+#. Attestations : C03272 ; C06017
+msgid "_Draw frame around selected window while cycling"
+msgstr ""
+"_Dessenhar un quadre a l'entorn de la frinèsta mesa en evidéncia au moment de la "
+"navigacion"
+
+#. Glossaire : aux
+#. Attestations : C03720
+msgid "_Edge resistance:"
+msgstr "_Resisténcia aus bòrds :"
+
+#. Glossaire : general
+#. Attestations : C03230
+msgid "_General"
+msgstr "_Generau"
+
+#. Glossaire : clavier
+#. Attestations : C06853
+msgid "_Keyboard"
+msgstr "_Clavèr"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "_Number of workspaces:"
+msgstr "_Nombre d'espacis de tribalh :"
+
+#. Glossaire : au, clavier, travail
+#. Attestations : C03272 ; C06853 ; C08020
+msgid ""
+"_Remember and recall previous workspace\n"
+"when switching via keyboard shortcuts"
+msgstr ""
+"_Memorizar l'espaci de tribalh precedent e i tornar\n"
+"au moment d'un cambiament d'espaci via un acorchi de clavèr"
+
+#. Glossaire : reinitialiser
+#. Attestations : C07477
+msgid "_Reset to Defaults"
+msgstr "_Tornar inicializar a las valors per defaut"
+
+#. Glossaire : travail
+#. Attestations : C08020
+msgid "_Workspaces"
+msgstr "_Espacis de tribalh"
+
+#. Glossaire : fenetre, travail
+#. Attestations : C06017 ; C08020
+msgid "workspaces;settings;preferences;virtual desktops;number;windows;screen;margins;"
+msgstr ""
+"workspaces;settings;preferences;virtual "
+"desktops;number;windows;screen;margins;espaci;tribalh;paramètres;preferéncias;burèu;nombre;frinèsta;finèstra;ecran;"

@@ -1,0 +1,121 @@
+# Adaptation lexicale béarnaise pour Occitux.
+# Source : paquet Ubuntu, voir ../provenance.json.
+# Crédits amont conservés ci-dessous.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Occitux lightdm-gtk-greeter\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-21 12:00+0200\n"
+"Last-Translator: Projet Occitux\n"
+"Language-Team: Occitan (post 1500) (https://www.transifex.com/xubuntu/teams/110148/oc/)\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Launchpad (build b190cebbf563f89e480a8b57f641753c8196bda0)\n"
+"X-Launchpad-Export-Date: 2020-06-11 23:00+0000\n"
+"X-Occitux-Delta: yes\n"
+"X-Occitux-Glossaire: ../glossari.csv\n"
+"X-Original-Last-Translator: Quentin PAGÈS, 2020\n"
+
+#. Glossaire : fermer, tous, programme, redemarrer, ordinateur
+#. Attestations : G:fermer ; G:tous ; G:programme ; G:redemarrer ; G:ordinateur
+msgid "Are you sure you want to close all programs and restart the computer?"
+msgstr "Barrar tots los programas e tornar aviar l'ordinator ?"
+
+#. Glossaire : fermer, tous, programme, eteindre, ordinateur
+#. Attestations : G:fermer ; G:tous ; G:programme ; G:eteindre ; G:ordinateur
+msgid "Are you sure you want to close all programs and shut down the computer?"
+msgstr "Barrar tots los programas e estupar l'ordinator ?"
+
+#. Glossaire : saisir, mot_de_passe
+#. Attestations : G:saisir ; G:mot_de_passe
+msgid "Enter your password"
+msgstr "Picar lo mot de passa"
+
+#. Glossaire : saisir, nom, utilisateur
+#. Attestations : G:saisir ; G:nom ; G:utilisateur
+msgid "Enter your username"
+msgstr "Picar lo nom d'utilizator"
+
+#. Glossaire : erreur
+#. Attestations : G:erreur
+msgid "Failed to authenticate"
+msgstr "Error d'autentificacion"
+
+#. Glossaire : impossible, lancer, session
+#. Attestations : G:impossible ; G:lancer ; G:session
+msgid "Failed to start session"
+msgstr "Impossible d'aviar la session"
+
+#. Glossaire : grand
+#. Attestations : C04304
+msgid "Large Text"
+msgstr "Gran tèxte"
+
+#. Glossaire : ouvrir, session
+#. Attestations : G:ouvrir ; G:session
+msgid "Log In"
+msgstr "Obrir la session"
+
+#. Glossaire : accord
+#. Attestations : C01955
+msgid "OK"
+msgstr "D'acòrd"
+
+#. Glossaire : clavier
+#. Attestations : C06853
+msgid "On Screen Keyboard"
+msgstr "Clavèr visual"
+
+#. Glossaire : autre
+#. Attestations : C02254
+msgid "Other"
+msgstr "Aute"
+
+#. Glossaire : autre
+#. Attestations : C02254
+msgid "Other..."
+msgstr "Aute..."
+
+#. Glossaire : redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer
+msgid "Restart"
+msgstr "Tornar aviar"
+
+#. Glossaire : redemarrer
+#. Attestations : C05067 + C03287 +
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9marrer
+msgid "Restart..."
+msgstr "Tornar aviar..."
+
+#. Glossaire : eteindre
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=%C3%A9teindre
+msgid "Shut Down"
+msgstr "Estupar"
+
+#. Glossaire : eteindre
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=%C3%A9teindre
+msgid "Shut Down..."
+msgstr "Estupar..."
+
+#. Glossaire : mettre
+#. Attestations : C07049
+msgid "Suspend"
+msgstr "Méter en velha"
+
+#. Glossaire : deverrouiller
+#. Attestations :
+#. https://dicodoc.eu/oc/diccionaris?option=com_dicodoc&view=search&Itemid=168&type=fr-
+#. oc&dic%5B%5D=PNST&q=d%C3%A9verrouiller
+msgid "Unlock"
+msgstr "Desvarrolhar"

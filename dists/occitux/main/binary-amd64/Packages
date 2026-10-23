@@ -1,0 +1,24 @@
+Package: occitux
+Architecture: all
+Version: 0.2.0
+Priority: optional
+Section: localization
+Maintainer: Guillaume GOMES DA NAVE <guillaume.gomes@laposte.net>
+Depends: locales, keyboard-configuration, unattended-upgrades, language-pack-oc, language-pack-gnome-oc, python3
+Recommends: firefox-locale-oc, libreoffice-l10n-oc, hunspell-oc, imagemagick
+Filename: pool/main/o/occitux/occitux_0.2.0_all.deb
+Size: 150132
+MD5sum: 86f9892c09950bdac979026cea70ab69
+SHA1: 784f93c4bbb8a7fbc2cbf2d760ed03f6bd7f6327
+SHA256: 62eebe78e1385089fc5fc4a20781975c169509e3930296bcb4f5512933d9e81f
+SHA512: a6f52798a87ccb3d908a4a6fc7bd8a86da5dcf2a256c958b23e7ecb00dd1b4621814ed9edb0d55365ec01fe9630af32abd9e199a0490b7c0b7112cd924a4a18a
+Homepage: https://github.com/GMS64260/occitux
+Description: couche occitane pour PrimTux, pensée pour les Calandretas
+ Occitux passe un PC PrimTux en occitan : interface en occitan avec repli
+ en français pour ce qui n'est pas traduit, menu des élèves et écran de
+ connexion traduits, clavier AZERTY occitan, Firefox, LibreOffice et
+ dictionnaire en occitan, mises à jour de sécurité automatiques. Le PC se
+ présente comme Occitux : noms, fonds d'écran, menus de démarrage.
+ .
+ Réglages dans /etc/occitux/occitux.conf, appliqués par « sudo occitux-config ».
+

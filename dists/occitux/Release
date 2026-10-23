@@ -1,0 +1,24 @@
+Architectures: amd64
+Codename: occitux
+Components: main
+Date: Fri, 23 Oct 2026 09:00:22 +0000
+Description: Occitux : PrimTux en occitan pour les Calandretas
+Label: Occitux
+Origin: Occitux
+Suite: occitux
+MD5Sum:
+ 411424f9264596ade00ae70b5c218776              203 Release
+ 8d6539d13e8c138dddba19e977bce350             1283 main/binary-amd64/Packages
+ 93d3cc0eb1c2c5c15396c1742a031ab0              854 main/binary-amd64/Packages.gz
+SHA1:
+ a90081c639b5309e5f146092f0dc56e224048683              203 Release
+ f1a23ff5f8a1b264f44a27a3e179bdde6c21277c             1283 main/binary-amd64/Packages
+ 6b638bd9e251839fd303685a93b93063b7e788b8              854 main/binary-amd64/Packages.gz
+SHA256:
+ dc7d45e00efdd89ed9ef005b09bb0321ca5bd9605967c3e504dd4a8b17030bd3              203 Release
+ befde244fdd6102c87fb28baaad50eff28fc79b2ff816d0245bc6251c614a721             1283 main/binary-amd64/Packages
+ 8528ae982a9a6854594355dc158a9287df5ab2567706b5444f486b887e412b53              854 main/binary-amd64/Packages.gz
+SHA512:
+ 0cad57e92c5503168310db7d0457a00dcd842aba51427de6e773eeed4f5ca26fbcd06332fcba9fa1d0a3385a512dd17eea73dff7bcdb4ad5f2ca27f6b211673c              203 Release
+ 178509ed4457190c927208347da4a751449b2f24b9c4cf16d5c6d992d5119e64fde042fa60e3ddc75c6b15f4fff9911fd6d96e17e8c41acb35d4e21c1cbe885b             1283 main/binary-amd64/Packages
+ 6dd2478a7ee282d06e73adf0c07ded0111e18557fa0215549762a06a62476b25a2c1ffaca1ea40a1d16692367e1aa33bcdc94845c877cf7942fcd6a474c34d6c              854 main/binary-amd64/Packages.gz

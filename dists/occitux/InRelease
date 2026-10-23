@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: occitux
+Components: main
+Date: Fri, 23 Oct 2026 09:00:22 +0000
+Description: Occitux : PrimTux en occitan pour les Calandretas
+Label: Occitux
+Origin: Occitux
+Suite: occitux
+MD5Sum:
+ 411424f9264596ade00ae70b5c218776              203 Release
+ 8d6539d13e8c138dddba19e977bce350             1283 main/binary-amd64/Packages
+ 93d3cc0eb1c2c5c15396c1742a031ab0              854 main/binary-amd64/Packages.gz
+SHA1:
+ a90081c639b5309e5f146092f0dc56e224048683              203 Release
+ f1a23ff5f8a1b264f44a27a3e179bdde6c21277c             1283 main/binary-amd64/Packages
+ 6b638bd9e251839fd303685a93b93063b7e788b8              854 main/binary-amd64/Packages.gz
+SHA256:
+ dc7d45e00efdd89ed9ef005b09bb0321ca5bd9605967c3e504dd4a8b17030bd3              203 Release
+ befde244fdd6102c87fb28baaad50eff28fc79b2ff816d0245bc6251c614a721             1283 main/binary-amd64/Packages
+ 8528ae982a9a6854594355dc158a9287df5ab2567706b5444f486b887e412b53              854 main/binary-amd64/Packages.gz
+SHA512:
+ 0cad57e92c5503168310db7d0457a00dcd842aba51427de6e773eeed4f5ca26fbcd06332fcba9fa1d0a3385a512dd17eea73dff7bcdb4ad5f2ca27f6b211673c              203 Release
+ 178509ed4457190c927208347da4a751449b2f24b9c4cf16d5c6d992d5119e64fde042fa60e3ddc75c6b15f4fff9911fd6d96e17e8c41acb35d4e21c1cbe885b             1283 main/binary-amd64/Packages
+ 6dd2478a7ee282d06e73adf0c07ded0111e18557fa0215549762a06a62476b25a2c1ffaca1ea40a1d16692367e1aa33bcdc94845c877cf7942fcd6a474c34d6c              854 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEGdAZNc5bkiV6wA5jtQlLWKCMMKUFAmrbIiYACgkQtQlLWKCM
+MKVHAg//QoiBFqDFSNGlf9Tq8aM+6WCb/7rwydNZsM/HIPyjI74FudSbBzFXe9Rq
+vxPQjPq4AJwYmXOj85+f27nnmgOmVh5LKhjKolQNAtxxJOY4/hHiZbBvSDwty03j
+X/JSasi/541NQDjaP9FPdqUOhXudd4YHL+/OUyRallc3aVsIB4/mqLxOJS5dUSe9
+L9e6sQnlrNbJh2TzTD0JGFWzoY99sdh2ToUuFGRJCd22lCXtkpwMrAVpQoTsUp+a
+1EytcpTdRrdaJoo/gaeGNTK2aowasnlRqEejR1Fb5n8rLElOJv9xXKjccjSdmTpl
+Tsf8KI4/03pALctIdV3LIOeyQjZjRgJ9rAaO/N/ObH1s7tQ6CcV2YUE5WcCNA0X2
+4P4oJ4BtTzc3JnfoOB1QrG46qg3BKR9Yskdr1aaq6uheqG9gffwCu+3kCBjRcAn2
++gztxFmy4fUBr5T1KAqiV+QgRgUcWwRx4pXNA/etSoRBck6ctH0LBaI+/DlpFyEs
+89KnTdGuyvtJ+ASysXK4XNcoaKrAibzpVuSvIbjf89dgdUKzE8Gl1GJFbjF/uU21
+yZy+jvX7FhBrDsc9558umvmFSuaAchx34otbo2xU+ybjC3ueDdxrmatJuCtSykNL
+VXwkEhdBWy6g6/NqJPjzspdCIEHtrW1l3/t/l7cAFfyz9Z1paK0=
+=cwdB
+-----END PGP SIGNATURE-----

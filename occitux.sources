@@ -1,0 +1,8 @@
+# Dépôt apt d'Occitux : les nouvelles versions du paquet occitux s'installent
+# toutes seules, avec les correctifs de sécurité (voir /etc/occitux/occitux.conf).
+# Publié par la CI du projet : https://github.com/GMS64260/occitux
+Types: deb
+URIs: https://gms64260.github.io/occitux
+Suites: occitux
+Components: main
+Signed-By: /usr/share/keyrings/occitux.gpg

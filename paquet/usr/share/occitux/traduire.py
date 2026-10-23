@@ -71,13 +71,24 @@ def proteger(texte, javascript):
 
 
 def traduire_brut(contenu, textes, javascript):
-    """Remplacement des textes dans une chaîne sans structure particulière."""
+    """Remplacement des textes dans une chaîne sans structure particulière.
+
+    Les traductions insérées sont gardées telles quelles : « PrimTux » n'y est
+    remplacé par « Occitux » que dans le texte d'origine (une traduction peut
+    nommer PrimTux à dessein, par ex. « Occitux es PrimTux en occitan »)."""
+    inserts = []
     for fr in sorted(textes, key=len, reverse=True):
         # Une espace du texte français vaut aussi pour une espace insécable (U+00A0).
         corps = "".join("[ \u00a0]" if c == " " else re.escape(c) for c in fr)
         motif = re.compile(r"(?<!\w)" + corps + r"(?!\w)")
-        contenu = motif.sub(lambda m, t=proteger(textes[fr], javascript): t, contenu)
-    return MARQUE.sub("Occitux", contenu)
+
+        def garder(m, t=proteger(textes[fr], javascript)):
+            inserts.append(t)
+            return "\x00%d\x00" % (len(inserts) - 1)
+
+        contenu = motif.sub(garder, contenu)
+    contenu = MARQUE.sub("Occitux", contenu)
+    return re.sub(r"\x00(\d+)\x00", lambda m: inserts[int(m.group(1))], contenu)
 
 
 # Un gabarit HTML/Jinja n'est traduit que là où un humain lit : les textes
@@ -128,13 +139,15 @@ def traduire_diapo(contenu, nom, cles, textes, javascript):
     """Diapositive du diaporama d'installation : titre et texte entiers."""
     titre = cles.get(f"diapo.{nom}.titre")
     texte = cles.get(f"diapo.{nom}.texte")
+    # Le reste de la page d'abord ; titre et texte, rédigés à part, restent tels quels.
+    contenu = traduire_texte(contenu, textes, javascript, html=True)
     if titre:
         contenu = re.sub(r'(<h1 class="slidetitle">).*?(</h1>)', lambda m: m.group(1) + titre + m.group(2), contenu, flags=re.S)
     if texte:
         contenu = re.sub(r'(<div class="text">).*?(</div>\s*</div>)',
                          lambda m: m.group(1) + "\n<div>\n<p>" + texte + "</p>\n" + m.group(2),
                          contenu, count=1, flags=re.S)
-    return traduire_texte(contenu, textes, javascript, html=True)
+    return contenu
 
 
 def traduire_sqlite(base, textes):

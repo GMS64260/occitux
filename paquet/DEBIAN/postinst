@@ -1,7 +1,13 @@
 #!/bin/sh
 set -e
 
-if [ "$1" = configure ]; then
-    occitux-config || echo "occitux : réglages incomplets, ils seront refaits au prochain démarrage" >&2
-    deb-systemd-helper enable occitux-premier-demarrage.service >/dev/null || true
-fi
+case "$1" in
+    configure)
+        occitux-config || echo "occitux : réglages incomplets, ils seront refaits au prochain démarrage" >&2
+        deb-systemd-helper enable occitux-premier-demarrage.service >/dev/null || true
+        ;;
+    triggered)
+        # Un paquet de PrimTux ou de Mint vient de remplacer des fichiers habillés.
+        occitux-config --declenche || true
+        ;;
+esac

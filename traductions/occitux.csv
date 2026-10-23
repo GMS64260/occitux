@@ -1,16 +1,22 @@
-clau;frances;bearnes
-demarrage.essayer;Essayer Occitux;Ensajar Occitux
-demarrage.installer;Installer Occitux;Installar Occitux
-readme.accroche;PrimTux en occitan, pour les Calandretas;PrimTux en occitan, entà las Calandretas
-config.sudo;occitux-config : à lancer avec sudo;occitux-config : aviar dab sudo
-config.langue_inconnue;occitux-config : LANGUE=$LANGUE inconnue (bearnes, oc ou fr);occitux-config : error LANGUE=$LANGUE (bearnes, oc o fr)
-config.langue;langue : $lang (repli : $language);lenga : $lang (òrdi de las lengas : $language)
-config.gcompris;GCompris : ${apres/system/langue du système};GCompris : ${apres/system/lenga deu sistèma}
-config.gcompris_systeme;langue du système;lenga deu sistèma
-config.firefox;Firefox : sites en occitan, puis en français;Firefox : sites en occitan, puish en francés
-config.clavier_inconnu;occitux-config : CLAVIER=$CLAVIER inconnu (oci ou azerty);occitux-config : error CLAVIER=$CLAVIER (oci o azerty)
-config.clavier;clavier : fr${variante:+($variante)};clavèr : fr${variante:+($variante)}
-config.maj_inconnues;occitux-config : MISES_A_JOUR_AUTO=$MISES_A_JOUR_AUTO inconnu (oui ou non);occitux-config : error MISES_A_JOUR_AUTO=$MISES_A_JOUR_AUTO (oui o non)
-config.maj;mises à jour automatiques : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint});actualizacion automatica : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint})
-config.redemarrer;Redémarrer le PC pour que tout soit pris en compte.;Tornar aviar lo PC entà aplicar los paramètres.
-config.commentaire_genere;// Généré par occitux-config : modifier /etc/occitux/occitux.conf à la place.;// Generat per occitux-config : modificar /etc/occitux/occitux.conf.
+clau;frances;occitan;bearnes
+demarrage.essayer;Essayer Occitux;Ensajar Occitux;Ensajar Occitux
+demarrage.installer;Installer Occitux;Installar Occitux;Installar Occitux
+readme.accroche;PrimTux en occitan, pour les Calandretas;PrimTux en occitan, per las Calandretas;PrimTux en occitan, entà las Calandretas
+config.sudo;occitux-config : à lancer avec sudo;occitux-config : aviar amb sudo;occitux-config : aviar dab sudo
+config.langue_inconnue;occitux-config : LANGUE=$LANGUE inconnue (bearnes, oc ou fr);occitux-config : error LANGUE=$LANGUE (bearnes, oc o fr);occitux-config : error LANGUE=$LANGUE (bearnes, oc o fr)
+config.langue;langue : $lang (repli : $language);lenga : $lang (òrdre de las lengas : $language);lenga : $lang (òrdi de las lengas : $language)
+config.gcompris;GCompris : ${apres/system/langue du système};GCompris : ${apres/system/lenga del sistèma};GCompris : ${apres/system/lenga deu sistèma}
+config.gcompris_systeme;langue du système;lenga del sistèma;lenga deu sistèma
+config.firefox;Firefox : sites en occitan, puis en français;Firefox : sites en occitan, puèi en francés;Firefox : sites en occitan, puish en francés
+config.clavier_inconnu;occitux-config : CLAVIER=$CLAVIER inconnu (oci ou azerty);occitux-config : error CLAVIER=$CLAVIER (oci o azerty);occitux-config : error CLAVIER=$CLAVIER (oci o azerty)
+config.clavier;clavier : fr${variante:+($variante)};clavièr : fr${variante:+($variante)};clavèr : fr${variante:+($variante)}
+config.maj_inconnues;occitux-config : MISES_A_JOUR_AUTO=$MISES_A_JOUR_AUTO inconnu (oui ou non);occitux-config : error MISES_A_JOUR_AUTO=$MISES_A_JOUR_AUTO (oui o non);occitux-config : error MISES_A_JOUR_AUTO=$MISES_A_JOUR_AUTO (oui o non)
+config.maj;mises à jour automatiques : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint});mesas a jorn automaticas : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint});actualizacion automatica : $MISES_A_JOUR_AUTO (Ubuntu ${ubuntu}-security${mint:+, Mint $mint})
+config.redemarrer;Redémarrer le PC pour que tout soit pris en compte.;Reaviar lo PC per aplicar los paramètres.;Tornar aviar lo PC entà aplicar los paramètres.
+config.commentaire_genere;// Généré par occitux-config : modifier /etc/occitux/occitux.conf à la place.;// Generat per occitux-config : modificar /etc/occitux/occitux.conf.;// Generat per occitux-config : modificar /etc/occitux/occitux.conf.
+demarrage.installer_auto;Installer Occitux automatiquement (efface tout le disque);Installar Occitux automaticament (escafa tot lo disc);Installar Occitux automaticament (desfaça tot lo disc)
+demarrage.memoire;Tester la mémoire;Testar la memòria;Testar la memòria
+demarrage.avertissement_auto;ATTENTION : dans 20 secondes, Occitux s'installe tout seul et efface tout le disque de ce PC. Pour l'éviter, retirez la clé et redémarrez.;ATENCION : dins 20 segondas, Occitux s'installa tot sol e escafa tot lo disc d'aqueste PC. Per o evitar, levar la clau e reaviar.;ATENCION : dens 20 segondas, Occitux que s'installa solet e que desfaça tot lo disc d'aqueste PC. Entà ac evitar, tirar la clau e tornar aviar.
+connexion.mot_de_passe;Mot de passe;Senhal;Mot de passa
+connexion.bienvenue;Bienvenue sur Occitux;Benvenguda sus Occitux;Benvienguda sus Occitux
+identite.description;Occitux, PrimTux en occitan pour les Calandretas;Occitux, PrimTux en occitan per las Calandretas;Occitux, PrimTux en occitan entà las Calandretas

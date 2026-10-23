@@ -1,0 +1,34 @@
+clau;frances;occitan;bearnes
+connexion.redemarrer;Redémarrer;Reaviar;Tornar aviar
+connexion.arreter;Arrêter;Atudar;Estupar
+connexion.fond_floute;Arrière-plan flouté;Rèireplan fosc;Arrèrplan fosc
+connexion.fond_floute_ressources;Arrière-plan flouté (utilise plus de ressources matérielles);Rèireplan fosc (utiliza mai de ressorsas materialas);Arrèrplan fosc (qu'utiliza mei ressorças materiaus)
+connexion.animation;Animation supplémentaire (utilise plus de ressources matérielles);Animacion suplementària (utiliza mai de ressorsas materialas);Animacion suplementària (qu'utiliza mei ressorças materiaus)
+connexion.splash;Désactiver le splash;Desactivar l'imatge de presentacion;Desactivar l'imatge de presentacion
+connexion.apercu;Aperçu;Apercebut;Apercebut
+connexion.choix_fond;Choix de l'arrière plan;Causida del rèireplan;Causida de l'arrèrplan
+connexion.jerry;Jerry la souris: Session élève destinée au enfants de 3 à 5 ans (Maternelle);Jerry la mirga : sesilha d'escolan pels mainatges de 3 a 5 ans (mairala);Jerry la soritz : session d'escolan entaus mainatges de 3 a 5 ans (mairau)
+connexion.koda;Koda le koala: Session élève destinée au enfants de 6 à 8 ans (Cycle 2: CP-CE1-CE2);Koda lo coala : sesilha d'escolan pels mainatges de 6 a 8 ans (cicle 2 : CP-CE1-CE2);Koda lo coala : session d'escolan entaus mainatges de 6 a 8 ans (cicle 2 : CP-CE1-CE2)
+connexion.leon;Léon le caméléon: Session élève destinée au enfants de 8 à 11 ans (Cycle 3: CM1-CM2-6e);Léon lo camaleon : sesilha d'escolan pels mainatges de 8 a 11 ans (cicle 3 : CM1-CM2-6e);Léon lo camaleon : session d'escolan entaus mainatges de 8 a 11 ans (cicle 3 : CM1-CM2-6e)
+connexion.poe;Poe la pieuvre: Session adulte;Poe lo pofre : sesilha adulta;Poe lo lagast : session adulta
+connexion.bienvenue_court;Bienvenue!;Benvenguda !;Benvienguda !
+lanceur.menu;Primtuxmenu;Menú Occitux;Menú Occitux
+lanceur.commentaire;Application Web;Aplicacion Web;Aplicacion Web
+fin.retirer_cle;Retirez la clé USB, puis appuyez sur Entrée : ;Levar la clau USB, puèi quichar sus Entrada : ;Tirar la clau USB, puish prémer Entrada : 
+fin.retirer_cle_redemarrer;Retirez la clé USB, puis redémarrez.;Levar la clau USB, puèi reaviar.;Tirar la clau USB, puish tornar aviar.
+diapo.welcome.titre;Bienvenue sur Occitux;Benvenguda sus Occitux;Benvienguda sus Occitux
+diapo.welcome.texte;Occitux est PrimTux en occitan : une distribution rapide et complète, dédiée aux élèves des Calandretas et de l'école primaire.;Occitux es PrimTux en occitan : una distribucion rapida e completa, dedicada als escolans de las Calandretas e de l'escòla primària.;Occitux qu'ei PrimTux en occitan : ua distribucion rapida e completa, dedicada aus escolans de las Calandretas e de l'escòla primària.
+diapo.accessibility.titre;Les applications;Las aplicacions;Las aplicacions
+diapo.accessibility.texte;Un grand nombre d'applications éducatives libres sont accessibles, classées par niveau et par domaine, ainsi que les applications classiques : VLC, LibreOffice, Firefox...;Un grand nombre d'aplicacions educativas liuras son accessiblas, classadas per nivèl e per domeni, amai las aplicacions classicas : VLC, LibreOffice, Firefox...;Un gran nombre d'aplicacions educativas libras que son accessiblas, classadas per nivèu e per domeni, atau com las aplicacions classicas : VLC, LibreOffice, Firefox...
+diapo.browse.titre;Rapide et légère;Rapida e leugièra;Rapida e leugèra
+diapo.browse.texte;Adaptée aux PC récents comme anciens : fluidité et rapidité, avec un bureau agencé de manière inédite, qui rassemble les meilleurs éléments des environnements légers du monde Linux.;Adaptada als PC recents coma als ancians : fluiditat e rapiditat, amb un burèu agençat d'un biais inedit, qu'acampa los melhors elements dels environaments leugièrs del mond Linux.;Adaptada aus PC recents com aus ancians : fluiditat e rapiditat, dab un burèu agençat d'ua faiçon inedita, qui amassa los mei bons elements deus environaments leugèrs deu monde Linux.
+diapo.gethelp.titre;Aide et assistance;Ajuda e assisténcia;Ajuda e assisténcia
+diapo.gethelp.texte;"La documentation d'Occitux est disponible <a href=""https://github.com/GMS64260/occitux"">en ligne. Pour PrimTux, le forum forum.primtux.fr permet de poser des questions et de chercher parmi de nombreuses questions ayant déjà une réponse.";"La documentacion d'Occitux es disponibla <a href=""https://github.com/GMS64260/occitux"">en linha. Per PrimTux, lo forum forum.primtux.fr permet de pausar de questions e de cercar dins fòrça questions qu'an ja una responsa.";"La documentacion d'Occitux qu'ei disponibla <a href=""https://github.com/GMS64260/occitux"">en linha. Entà PrimTux, lo fòrum forum.primtux.fr que permet de pausar questions e de cercar dens hèra de questions qui an dejà ua responsa."
+diapo.music.titre;Contrôle parental;Contraròtle parental;Contròle pairau
+diapo.music.texte;Avec Occitux, le filtrage DNS est assuré par Dns4eu. Des restrictions de temps d'écran peuvent aussi être appliquées.;Amb Occitux, lo filtratge DNS es assegurat per Dns4eu. De restriccions de temps d'ecran se pòdon tanben aplicar.;Dab Occitux, lo filtratge DNS qu'ei assegurat per Dns4eu. Que's pòden tanben aplicar restriccions de temps d'ecran.
+diapo.office.titre;QwantJunior;QwantJunior;QwantJunior
+diapo.office.texte;QwantJunior est le moteur de recherche par défaut des sessions élèves, Qwant est celui de la session administrateur.;QwantJunior es lo motor de recèrca per defaut de las sesilhas dels escolans, Qwant lo de la sesilha administrator.;QwantJunior qu'ei lo motor de recèrca per defaut de las sessions deus escolans, Qwant lo de la session administrator.
+diapo.photos.titre;Quatre environnements;Quatre environaments;Quate environaments
+diapo.photos.texte;Occitux : 4 environnements différents, adaptés aux cycles de l'école primaire.;Occitux : 4 environaments diferents, adaptats als cicles de l'escòla primària.;Occitux : 4 environaments diferents, adaptats aus cicles de l'escòla primària.
+diapo.usc.titre;Des outils adaptés;D'aisinas adaptadas;Utís adaptats
+diapo.usc.texte;Occitux propose de nombreux outils adaptés aux élèves de l'école primaire : GCompris, un menu simplifié, une interface simple...;Occitux prepausa fòrça aisinas adaptadas als escolans de l'escòla primària : GCompris, un menú simplificat, una interfàcia simpla...;Occitux que perpausa hèra d'utís adaptats aus escolans de l'escòla primària : GCompris, un menú simplificat, ua interfàcia simpla...

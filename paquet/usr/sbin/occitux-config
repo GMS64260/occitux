@@ -7,11 +7,18 @@
 #
 #   sudo occitux-config                     applique les réglages
 #   occitux-config --premier-demarrage      utilisé par le service systemd
+#   occitux-config --declenche              après la mise à jour d'un paquet
+#                                           de PrimTux (déclencheur dpkg) :
+#                                           refait seulement l'habillage
 set -euo pipefail
 
 CONF=/etc/occitux/occitux.conf
 ETAT=/var/lib/occitux
 APT_CONF=/etc/apt/apt.conf.d
+PARTAGE=/usr/share/occitux
+TEXTES=$PARTAGE/textes
+ORIGINAUX=$PARTAGE/originaux
+MODE=${1:-}
 
 LANGUE=oc
 CLAVIER=oci
@@ -156,13 +163,203 @@ appliquer_catalogues() {
     fi
 }
 
+
+# ---- Occitux à la place de PrimTux ------------------------------------------
+
+version_occitux() { dpkg-query -W -f '${Version}' occitux 2>/dev/null || echo "?"; }
+version_primtux() { sed -n 's/^RELEASE=//p' /etc/linuxmint/info 2>/dev/null || true; }
+
+# Ce que le système dit de lui-même : noms affichés seulement. Les identifiants
+# (ID, noms de code) restent ceux de Mint et de PrimTux : les outils de Mint et
+# les mises à jour en dépendent.
+FICHIERS_IDENTITE="/usr/lib/os-release /etc/lsb-release /etc/linuxmint/info /etc/issue /etc/issue.net"
+appliquer_identite() {
+    local f primtux
+    primtux=$(version_primtux)
+    # Les fichiers d'origine sont gardés pour la désinstallation.
+    for f in $FICHIERS_IDENTITE; do
+        if [ -f "$f" ] && [ ! -f "$ORIGINAUX$f" ]; then
+            mkdir -p "$(dirname "$ORIGINAUX$f")"
+            cp -p "$f" "$ORIGINAUX$f"
+        fi
+    done
+    f=/usr/lib/os-release
+    [ -f "$f" ] || f=/etc/os-release
+    if [ -f "$f" ]; then
+        fixer "$f" NAME '"Occitux"'
+        fixer "$f" PRETTY_NAME "\"Occitux $(version_occitux)${primtux:+ (PrimTux $primtux)}\""
+        fixer "$f" HOME_URL '"https://github.com/GMS64260/occitux"'
+        fixer "$f" SUPPORT_URL '"https://github.com/GMS64260/occitux/issues"'
+    fi
+    if [ -f /etc/lsb-release ]; then
+        fixer /etc/lsb-release DISTRIB_ID Occitux
+        fixer /etc/lsb-release DISTRIB_DESCRIPTION '"Occitux"'
+    fi
+    if [ -f /etc/linuxmint/info ]; then
+        fixer /etc/linuxmint/info DESCRIPTION "\"Occitux${primtux:+ (PrimTux $primtux)}\""
+        fixer /etc/linuxmint/info GRUB_TITLE Occitux
+    fi
+    printf 'Occitux \\n \\l\n\n' > /etc/issue
+    echo Occitux > /etc/issue.net
+    echo "identité : Occitux"
+}
+
+traduire() { python3 "$PARTAGE/traduire.py" --langue "$LANGUE" --textes "$TEXTES" "$@"; }
+
+# Remplace un fichier d'un paquet de PrimTux par sa version traduite. L'original
+# est mis de côté par dpkg-divert : les mises à jour du paquet le suivront là,
+# et le déclencheur dpkg d'occitux refera la traduction.
+remplacer_traduit() {
+    local f=$1 original=$ORIGINAUX$1
+    shift
+    if ! dpkg-divert --listpackage "$f" 2>/dev/null | grep -qx occitux; then
+        mkdir -p "$(dirname "$original")"
+        dpkg-divert --package occitux --rename --divert "$original" --add "$f" >/dev/null
+    fi
+    [ -f "$original" ] || return 0
+    traduire "$@" "$original" "$f"
+}
+
+# Fin d'un détournement : l'original reprend sa place.
+restaurer_original() {
+    local f=$1
+    if dpkg-divert --listpackage "$f" 2>/dev/null | grep -qx occitux; then
+        rm -f "$f"
+        dpkg-divert --package occitux --rename --remove "$f" >/dev/null
+    fi
+}
+
+# Le menu des élèves (primtuxmenu) n'est pas traduisible : on traduit ses
+# gabarits, ses scripts, ses catégories (fichier SQL et base de données).
+MENU=/usr/share/primtuxmenu
+MENU_WEB=/var/www/primtuxmenu/static/js
+MENU_BASE=/var/lib/primtuxmenu/primtuxmenu.db
+appliquer_menu() {
+    local f n=0
+    [ -d "$MENU/templates" ] || return 0
+    while IFS= read -r -d '' f; do
+        remplacer_traduit "$f"; n=$((n + 1))
+    done < <(find "$MENU/templates" -name '*.html' -print0; find "$MENU_WEB" -name '*.js' -not -path '*/lib/*' -print0 2>/dev/null)
+    [ -f "$MENU/SQL/INSERT_levels.sql" ] && remplacer_traduit "$MENU/SQL/INSERT_levels.sql"
+    [ -f "$MENU_BASE" ] && traduire --sqlite "$MENU_BASE"
+    if systemctl is-active --quiet primtuxmenu.service 2>/dev/null; then
+        systemctl restart primtuxmenu.service 2>/dev/null || true
+    fi
+    echo "menu des élèves : $n fichiers traduits"
+}
+
+# Écran de connexion (web-greeter, thème « neon » de PrimTux).
+CONNEXION=/usr/share/web-greeter/themes/neon/bundle.js
+appliquer_connexion() {
+    [ -f "$CONNEXION" ] || [ -f "$ORIGINAUX$CONNEXION" ] || return 0
+    remplacer_traduit "$CONNEXION"
+    echo "écran de connexion : traduit"
+}
+
+# Diaporama de l'installateur (présent seulement sur la clé).
+DIAPOS=/usr/share/ubiquity-slideshow/slides
+appliquer_diaporama() {
+    local f nom
+    [ -d "$DIAPOS" ] || return 0
+    for f in "$DIAPOS"/*.html; do
+        nom=$(basename "$f" .html)
+        [ "$nom" = index ] && continue
+        remplacer_traduit "$f" --diapo "$nom"
+    done
+    # La version française du diaporama cacherait la traduction.
+    if [ -d "$DIAPOS/l10n/fr" ]; then
+        mkdir -p "$ORIGINAUX$DIAPOS/l10n"
+        mv -n "$DIAPOS/l10n/fr" "$ORIGINAUX$DIAPOS/l10n/" 2>/dev/null || true
+    fi
+    echo "diaporama d'installation : traduit"
+}
+
+# Fonds d'écran des sessions : le logo PrimTux au centre laisse la place à
+# celui d'Occitux, dans la même couleur, le reste du dessin est conservé.
+FONDS=/usr/share/backgrounds/xfce
+POLICE=/usr/share/fonts/truetype/luciole/Luciole-Bold.ttf
+appliquer_fonds() {
+    local nom src dst couleur n=0
+    [ -d "$FONDS" ] || return 0
+    if ! command -v convert >/dev/null || [ ! -f "$PARTAGE/identite/occitux-blanc.png" ]; then
+        echo "fonds d'écran : imagemagick absent, PrimTux conservé"; return 0
+    fi
+    for nom in jerry koda leon poe jerry-light koda-light leon-light poe-light; do
+        dst=$FONDS/$nom.png; src=$ORIGINAUX$dst
+        [ -f "$dst" ] || [ -f "$src" ] || continue
+        if ! dpkg-divert --listpackage "$dst" 2>/dev/null | grep -qx occitux; then
+            mkdir -p "$(dirname "$src")"
+            dpkg-divert --package occitux --rename --divert "$src" --add "$dst" >/dev/null
+        fi
+        [ -f "$src" ] || continue
+        # Couleur dominante du logo d'origine (hors fond).
+        couleur=$(convert "$src" -crop 231x276+844+370 +repage -colors 3 -format %c histogram:info:- 2>/dev/null \
+                  | sort -rn | sed -n 2p | grep -o '#[0-9A-Fa-f]\{6\}' | head -1)
+        [ -n "$couleur" ] || couleur="#9a98a4"
+        convert "$src" \
+            \( +clone -crop 260x300+1100+360 +repage \) -geometry +830+360 -composite \
+            \( "$PARTAGE/identite/occitux-blanc.png" -fill "$couleur" -colorize 100 -resize 230x230 \) -geometry +845+375 -composite \
+            -font "$POLICE" -pointsize 60 -fill "$couleur" -gravity north -annotate +0+615 "Occitux" \
+            "$dst.occitux-tmp" 2>/dev/null || { rm -f "$dst.occitux-tmp"; continue; }
+        mv "$dst.occitux-tmp" "$dst"; n=$((n + 1))
+    done
+    echo "fonds d'écran : $n refaits"
+}
+
+# Lanceur du menu dans la barre de chaque session (fichiers des élèves, pas d'un paquet).
+appliquer_lanceurs() {
+    local f nom
+    nom=$(traduire --cle lanceur.menu 2>/dev/null || true)
+    [ -n "$nom" ] || return 0
+    for f in /home/*/.config/xfce4/panel/launcher-*/*.desktop /etc/skel*/.config/xfce4/panel/launcher-*/*.desktop \
+             /home/*/.local/share/applications/webapp-Primtuxmenu*.desktop /etc/skel*/.local/share/applications/webapp-Primtuxmenu*.desktop; do
+        [ -f "$f" ] || continue
+        grep -q '^X-WebApp-URL=http://127.0.0.1:5500' "$f" || continue
+        sed -i "s|^Name=.*|Name=$nom|" "$f"
+    done
+    echo "lanceur du menu : $nom"
+}
+
+appliquer_habillage() {
+    appliquer_identite
+    appliquer_menu
+    appliquer_connexion
+    appliquer_diaporama
+    appliquer_fonds
+    appliquer_lanceurs
+}
+
+# Désinstallation : PrimTux reprend ses fichiers.
+retirer_habillage() {
+    local f
+    dpkg-divert --list '*' | awk '$NF == "occitux" { print $3 }' | while read -r f; do
+        restaurer_original "$f"
+    done
+    if [ -d "$ORIGINAUX$DIAPOS/l10n/fr" ] && [ -d "$DIAPOS/l10n" ]; then
+        mv -n "$ORIGINAUX$DIAPOS/l10n/fr" "$DIAPOS/l10n/" 2>/dev/null || true
+    fi
+    if [ -f "$MENU_BASE" ]; then
+        traduire --sqlite "$MENU_BASE" --inverse 2>/dev/null || true
+    fi
+    for f in $FICHIERS_IDENTITE; do
+        [ -f "$ORIGINAUX$f" ] && cp -p "$ORIGINAUX$f" "$f"
+    done
+    rm -rf "$ORIGINAUX"
+}
+
+case "$MODE" in
+    --retirer)   retirer_habillage; exit 0 ;;
+    --declenche) appliquer_habillage; exit 0 ;;
+esac
+
 appliquer_catalogues
 appliquer_langue
 appliquer_applications
 appliquer_clavier
 appliquer_mises_a_jour
+appliquer_habillage
 
-if [ "${1:-}" = --premier-demarrage ]; then
+if [ "$MODE" = --premier-demarrage ]; then
     mkdir -p "$ETAT"
     touch "$ETAT/premier-demarrage-fait"
 else

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logo Occitux : croix occitane or sur fond rouge. Dessin original, licence GPL-3.0-or-later. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <circle cx="256" cy="256" r="248" fill="#b5121b"/>
+  <g fill="#f5c842" transform="translate(256 256)">
+    <g id="bras">
+      <path d="M -30 -24 C -30 -70 -52 -110 -58 -156 C -40 -150 -20 -148 0 -148 C 20 -148 40 -150 58 -156 C 52 -110 30 -70 30 -24 Z"/>
+      <circle cx="-58" cy="-172" r="15"/>
+      <circle cx="0" cy="-184" r="15"/>
+      <circle cx="58" cy="-172" r="15"/>
+    </g>
+    <use href="#bras" transform="rotate(90)"/>
+    <use href="#bras" transform="rotate(180)"/>
+    <use href="#bras" transform="rotate(270)"/>
+    <circle r="34"/>
+  </g>
+</svg>

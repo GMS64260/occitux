@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Consultation ponctuelle d'une entrée Per Noste, sans archivage des définitions.
+"""Consultation ponctuelle d'une entrée Dicodòc (Per Noste par défaut), sans archivage des définitions.
 
 Dicodòc : tous droits réservés. Ne pas utiliser pour extraire le dictionnaire.
 """
@@ -13,10 +13,13 @@ from urllib.request import urlopen
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("mot", help="une entrée française à consulter")
+    p.add_argument("--dic", default="PNST",
+                   help="code du dictionnaire Dicodòc (PNST : Per Noste gascon ; "
+                        "LAUS : Laux languedocien ; BASIC : Basic gascon/languedocien)")
     a = p.parse_args()
     url = "https://dicodoc.eu/oc/diccionaris?" + urlencode({
         "option": "com_dicodoc", "view": "search", "Itemid": "168",
-        "type": "fr-oc", "dic[]": "PNST", "q": a.mot})
+        "type": "fr-oc", "dic[]": a.dic, "q": a.mot})
     print(url)
     with urlopen(url, timeout=30) as r:
         page = r.read().decode("utf-8")

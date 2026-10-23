@@ -68,3 +68,82 @@ python3 traductions/outils/dicodoc.py fenêtre
 
 Le périmètre de livraison est un delta vérifié et conservateur, pas la certification intégrale
 des traductions amont. Les chaînes différées restent un travail à terminer, explicitement visible.
+
+# Tables de substitution du 23 octobre 2026
+
+`primtuxmenu.csv`, `systeme.csv` et la colonne `occitan` d'`occitux.csv` sont des
+substitutions texte exact → texte exact, sans gettext. Les formes ci-dessous ont été
+livrées malgré une attestation incomplète ; elles sont à relire avant toute recette.
+Les attestations retenues figurent dans `glossari.csv` (lignes datées 2026-10-23).
+
+## Formes reprises d'un seul dictionnaire, sans occurrence dans le corpus ni les catalogues
+
+| Notion | Forme | Colonne | Source unique et remarque |
+|---|---|---|---|
+| koala | coala | occitan, béarnais | Per Noste seul ; Laux sans entrée, aucun catalogue. |
+| pieuvre | pofre / lagast | occitan / béarnais | Laux (pofre) et Per Noste (lagast) ; genre masculin dans les deux cas : « Poe lo pofre », « Poe lo lagast ». |
+| caméléon | camaleon | occitan, béarnais | Laux et Per Noste ; aucun catalogue. |
+| appuyer (sur Entrée) | prémer | béarnais | Per Noste, sens presser. `quichar` n'est attesté qu'en languedocien (C04861, catalogues oc). |
+| phase | fasi | béarnais | Per Noste ; les catalogues oc emploient `fasa`. |
+| dysfonctionnement | disfoncionament | occitan, béarnais | Per Noste seul ; Laux sans entrée. Forme languedocienne identique par défaut. |
+| parental | pairau | béarnais | Per Noste, sens « relatif au père et à la mère ». Le languedocien `parental` n'est ni dans Laux ni dans les catalogues ; `Contraròtle parental` reste une construction. |
+| flouté | fosc | occitan, béarnais | Per Noste et Laux donnent `fosc` pour flou ; flouter n'a pas d'entrée. |
+| signalement | senhalada | béarnais | Per Noste, « action de signaler ». Le languedocien `senhalament` vient du catalogue oc d'apport. |
+| forge (logicielle) | farga / harga | occitan / béarnais | Laux et Per Noste au sens d'atelier ; l'emploi pour une forge logicielle est métaphorique, comme en français. |
+| jeton (token) | geton | occitan, béarnais | Per Noste et Laux ; le sens informatique n'est attesté que dans le catalogue oc de Linux-PAM. |
+| ticket | ticket | occitan, béarnais | Mot conservé tel quel (jargon de la forge). Laux et le catalogue oc de sudoers donnent `tiquet`. |
+| agencé, fluidité, inédit | agençat, fluiditat, inedit | occitan, béarnais | Dictionnaires seuls pour agençar et fluiditat ; inedit attesté en C07842. |
+| fonctionnalité | foncionalitat | occitan | Catalogues oc (cinder, nova, notificationhelper) ; Laux sans entrée. |
+| plus tard | mei tard | béarnais | Composé mei + tard ; le corpus n'offre que la forme bigourdane `ath mes tard` (C03002), non retenue. |
+
+## Flexions et constructions non attestées littéralement
+
+Les tables contiennent des phrases entières ; participes et accords ont été formés
+sur des lemmes attestés mais n'ont pas tous une occurrence exacte : `indicada`,
+`constatadas`, `classadas`, `adaptats`, `dedicada`, `accessiblas`, `suprimits`,
+`actualizats`, `disponiblas`, `rapida`, `completa`, `suplementària`, `materiaus`,
+`leugèrs`, `inedita`, `simplificat`, `qui an miat`, `que desfaça`, `escafa`.
+Les tournures `que deu`, `qu'ei`, `que cau`, `que's pòden` suivent l'énonciatif des
+phrases affirmatives (README) ; les énumérations et infinitifs restent sans `que`.
+Le mot `reproductibles` n'a pas d'équivalent attesté en gascon : la phrase béarnaise
+dit « se possible de tornar har » (glossaire refaire).
+
+## Choix à connaître
+
+- `Session` : le catalogue XFCE oc dit `sesilha`, LibreOffice oc dit `session`. La
+  colonne occitane suit XFCE (`Sesilha :`, `sesilha d'escolan`), la béarnaise garde
+  `session` (glossaire). Si l'ISO n'affiche pas XFCE en occitan, revoir ce choix.
+- `Redémarrer` : `Reaviar` (LibreOffice, GRUB, friendly-recovery) ; XFCE oc dit
+  `Reamodar`. Une seule forme a été retenue pour toutes les tables.
+- `Bienvenue` : `Benvenguda` (oc) ; `Benvienguda` (glossaire, Per Noste). Le corpus
+  atteste aussi `planvenguda` (C03048), également donnée par Per Noste.
+- `Explorer le monde` : `mond` en oc (catalogues), `monde` en béarnais (C07422) ; Per
+  Noste admet les deux.
+- `Grandeur et mesure` est traduit au singulier, comme la source PrimTux, et non
+  « Grandors e mesuras ».
+- `Outils du professeur` : `professor` (source), pas `regent` (C06216, « enseignant »).
+- `Lecture-compréhension` : `compreneson` (corpus C08153) ; Per Noste donne d'abord
+  `comprenença`.
+- `Descriptif` et `Description` donnent tous deux `Descripcion` : deux chaînes
+  françaises distinctes, aucune collision de substitution.
+- `Ex : Au jardin, Achats…` est un exemple de titre ; il est rendu par un exemple de
+  même nature (`Al jardin` / `Au casau`), pas par une traduction littérale.
+- La chaîne `est important ici d` (top_bar.html) est un fragment coupé ; elle n'est
+  pas dans la table, une substitution partielle pouvant casser le gabarit.
+- Les fragments `L'objet concerné de type \` et `La gravité pour une anomalie de type \`
+  conservent la barre oblique inverse finale de la source Python.
+- Dans `systeme.csv`, la colonne `frances` des diapositives est déjà adaptée à Occitux
+  (nom, Calandretas, lien de documentation) : ce n'est pas le texte PrimTux d'origine.
+  La balise `<a href=…>` de `diapo.gethelp.texte` est conservée sans fermeture, comme
+  dans la source, et pointe vers https://github.com/GMS64260/occitux.
+- `Désactiver le splash` : `l'imatge de presentacion`, comme GRUB oc ; `splash` n'a
+  pas d'équivalent attesté.
+
+## Reproduire une recherche
+
+```sh
+python3 traductions/outils/dicodoc.py --dic LAUS géométrie
+python3 traductions/outils/dicodoc.py koala
+python3 traductions/outils/corpus.py escolans --mot
+python3 -I traductions/outils/verifier_csv.py
+```

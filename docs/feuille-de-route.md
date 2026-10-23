@@ -18,11 +18,18 @@
 - [x] Menus de démarrage « Essayer Occitux » et « Installer Occitux »
 - [x] Option `LANGUE=bearnes` : béarnais, puis occitan, puis français
 - [x] Entrée « Tester la mémoire » (memtest86+, BIOS et UEFI) et section mémoire du guide des bénévoles, après un Acer Aspire 4820TG qui plantait au démarrage à cause d'une barrette
-- [ ] Premiers catalogues béarnais (`traductions/gascon/`) : bureau XFCE, Thunar, Tux Paint, écran de connexion
+- [x] Premiers catalogues béarnais (`traductions/gascon/`) : bureau XFCE, Thunar, Tux Paint, écran de connexion (fusionnés le 2026-10-23)
 
-## 0.2 : l'identité de l'école
+## 0.2 : Occitux à la place de PrimTux, installation sans un clic (en cours)
 
-- [ ] Fond d'écran, écran de connexion et écran de démarrage Occitux
+- [x] Installation automatique : preseed Ubiquity, choix du plus grand disque interne, extinction en fin d'installation, nom de PC `occitux-xxxx`
+- [x] ISO de déploiement (`OCCITUX_INSTALLATION=automatique`) : l'installation démarre seule après 20 secondes
+- [x] Le PC se présente comme Occitux : `os-release`, GRUB, écran de connexion, fonds d'écran des quatre sessions (logo Occitux à la place de celui de PrimTux), menus de démarrage, nom de volume de l'ISO
+- [x] Menu des élèves en occitan et en béarnais : gabarits, scripts, catégories (fichiers détournés par `dpkg-divert`, refaits à chaque mise à jour du menu par un déclencheur dpkg)
+- [x] Écran de connexion, diaporama d'installation et message de fin (« retirez la clé ») en occitan
+- [ ] Vérifier l'installation automatique en machine virtuelle (UEFI et BIOS), puis sur un vrai PC
+- [ ] Descriptions des logiciels du menu en occitan
+- [ ] Panneau d'accueil de la session Poe (« Accueil ») en occitan
 - [ ] Choix de la Calandreta à l'installation (nom des PC, logo)
 - [ ] Guide des bénévoles relu par un bénévole qui n'est pas informaticien
 

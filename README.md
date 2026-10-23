@@ -15,7 +15,8 @@ Occitux vise les PC des Calandretas, souvent reconditionnés. Les besoins sont d
 |---|---|
 | **Langue** | Interface en occitan (`oc_FR`). Ce qui n'est pas traduit s'affiche en français, pas en anglais. Option béarnais (`LANGUE=bearnes`) : les traductions béarnaises d'Occitux passent devant l'occitan. |
 | **Logiciels** | Firefox et LibreOffice en occitan, dictionnaire occitan pour LibreOffice. Les sites web sans occitan s'affichent en français. GCompris, qui n'existe pas en occitan, reste en français au lieu de basculer en anglais. |
-| **Démarrage** | Menus de démarrage « Essayer Occitux », « Installer Occitux » et « Tester la mémoire », pour les PC reconditionnés. |
+| **Installation** | Entrée « Installer Occitux automatiquement » : le PC s'installe sans une question (tout le disque est effacé). Avec l'ISO de déploiement, il suffit de démarrer sur la clé. Entrée « Tester la mémoire » pour les PC reconditionnés. |
+| **Identité** | Le PC se présente comme Occitux : nom du système, menus de démarrage, fonds d'écran des sessions, écran de connexion, menu des élèves. |
 | **Clavier** | AZERTY occitan (`fr(oci)`) : les lettres occitanes en accès direct. |
 | **Mises à jour** | Correctifs de sécurité Ubuntu et Mint installés automatiquement. |
 
@@ -24,7 +25,7 @@ Tout se règle dans un seul fichier, `/etc/occitux/occitux.conf` : interface en 
 ## Ce qu'Occitux ne fait pas
 
 - **Il ne remplace pas PrimTux.** Les logiciels éducatifs, les sessions par âge et le contrôle parental sont ceux de PrimTux, maintenus par son équipe.
-- **Le menu de PrimTux reste en français** : il n'est pas encore traduisible. Voir la [feuille de route](docs/feuille-de-route.md).
+- **Le menu de PrimTux n'est pas traduisible** : Occitux remplace ses textes français par des textes occitans à l'installation (menus, catégories, écran de connexion, diaporama d'installation) et refait ce remplacement à chaque mise à jour du menu. Les descriptions des logiciels et le panneau d'accueil de la session Poe restent en français. Voir la [feuille de route](docs/feuille-de-route.md).
 - **Les traductions occitanes ne sont pas en gascon** : le système ne connaît qu'un seul occitan. Voir [la question de la langue](docs/lenga.md).
 
 ## Installer
@@ -71,6 +72,20 @@ Pour une ISO dont les PC s'installent directement en béarnais, avec les menus d
 sudo OCCITUX_LANGUE=bearnes ./construire/construire-iso.sh PrimTux9-….iso construction/occitux_x.y.z_all.deb
 ```
 
+### Installation automatique et ISO de déploiement
+
+Chaque ISO a une entrée « Installer Occitux automatiquement » : l'installateur ne pose aucune question, prend **le plus grand disque interne** du PC (jamais la clé USB), l'efface entièrement, installe Occitux, puis demande de retirer la clé et s'éteint. Au rallumage, le PC démarre sur Occitux, en occitan.
+
+Pour une salle entière, on construit une **ISO de déploiement**, où cette entrée est choisie toute seule après 20 secondes :
+
+```sh
+sudo OCCITUX_INSTALLATION=automatique ./construire/construire-iso.sh PrimTux9-….iso construction/occitux_x.y.z_all.deb
+```
+
+Elle produit `occitux-x.y.z-deploiement.iso`. **Tout PC démarré sur cette clé perd son disque** : ne la laisser branchée que sur les PC à installer. Les réponses de l'installateur sont dans `construire/preseed/`.
+
+Pour essayer une ISO dans une machine virtuelle (QEMU, disque vierge de 40 Go) : `./construire/essayer-vm.sh construction/occitux-x.y.z.iso`.
+
 ## Organisation du dépôt
 
 ```
@@ -78,8 +93,10 @@ paquet/            le paquet occitux, tel qu'il sera installé
   DEBIAN/          description et scripts d'installation
   etc/occitux/     le fichier de réglages
   usr/sbin/        occitux-config, qui applique les réglages
-traductions/       traductions béarnaises (gascon/<logiciel>.po, compilées dans le paquet)
-construire/        fabrication de l'ISO à partir de celle de PrimTux
+  usr/share/occitux/ traduire.py, qui remplace les textes de PrimTux par ceux d'Occitux
+traductions/       traductions béarnaises (gascon/<logiciel>.po), tables de textes (*.csv)
+identite/          logo Occitux (croix occitane)
+construire/        fabrication de l'ISO à partir de celle de PrimTux, preseed de l'installation automatique
 docs/              guide des bénévoles, langue, feuille de route
 ```
 

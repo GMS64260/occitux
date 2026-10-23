@@ -33,6 +33,14 @@ jobs:
               printf "[%%General]\nlocale=system\n" > $d/.config/gcompris/gcompris-qt.conf
             done
             mkdir -p /usr/lib/firefox/defaults/pref
+            # Fichiers de PrimTux habillés par Occitux : menu des élèves, écran de connexion, fond
+            mkdir -p /usr/share/primtuxmenu/templates /usr/share/primtuxmenu/SQL /var/lib/primtuxmenu /usr/share/web-greeter/themes/neon /usr/share/backgrounds/xfce /etc/linuxmint
+            printf "<h1>Quel personnage&nbsp;?</h1><title>Primtux Menu</title>\n" > /usr/share/primtuxmenu/templates/index.html
+            printf "INSERT INTO levels VALUES (1, %s);\n" "\"Mathématiques\"" > /usr/share/primtuxmenu/SQL/INSERT_levels.sql
+            printf "placeholder:\"Mot de passe\"\n" > /usr/share/web-greeter/themes/neon/bundle.js
+            printf "RELEASE=9\nDESCRIPTION=\"PrimTux 9\"\nGRUB_TITLE=PrimTux9\n" > /etc/linuxmint/info
+            apt-get install -y -q --no-install-recommends sqlite3
+            sqlite3 /var/lib/primtuxmenu/primtuxmenu.db "CREATE TABLE levels (id INTEGER, session TEXT, name_level_one TEXT, name_level_two TEXT); INSERT INTO levels VALUES (1, \"jerry\", \"Mathématiques\", NULL);"
             # Élagage des traductions de PrimTux (localepurge) : seul le français passe
             mkdir -p /etc/dpkg/dpkg.cfg.d
             printf "path-exclude=/usr/share/locale/*\npath-include=/usr/share/locale/fr/*\n" > /etc/dpkg/dpkg.cfg.d/50localepurge
@@ -55,6 +63,16 @@ jobs:
             locale -a | grep -qi "^oc_FR.utf8$"
             grep -x "XKBVARIANT=\"oci\"" /etc/default/keyboard
             grep -q "noble-security" /etc/apt/apt.conf.d/51occitux-unattended-upgrades
+            # Occitux à la place de PrimTux : noms, menu des élèves, écran de connexion
+            grep -x "NAME=\"Occitux\"" /usr/lib/os-release
+            grep -x "GRUB_TITLE=Occitux" /etc/linuxmint/info
+            dpkg-divert --listpackage /usr/share/primtuxmenu/templates/index.html | grep -x occitux
+            test -f /usr/share/occitux/originaux/usr/share/primtuxmenu/templates/index.html
+            grep -q "Occitux" /usr/share/primtuxmenu/templates/index.html
+            grep -q "Quin personatge" /usr/share/primtuxmenu/templates/index.html
+            grep -q "Matematicas" /usr/share/primtuxmenu/SQL/INSERT_levels.sql
+            sqlite3 /var/lib/primtuxmenu/primtuxmenu.db "select name_level_one from levels" | grep -x Matematicas
+            grep -q "Senhal" /usr/share/web-greeter/themes/neon/bundle.js
             sed -i "s/^LANGUE=.*/LANGUE=fr/; s/^CLAVIER=.*/CLAVIER=azerty/" /etc/occitux/occitux.conf
             occitux-config
             grep -x "LANG=fr_FR.UTF-8" /etc/default/locale
@@ -67,6 +85,11 @@ jobs:
             apt-get purge -y -q occitux
             test ! -e /etc/apt/apt.conf.d/51occitux-unattended-upgrades
             test ! -e /usr/share/locale/oc@gascon
+            # PrimTux reprend ses fichiers et ses noms
+            test -z "$(dpkg-divert --listpackage /usr/share/primtuxmenu/templates/index.html)"
+            grep -q "Quel personnage" /usr/share/primtuxmenu/templates/index.html
+            grep -x "GRUB_TITLE=PrimTux9" /etc/linuxmint/info
+            sqlite3 /var/lib/primtuxmenu/primtuxmenu.db "select name_level_one from levels" | grep -x "Mathématiques"
           '
 
       - uses: actions/upload-artifact@v7

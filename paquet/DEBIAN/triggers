@@ -1,0 +1,10 @@
+# Quand PrimTux ou Mint mettent à jour ces fichiers, occitux refait son
+# habillage (occitux-config --declenche).
+interest-noawait /usr/share/primtuxmenu/templates
+interest-noawait /usr/share/primtuxmenu/SQL
+interest-noawait /var/www/primtuxmenu/static/js
+interest-noawait /usr/share/web-greeter/themes/neon
+interest-noawait /usr/share/backgrounds/xfce
+interest-noawait /usr/share/ubiquity-slideshow/slides
+interest-noawait /usr/lib/os-release
+interest-noawait /etc/linuxmint/info

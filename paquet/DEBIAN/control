@@ -1,16 +1,17 @@
 Package: occitux
-Version: 0.1.0
+Version: 0.2.0
 Architecture: all
 Section: localization
 Priority: optional
 Maintainer: Guillaume GOMES DA NAVE <guillaume.gomes@laposte.net>
 Homepage: https://github.com/GMS64260/occitux
-Depends: locales, keyboard-configuration, unattended-upgrades, language-pack-oc, language-pack-gnome-oc
-Recommends: firefox-locale-oc, libreoffice-l10n-oc, hunspell-oc
+Depends: locales, keyboard-configuration, unattended-upgrades, language-pack-oc, language-pack-gnome-oc, python3
+Recommends: firefox-locale-oc, libreoffice-l10n-oc, hunspell-oc, imagemagick
 Description: couche occitane pour PrimTux, pensée pour les Calandretas
  Occitux passe un PC PrimTux en occitan : interface en occitan avec repli
- en français pour ce qui n'est pas traduit, clavier AZERTY occitan,
- Firefox, LibreOffice et dictionnaire en occitan, mises à jour de sécurité
- automatiques.
+ en français pour ce qui n'est pas traduit, menu des élèves et écran de
+ connexion traduits, clavier AZERTY occitan, Firefox, LibreOffice et
+ dictionnaire en occitan, mises à jour de sécurité automatiques. Le PC se
+ présente comme Occitux : noms, fonds d'écran, menus de démarrage.
  .
  Réglages dans /etc/occitux/occitux.conf, appliqués par « sudo occitux-config ».

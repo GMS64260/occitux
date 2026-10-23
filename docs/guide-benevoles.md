@@ -8,9 +8,15 @@ Ce guide s'adresse à un parent bénévole, pas forcément informaticien. Compte
 - Une clé USB de 32 Go ou plus, **vide** : elle sera effacée.
 - Un PC sous Linux pour préparer la clé (celui d'un parent suffit).
 
-## Le principe
+## Deux façons de faire
 
-On installe Occitux sur **un seul PC**, le modèle. On en fait une copie sur la clé USB. Puis on recopie ce modèle sur les autres PC, en quelques minutes chacun. C'est l'[outil de déploiement de PrimTux](https://framagit.org/primtux/outil-de-deploiement-primtux) qui fait les copies.
+**La plus simple : la clé qui installe toute seule.** Quelqu'un prépare une clé avec l'ISO de déploiement d'Occitux (`occitux-x.y.z-deploiement.iso`, voir le README). Sur chaque PC : brancher la clé, allumer, attendre. Au bout de 20 secondes, Occitux s'installe sans poser de question, puis le PC demande de retirer la clé et s'éteint. On rallume : c'est fini, le PC est en occitan. Compter 10 à 20 minutes par PC, et plusieurs PC à la fois si on a plusieurs clés.
+
+**Attention** : cette clé **efface tout le disque** de n'importe quel PC qui démarre dessus. Ne jamais la laisser traîner, ni la brancher sur le PC d'un parent. Si un PC démarre dessus par erreur, l'éteindre dans les 20 secondes.
+
+Chaque PC installé de cette façon reçoit un nom `occitux-xxxx` différent, en occitan, avec les mises à jour automatiques. Il ne reste qu'à ajouter ce qui est propre à l'école (favoris, logiciels en plus), PC par PC, ou à passer par la seconde méthode.
+
+**La seconde : le PC modèle.** On installe Occitux sur **un seul PC**, le modèle, on le règle aux petits oignons, on en fait une copie sur la clé USB, puis on recopie ce modèle sur les autres PC. C'est l'[outil de déploiement de PrimTux](https://framagit.org/primtux/outil-de-deploiement-primtux) qui fait les copies. Les étapes 2 à 6 ci-dessous décrivent cette méthode. L'étape 1 vaut pour les deux.
 
 ## 1. Préparer chaque PC (5 minutes par PC)
 
@@ -47,7 +53,7 @@ Copier aussi sur la clé, dans le dossier `ventoy`, l'ISO Occitux (`occitux-x.y.
 ## 3. Installer le PC modèle
 
 1. Démarrer le PC sur la clé et choisir l'ISO Occitux.
-2. Lancer l'installation et suivre les écrans. Prendre **le plus petit disque** de tous les PC : on ne pourra pas copier le modèle sur un disque plus petit que le sien.
+2. Choisir « Installer Occitux automatiquement » (tout le disque est effacé) ou « Installer Occitux » pour choisir soi-même le disque. Prendre **le plus petit disque** de tous les PC : on ne pourra pas copier le modèle sur un disque plus petit que le sien.
 3. Redémarrer. Le PC s'ouvre en occitan.
 4. Ajouter ce qui est propre à l'école : logiciels en plus, favoris, réglages des sessions.
 

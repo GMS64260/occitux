@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove)
+        # PrimTux reprend ses fichiers (dpkg-divert) et ses noms.
+        occitux-config --retirer || true
+        ;;
+esac

@@ -1,0 +1,129 @@
+frances;occitan;bearnes
+Ex : Au jardin, Achats…;Ex : Al jardin, Crompas…;Ex : Au casau, Crompas…
+icône par défaut pour toutes les sessions;icòna per defaut per totas las sesilhas;icòna per defaut entà totas las sessions
+la page sélectionnée;la pagina seleccionada;la pagina seleccionada
+Retour au Primtuxmenu;Tornar al menú Occitux;Tornar au menú Occitux
+Accessoires;Accessòris;Accessòris
+Activités artistiques;Activitats artisticas;Activitats artisticas
+Bureautique;Burotica;Burotica
+Calcul;Calcul;Calcul
+Conjugaison;Conjugason;Conjugason
+Enseignement moral et civique;Ensenhament moral e civic;Ensenhament morau e civic
+Enseignements artistiques;Ensenhaments artistics;Ensenhaments artistics
+Explorer le monde;Explorar lo mond;Explorar lo monde
+Français;Francés;Francés
+Grammaire;Gramatica;Gramatica
+Grandeur et mesure;Grandor e mesura;Grandor e mesura
+Graphisme;Grafisme;Grafisme
+Géométrie;Geometria;Geometria
+Histoire géographie;Istòria geografia;Istòria geografia
+Jeux;Jòcs;Jòcs
+Langue vivante;Lenga viva;Lenga viva
+Le temps et l'espace;Lo temps e l'espaci;Lo temps e l'espaci
+Lecture-compréhension;Lectura-compreneson;Lectura-compreneson
+Lecture-sons;Lectura-sons;Lectura-sons
+Lexique;Lexic;Lexic
+Mathématiques;Matematicas;Matematicas
+Multimédia;Multimèdia;Multimèdia
+Numération;Numeracion;Numeracion
+Orthographe;Ortografia;Ortografia
+Outils du professeur;Aisinas del professor;Utís deu professor
+Sciences;Sciéncias;Sciéncias
+Essayez de décrire au maximum quel est la fonctionnalité absente que vous désirez : sa nature, son intention et si possible la manière dont vous souhaitez y répondre.;Ensajar de descriure al maximum la foncionalitat absenta desirada : sa natura, son intencion e, se possible, lo biais de i respondre.;Ensajar de descríver au maxímum la foncionalitat absenta desirada : la soa natura, la soa intencion e, se possible, la faiçon de i respóner.
+Exprimez ici une suggestion d'amélioration, un conseil etc.;Exprimir aicí una suggestion de melhorament, un conselh, etc.;Exprimir ací ua suggestion de melhorament, un conselh, etc.
+Pour faciliter la tâche de correction, il faut être précis sur les étapes (si possible reproductibles) qui ont conduit au disfonctionnement ainsi que la description de l'intention de départ.;Per facilitar la correccion, cal èsser precís sus las etapas (se possible reproductiblas) qu'an menat al disfoncionament, e descriure l'intencion iniciala.;Entà facilitar la correccion, que cau estar precís sus las etapas (se possible de tornar har) qui an miat au disfoncionament, e descríver l'intencion iniciau.
+Connecté !;Connectat !;Connectat !
+Non défini;Pas definit;Pas definit
+Propriétaire;Proprietari;Proprietari
+"{path} doit avoir une entrée ""aptName""";"{path} deu aver una entrada ""aptName""";"{path} que deu aver ua entrada ""aptName"""
+{path} doit avoir une entrée de session !;{path} deu aver una entrada de sesilha !;{path} que deu aver ua entrada de session !
+accès à l'ensemble des 3 cycles;accès als 3 cicles;accès aus 3 cicles
+Succès : ;Succès : ;Escaduda : 
+Version du primtuxmenu dans la base de donnée (avant la montée de version): {last_version};Version del menú Occitux dins la basa de donadas (abans la mesa a jorn): {last_version};Version deu menú Occitux dens la basa de dadas (abans l'actualizacion): {last_version}
+Recréation de l'ensemble des tables;Tornar crear totas las taulas;Tornar crear totas las taulas
+**Ca concerne :** le système;**Concernís :** lo sistèma;**Çò concernit :** lo sistèma
+Erreur pour insérer un ticket dans la forge : {response.status_code} : {response.text};Error al moment d'inserir un ticket dins la farga : {response.status_code} : {response.text};Error en inserir un ticket dens la harga : {response.status_code} : {response.text}
+Il faut que la valeur de recherche face plus de 2 caractères.;La valor de recèrca deu far mai de 2 caractèrs.;La valor de recèrca que deu har mei de 2 caractèrs.
+Impossibilité d'accéder au token git;Impossible d'accedir al geton git;Impossible d'accedir au geton git
+Impossibilité de créer un ticket car la forge de communs numériques n'est pas accessible. Veuillez rééssayer plus tard. code d'erreur : {e.code} et raison : {e.reason}. details : {e.read().decode()};Impossible de crear un ticket : la farga dels comuns numerics es pas accessibla. Ensajar tornamai pus tard. còdi d'error : {e.code} e rason : {e.reason}. detalhs : {e.read().decode()};Impossible de crear un ticket : la harga deus comuns numerics n'ei pas accessibla. Tornar ensajar mei tard. còdi d'error : {e.code} e rason : {e.reason}. detalhs : {e.read().decode()}
+Impossibilité de créer un ticket car la forge de communs numériques n'est pas accessible. Veuillez rééssayer plus tard. code d'erreur : {e.code} et raison : {e.reason}. détails : {e.read().decode()};Impossible de crear un ticket : la farga dels comuns numerics es pas accessibla. Ensajar tornamai pus tard. còdi d'error : {e.code} e rason : {e.reason}. detalhs : {e.read().decode()};Impossible de crear un ticket : la harga deus comuns numerics n'ei pas accessibla. Tornar ensajar mei tard. còdi d'error : {e.code} e rason : {e.reason}. detalhs : {e.read().decode()}
+L'application renseigné n'existe pas;L'aplicacion indicada existís pas;L'aplicacion indicada n'existeish pas
+L'objet concerné de type \;L'objècte concernit de tipe \;L'objècte concernit de tipe \
+L'objet concerné est obligatoire;L'objècte concernit es obligatòri;L'objècte concernit qu'ei obligatòri
+"La demande a été créée : <a href=""{issue[""web_url""]}"" target=""_blank"">{issue[""web_url""]}</a>";"La demanda es estada creada : <a href=""{issue[""web_url""]}"" target=""_blank"">{issue[""web_url""]}</a>";"La demanda qu'ei estada creada : <a href=""{issue[""web_url""]}"" target=""_blank"">{issue[""web_url""]}</a>"
+La gravité pour une anomalie de type \;La gravetat per una anomalia de tipe \;La gravetat entà ua anomalia de tipe \
+Le nombre de secondes pour la saisie du formulaire doit être présente.;Lo nombre de segondas per la picada del formulari deu èsser present.;Lo nombre de segondas entà la sasida deu formulari que deu estar present.
+Le signalement d'une anomalie nécessite de préciser la gravité;Lo senhalament d'una anomalia necessita de precisar la gravetat;La senhalada d'ua anomalia que necessita de precisar la gravetat
+Le titre de ce signalement existe déjà.;Lo títol d'aqueste senhalament existís ja.;Lo títol d'aquesta senhalada qu'existeish dejà.
+Quand l'object concerné est une application, il faut la renseigner.;Quand l'objècte concernit es una aplicacion, cal l'indicar.;Quan l'objècte concernit ei ua aplicacion, que cau indicar-la.
+anomalie de gravité : {gravity};anomalia de gravetat : {gravity};anomalia de gravetat : {gravity}
+fonctionnalité;foncionalitat;foncionalitat
+non identifié;pas identificat;pas identificat
+Client connecté;Client connectat;Client connectat
+Client déconnecté;Client desconnectat;Client desconnectat
+Adresse mail pour vous joindre (non obligatoire mais utile pour vous demander des précisions si nécessaire);Adreça electronica de contacte (pas obligatòria, mas utila per demandar de precisions se cal);Adreça corric de contacte (pas obligatòria, mas utila entà demandar precisions si cau)
+Envoyer;Mandar;Enviar
+Nature de l'alerte;Natura de l'alèrta;Natura de l'alèrta
+Nom de l'application;Nom de l'aplicacion;Nom de l'aplicacion
+Objet concerné;Objècte concernit;Objècte concernit
+Retour de bugs, problèmes, améliorations;Senhalar de bugs, de problèmas, de melhoraments;Senhalar bugs, problèmas, melhoraments
+Rédigez ici votre contribution, en essayant d'être le plus précis possible;Redigir aicí la contribucion, en ensajant d'èsser lo mai precís possible;Redigir ací la contribucion, en ensajar d'estar lo mei precís possible
+Titre;Títol;Títol
+Vous aimez PrimTux ? Alors vous pouvez contribuer à son amélioration, même en étant simple utilisateur, en nous faisant retour des bugs, des anomalies que vous constatez, ou par vos suggestions.;Occitux agrada ? Alara es possible de contribuir a son melhorament, quitament coma simple utilizaire : senhalar los bugs, las anomalias constatadas, o far de suggestions.;Occitux qu'agrada ? Alavetz qu'ei possible de contribuir au son melhorament, quitament com simple utilizator : senhalar los bugs, las anomalias constatadas, o har suggestions.
+faire des suggestions;far de suggestions;har suggestions
+le système;lo sistèma;lo sistèma
+proposer une amélioration;prepausar un melhorament;perpausar un melhorament
+signaler une anomalie;senhalar una anomalia;senhalar ua anomalia
+une application spécifique;una aplicacion especifica;ua aplicacion especifica
+Application;Aplicacion;Aplicacion
+Nombre d'utilisations;Nombre d'utilizacions;Nombre d'utilizacions
+Statistiques d'utilisation;Estatisticas d'utilizacion;Estatisticas d'utilizacion
+applications sur;aplicacions sus;aplicacions sus
+ont été lancées.;son estadas aviadas.;que son estadas aviadas.
+Licence;Licéncia;Licéncia
+Lien de l'éditeur;Ligam de l'editor;Ligam de l'editor
+Disponibles;Disponiblas;Disponiblas
+Toutes;Totas;Totas
+Descriptif;Descripcion;Descripcion
+Créer;Crear;Crear
+Mettre à jour;Metre a jorn;Actualizar
+Non;Non;Non
+Oui;Òc;Òc
+Supprimer;Suprimir;Suprimir
+Ajouter une application;Apondre una aplicacion;Ajustar ua aplicacion
+Commande de lancement;Comanda d'aviada;Comanda d'aviada
+Commande de lancement commune à toutes les sessions;Comanda d'aviada comuna a totas las sesilhas;Comanda d'aviada comuna a totas las sessions
+Description;Descripcion;Descripcion
+Icône commun à toutes les sessions;Icòna comuna a totas las sesilhas;Icòna comuna a totas las sessions
+Icône spécifique à cette session;Icòna especifica a aquesta sesilha;Icòna especifica ad aquesta session
+Nom;Nom;Nom
+Nom paquet;Nom del paquet;Nom deu paquet
+Présent dans;Present dins;Present dens
+Toutes les applications;Totas las aplicacions;Totas las aplicacions
+Primtux Menu;Menú Occitux;Menú Occitux
+"Quel personnage&nbsp;?";"Quin personatge&nbsp;?";"Quin personatge&nbsp;?"
+En attente;En espèra;En espèra
+En cours;En cors;En cors
+Terminés;Acabats;Acabats
+d'installation;d'installacion;d'installacion
+installer;installar;installar
+installés;installats;installats
+mettre à jour;metre a jorn;actualizar
+mis à jour;meses a jorn;actualizats
+paquets;paquets;paquets
+paquets en phase;paquets en fasa;paquets en fasi
+paquets à;paquets a;paquets a
+supprimer;suprimir;suprimir
+supprimés;suprimits;suprimits
+dernier;darrièr;darrèr
+premier;primièr;purmèr
+précédent;precedent;precedent
+suivant;seguent;seguent
+Filtrer par applications :;Filtrar per aplicacions :;Filtrar per aplicacions :
+Session :;Sesilha :;Session :
+installées;installadas;installadas
+non installées;pas installadas;pas installadas
+tous;totes;tots
+"Retourner à l'écran des sessions&nbsp;?";"Tornar a l'ecran de las sesilhas&nbsp;?";"Tornar tà l'ecran de las sessions&nbsp;?"
+Cette application est uniquement disponible pour les ordinateurs avec le système Primtux installé. Elle n’est pas compatible avec la version en ligne.;Aquesta aplicacion es disponibla unicament suls ordenadors amb lo sistèma Occitux installat. Es pas compatibla amb la version en linha.;Aquesta aplicacion qu'ei disponibla sonque suus ordinators dab lo sistèma Occitux installat. N'ei pas compatibla dab la version en linha.
+Installez Primtux pour utiliser cette application !;Installar Occitux per utilizar aquesta aplicacion !;Installar Occitux entà utilizar aquesta aplicacion !

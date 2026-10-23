@@ -1,6 +1,8 @@
 #!/bin/sh
 # La langue et le clavier restent tels quels après la désinstallation :
 # ce sont des réglages du système, que l'on change avec les outils de Mint.
+# L'habillage (menus, écran de connexion, fonds d'écran, noms) est retiré
+# par le prerm, tant que les scripts d'occitux sont encore là.
 set -e
 
 case "$1" in
@@ -9,6 +11,7 @@ case "$1" in
               /etc/apt/apt.conf.d/52occitux-periodic \
               /usr/lib/firefox/defaults/pref/occitux.js
         [ -L /usr/share/locale/oc@gascon ] && rm -f /usr/share/locale/oc@gascon
+        rm -rf /usr/share/occitux/originaux
         deb-systemd-helper disable occitux-premier-demarrage.service >/dev/null || true
         ;;
 esac

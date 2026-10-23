@@ -104,8 +104,15 @@ traduction avec le programme GNU `gettext`. Les MO de test et le rapport JSON
 restent dans `construction/`, non versionné. Le test de repli nécessite la locale
 `fr_FR.UTF-8`. Ce contrôle ne remplace pas un essai dans chaque application de l'ISO.
 
-Les textes propres au projet sont dans `occitux.csv`, avec leurs attestations
-dans `occitux-sources.csv`. `occitux-provenance.json` identifie la version du
+Les textes propres au projet sont dans `occitux.csv` (`clau;frances;occitan;bearnes`),
+avec leurs attestations dans `occitux-sources.csv`. Les textes du menu des élèves
+(`primtuxmenu.csv`, `frances;occitan;bearnes`, substitution texte exact → texte
+exact) et de l'écran de connexion, du lanceur, de la fin d'installation et du
+diaporama (`systeme.csv`) suivent les mêmes règles ; la colonne `occitan` est le
+languedocien référentiel des catalogues Ubuntu `oc` et LibreOffice, la colonne
+`bearnes` celui du glossaire. `python3 -I traductions/outils/verifier_csv.py`
+contrôle la forme de ces trois tables ; `outils/dicodoc.py --dic LAUS` consulte le
+dictionnaire languedocien de Laux. `occitux-provenance.json` identifie la version du
 script de configuration lue dans le travail parallèle. Ni ce script ni les menus
 de démarrage ne sont modifiés sur cette branche.
 
@@ -135,10 +142,12 @@ valide la structure gettext, pas à elle seule la langue.
 
 ## État de la livraison
 
-316 notions figurent au glossaire, dont 308 avec une attestation retenue.
-Pour huit notions, aucune attestation satisfaisante dans le sens voulu n'a été
-retenue : sept formes sources sont conservées, et une notion est absente des
-catalogues examinés. Les trois flexions sans attestation littérale sont également
+485 notions figurent au glossaire, dont 477 avec une attestation retenue
+(316 au 21 octobre, 169 ajoutées le 23 octobre pour le menu des élèves, l'écran de
+connexion et le diaporama ; ces dernières ne sont pas encore produites par
+`outils/glossaire.py`). Pour huit notions, aucune attestation satisfaisante dans le
+sens voulu n'a été retenue : sept formes sources sont conservées, et une notion est
+absente des catalogues examinés. Les trois flexions sans attestation littérale sont également
 documentées. Aucune particularité ossaloise n'est affirmée sans preuve locale.
 
 Les nombres de chaînes par domaine, y compris les différences différées, sont

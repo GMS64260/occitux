@@ -1,0 +1,71 @@
+# occitux.seed : réponses de l'installateur (Ubiquity) pour l'installation
+# automatique d'Occitux. Chargé par l'entrée de démarrage « Installer Occitux
+# automatiquement », avec le paramètre noyau automatic-ubiquity.
+#
+# ATTENTION : cette installation efface tout le disque interne choisi par
+# preseed/choisir-disque.sh (le plus grand disque interne, jamais la clé USB).
+
+# Langue de l'installateur et du système (occitux-config réapplique ensuite
+# la langue d'Occitux au premier démarrage).
+d-i debian-installer/locale string fr_FR.UTF-8
+d-i debian-installer/language string fr
+d-i localechooser/supported-locales multiselect fr_FR.UTF-8, oc_FR.UTF-8
+
+# Clavier : AZERTY occitan.
+d-i console-setup/ask_detect boolean false
+d-i keyboard-configuration/layoutcode string fr
+d-i keyboard-configuration/variantcode string oci
+d-i keyboard-configuration/xkb-keymap select fr(oci)
+
+# Réseau : pas d'attente d'une connexion, nom du PC.
+d-i netcfg/choose_interface select auto
+d-i netcfg/get_hostname string occitux
+d-i netcfg/get_domain string lan
+
+# Pas de téléchargement pendant l'installation (les mises à jour de sécurité
+# s'installent ensuite toutes seules), pas de pilotes propriétaires.
+ubiquity ubiquity/download_updates boolean false
+ubiquity ubiquity/use_nonfree boolean false
+ubiquity ubiquity/minimal_install boolean false
+
+# Fuseau horaire.
+d-i time/zone string Europe/Paris
+d-i clock-setup/utc boolean true
+d-i clock-setup/ntp boolean true
+
+# Comptes : comme PrimTux, aucun compte créé par l'installateur. Les comptes
+# Jerry, Koda, Léon et Poe sont déjà dans le système copié.
+d-i passwd/make-user boolean false
+d-i passwd/root-login boolean true
+d-i passwd/root-password password tuxprof
+d-i passwd/root-password-again password tuxprof
+d-i user-setup/allow-password-weak boolean true
+d-i user-setup/encrypt-home boolean false
+
+# Disque : tout le disque interne choisi par le script, une seule partition.
+d-i partman/early_command string sh /cdrom/preseed/choisir-disque.sh
+d-i partman-auto/method string regular
+d-i partman-auto/choose_recipe select atomic
+d-i partman-auto/purge_lvm_from_device boolean true
+d-i partman-lvm/device_remove_lvm boolean true
+d-i partman-lvm/confirm boolean true
+d-i partman-lvm/confirm_nooverwrite boolean true
+d-i partman-md/device_remove_md boolean true
+d-i partman-md/confirm boolean true
+d-i partman-partitioning/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+d-i partman-efi/non_efi_system boolean true
+d-i partman-basicfilesystems/no_swap boolean false
+
+# Amorçage : GRUB sur le disque choisi, sans chercher d'autres systèmes.
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/with_other_os boolean false
+
+# Pas d'écran récapitulatif ; à la fin, extinction du PC (on retire la clé,
+# puis on rallume : le PC démarre sur Occitux).
+ubiquity ubiquity/summary note
+ubiquity ubiquity/reboot boolean false
+ubiquity ubiquity/poweroff boolean true
+ubiquity ubiquity/success_command string sh /cdrom/preseed/apres-installation.sh

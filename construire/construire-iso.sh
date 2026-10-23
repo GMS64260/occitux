@@ -55,7 +55,7 @@ texte() {
     echo "${traduit:-$francais}"
 }
 # isolinux n'affiche pas les lettres accentuées : on les remplace.
-sans_accents() { echo "$1" | iconv -f UTF-8 -t ASCII//TRANSLIT | tr -d "'^\`\"~"; }
+sans_accents() { echo "$1" | iconv -f UTF-8 -t ASCII//TRANSLIT | tr -d '^`"~'; }
 
 ESSAYER=$(texte demarrage.essayer "Essayer Occitux")
 INSTALLER=$(texte demarrage.installer "Installer Occitux")

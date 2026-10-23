@@ -25,6 +25,7 @@ args=(
     -device virtio-vga -device qemu-xhci -device usb-tablet
     -netdev user,id=n0 -device virtio-net-pci,netdev=n0
     -monitor "unix:$DOSSIER/moniteur.sock,server,nowait"
+    -serial "file:$DOSSIER/serie.log"
     -rtc base=localtime
 )
 if [ "${OCCITUX_VM_DISQUE:-non}" != oui ]; then

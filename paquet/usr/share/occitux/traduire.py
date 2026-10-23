@@ -70,13 +70,58 @@ def proteger(texte, javascript):
     return texte
 
 
-def traduire_texte(contenu, textes, javascript):
+def traduire_brut(contenu, textes, javascript):
+    """Remplacement des textes dans une chaîne sans structure particulière."""
     for fr in sorted(textes, key=len, reverse=True):
         # Une espace du texte français vaut aussi pour une espace insécable (U+00A0).
         corps = "".join("[ \u00a0]" if c == " " else re.escape(c) for c in fr)
         motif = re.compile(r"(?<!\w)" + corps + r"(?!\w)")
         contenu = motif.sub(lambda m, t=proteger(textes[fr], javascript): t, contenu)
     return MARQUE.sub("Occitux", contenu)
+
+
+# Un gabarit HTML/Jinja n'est traduit que là où un humain lit : les textes
+# entre les balises, quelques attributs (title, placeholder, alt, aria-label),
+# et les chaînes des blocs <script> (en mode JavaScript). Les expressions Jinja
+# ({{ }}, {% %}, {# #}) et le reste des balises restent intacts.
+JINJA = r"\{\{.*?\}\}|\{%.*?%\}|\{#.*?#\}"
+SEGMENTS = re.compile(r"(?s)(" + JINJA + r"|<script\b.*?</script>|<style\b.*?</style>|<!--.*?-->|<[^>]*>)")
+ATTRIBUTS = re.compile(r'\b(title|placeholder|alt|aria-label)=("[^"]*"|\'[^\']*\')')
+
+
+def traduire_html(contenu, textes):
+    def balise(b):
+        if b.startswith("<script"):
+            m = re.match(r"(?s)(<script\b[^>]*>)(.*)(</script>)", b)
+            return m.group(1) + traduire_jinja(m.group(2), textes, True) + m.group(3) if m else b
+        if b.startswith("<style") or b.startswith("<!--"):
+            return b
+        return ATTRIBUTS.sub(lambda m: m.group(1) + "=" + m.group(2)[0] + traduire_brut(m.group(2)[1:-1], textes, False) + m.group(2)[-1], b)
+
+    morceaux = SEGMENTS.split(contenu)
+    for i, m in enumerate(morceaux):
+        if i % 2 == 0:
+            morceaux[i] = traduire_brut(m, textes, False)
+        elif m.startswith("{{") or m.startswith("{%") or m.startswith("{#"):
+            pass
+        else:
+            morceaux[i] = balise(m)
+    return "".join(morceaux)
+
+
+def traduire_jinja(contenu, textes, javascript):
+    """Texte sans balises (JavaScript, SQL…) : seules les expressions Jinja sont épargnées."""
+    morceaux = re.split(r"(?s)(" + JINJA + r")", contenu)
+    for i, m in enumerate(morceaux):
+        if i % 2 == 0:
+            morceaux[i] = traduire_brut(m, textes, javascript)
+    return "".join(morceaux)
+
+
+def traduire_texte(contenu, textes, javascript, html=False):
+    if html:
+        return traduire_html(contenu, textes)
+    return traduire_jinja(contenu, textes, javascript)
 
 
 def traduire_diapo(contenu, nom, cles, textes, javascript):
@@ -89,7 +134,7 @@ def traduire_diapo(contenu, nom, cles, textes, javascript):
         contenu = re.sub(r'(<div class="text">).*?(</div>\s*</div>)',
                          lambda m: m.group(1) + "\n<div>\n<p>" + texte + "</p>\n" + m.group(2),
                          contenu, count=1, flags=re.S)
-    return traduire_texte(contenu, textes, javascript)
+    return traduire_texte(contenu, textes, javascript, html=True)
 
 
 def traduire_sqlite(base, textes):
@@ -129,10 +174,11 @@ def main():
     with open(a.source, encoding="utf-8", errors="surrogateescape") as f:
         contenu = f.read()
     javascript = a.source.endswith(".js")
+    html = a.source.endswith((".html", ".htm"))
     if a.diapo:
         contenu = traduire_diapo(contenu, a.diapo, cles, textes, javascript)
     else:
-        contenu = traduire_texte(contenu, textes, javascript)
+        contenu = traduire_texte(contenu, textes, javascript, html)
     tmp = a.destination + ".occitux-tmp"
     with open(tmp, "w", encoding="utf-8", errors="surrogateescape") as f:
         f.write(contenu)
